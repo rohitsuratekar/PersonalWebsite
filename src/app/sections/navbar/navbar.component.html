@@ -1,0 +1,17 @@
+
+
+<md-toolbar color="primary">
+    <span (click)='onClick(-1)' style="cursor:pointer;">Custom Toolbar</span>
+    <span class="regular-spacer"></span>
+    <button md-button *ngIf="!currentSection(0)" (click)='onClick(0)'>About</button>
+    <button md-raised-button color="accent" *ngIf="currentSection(0)">About</button>
+    <button md-button *ngIf="!currentSection(1)" (click)='onClick(1)'>Researcher</button>
+    <button md-raised-button color="accent" *ngIf="currentSection(1)">Researcher</button>
+    <button md-button *ngIf="!currentSection(2)" (click)='onClick(2)'>Developer</button>
+    <button md-raised-button color="accent" *ngIf="currentSection(2)">Developer</button>
+    <button md-button *ngIf="!currentSection(3)" (click)='onClick(3)'>Artist</button>   
+    <button md-raised-button color="accent" *ngIf="currentSection(3)">Artist</button>
+    <span fxFlexOffset = 5></span>
+  </md-toolbar>
+  
+  

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeCard } from "./home.component.card.class";
+import { HomeCardComponent } from './home.component.card.class';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +12,7 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit() {
-   
   }
-  
 
 }
 

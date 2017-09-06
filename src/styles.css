@@ -4,3 +4,11 @@ html, body {
     height: 100%;
     margin: 0;
   }
+
+  .regular-spacer {
+    flex: 1 1 auto;
+  }
+
+  .test {
+    background-color: red;
+}
