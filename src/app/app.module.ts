@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCardModule, MdToolbarModule} from '@angular/material';
-
+import {MdButtonModule, MdCardModule, MdToolbarModule, MdMenuModule, MdGridListModule} from '@angular/material';
+import {MdTabsModule, MdChipsModule, MdListModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './sections/home/home.component';
 import { HomeCardComponent } from './sections/home/home.component.card.class';
@@ -13,6 +13,8 @@ import { AboutComponent } from './sections/about/about.component';
 import { DeveloperComponent } from './sections/developer/developer.component';
 import { ArtistComponent } from './sections/artist/artist.component';
 import { ResearcherComponent } from './sections/researcher/researcher.component';
+import { InfocardComponent } from './sections/researcher/infocard/infocard.component';
+import { PublicationsComponent } from './sections/publications/publications.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -32,13 +34,16 @@ const appRoutes: Routes = [
     AboutComponent,
     DeveloperComponent,
     ArtistComponent,
-    ResearcherComponent
+    ResearcherComponent,
+    InfocardComponent,
+    PublicationsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule, FlexLayoutModule,
     BrowserAnimationsModule,
-    MdButtonModule, MdCardModule, MdToolbarModule
+    MdButtonModule, MdCardModule, MdToolbarModule, MdMenuModule, MdGridListModule,
+    MdTabsModule, MdChipsModule, MdListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

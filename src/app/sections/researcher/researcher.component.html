@@ -1,1 +1,30 @@
 <app-navbar></app-navbar>
+<div fxLayout="row">
+    <div fxFlex="20%" fxFlex.lt-md="5%"></div>
+    <div fxLayout="column" fxFlex="60%" fxFlex.lt-md="90%">
+        <md-tab-group>
+            <md-tab label="Research Projects">
+                <div fxLayout="row" fxLayoutWrap fxLayoutAlign="start start" fxLayoutAlign.lt-md="center start">
+                    <app-infocard fxFlex="50%" fxFlex.lt-md="80%" [projectNo]=0></app-infocard>
+                    <app-infocard fxFlex="50%" fxFlex.lt-md="80%" [projectNo]=1></app-infocard>
+                    <app-infocard fxFlex="50%" fxFlex.lt-md="80%" [projectNo]=2></app-infocard>
+                    <app-infocard fxFlex="50%" fxFlex.lt-md="80%" [projectNo]=3></app-infocard>
+                    <app-infocard fxFlex="50%" fxFlex.lt-md="80%" [projectNo]=4></app-infocard>
+                    <app-infocard fxFlex="50%" fxFlex.lt-md="80%" [projectNo]=5></app-infocard>
+                </div>
+            </md-tab>
+            <md-tab label="Publications and Talks">
+                <div fxLayout="row" fxLayoutWrap>
+                    <app-publications></app-publications>
+                </div>
+            </md-tab>
+            <md-tab label="Other projects">
+                <div fxLayout="row" fxLayoutWrap fxLayoutAlign="start start" fxLayoutAlign.lt-md="center start">
+                    <app-infocard fxFlex="50%" fxFlex.lt-md="80%" [projectNo]=6></app-infocard>
+                    <app-infocard fxFlex="50%" fxFlex.lt-md="80%" [projectNo]=7></app-infocard>
+                </div>
+            </md-tab>
+        </md-tab-group>
+    </div>
+    <div fxFlex="20%" fxFlex.lt-md="5%">
+    </div>
