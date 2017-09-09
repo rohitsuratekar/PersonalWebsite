@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule, MdCardModule, MdToolbarModule, MdMenuModule, MdGridListModule} from '@angular/material';
-import {MdTabsModule, MdChipsModule, MdListModule} from '@angular/material';
+import {MdTabsModule, MdChipsModule, MdListModule, MdProgressBarModule, MdTooltipModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './sections/home/home.component';
 import { HomeCardComponent } from './sections/home/home.component.card.class';
@@ -15,6 +15,7 @@ import { ArtistComponent } from './sections/artist/artist.component';
 import { ResearcherComponent } from './sections/researcher/researcher.component';
 import { InfocardComponent } from './sections/researcher/infocard/infocard.component';
 import { PublicationsComponent } from './sections/publications/publications.component';
+import { ChartModule } from 'angular2-chartjs';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
     BrowserModule, FlexLayoutModule,
     BrowserAnimationsModule,
     MdButtonModule, MdCardModule, MdToolbarModule, MdMenuModule, MdGridListModule,
-    MdTabsModule, MdChipsModule, MdListModule
+    MdTabsModule, MdChipsModule, MdListModule, MdProgressBarModule, MdTooltipModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -18,3 +18,19 @@
           </div>
         </md-card>
         </div>
+
+        <div fxFlex="30%">
+                <md-card>
+                    <md-card-content>
+                        <h2>Programing languages</h2>
+                        <h4>From <i>Noob</i> to <i>Ninja</i> level</h4>
+                        <div fxLayout="column"  fxLayoutAlign="start start" *ngFor ="let l of lang" >
+                            <div>{{l.name}}</div>
+                            <md-progress-bar [color]="warn" [mode]="determinate" [value]= l.value> </md-progress-bar>
+                            <div style="height:5px;"></div>
+                        </div>
+                        
+            
+                    </md-card-content>
+                </md-card>
+            </div>

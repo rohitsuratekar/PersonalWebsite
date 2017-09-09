@@ -1,1 +1,12 @@
 <app-navbar></app-navbar>
+
+<div fxFill fxLayoutAlign="center center" fxLayout="row">
+    <div fxFlex="20%"></div>
+
+    <div fxFlex="50%" fxFlex.lt-md="100%" class="chart-container" >
+   
+    <chart  [type]="type" [data]="data" [options]="options"></chart>
+</div>
+
+    <div fxFlex="20%"></div>
+</div>
