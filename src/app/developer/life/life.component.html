@@ -1,0 +1,34 @@
+<div class="alert alert-app-level alert-warning" *ngIf="alertShow">
+  <div class="alert-items">
+    <div class="alert-item static">
+      <div class="alert-icon-wrapper">
+        <clr-icon class="alert-icon" shape="exclamation-triangle"></clr-icon>
+      </div>
+      <span class="alert-text">So far, this demo has only successfully worked on Chrome 30.0.1599.
+                  If you are in some other browser, you might see only text and no demo !
+              </span>
+      <div class="alert-actions">
+        <button class="btn alert-action" (click)="goHome()">Go Home</button>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="close" aria-label="Close" (click)="alertShow=false">
+          <clr-icon aria-hidden="true" shape="close"></clr-icon>
+      </button>
+</div>
+
+<div class="row flex-items-xs-center flex-items-xs-middle ">
+
+  <h2>Project Life Demo 1.0</h2>
+  <span class="dummy-spacer">I started working on this project along with '<a href="demo/campus" >Project Campus</a>'. 
+    I was inspired by GTA and other exploring RPGs. In this project, 
+    I was trying to make daily life of person with some objects. 
+    You need to eat, sleep and gain knowledge to survive. Again, this is incomplete development. I abandoned this project later on because lower interest in Flash.  </span>
+  <div class="row flex-items-xs-center  col-xs-12">
+    <object type="application/x-shockwave-flash" data="images/life_demo.swf" width="500" height="300"> 
+     <param name="movie" value="images/life_demo.swf" />
+     <param name="quality" value="high" />
+    </object>
+
+  </div>
+</div>

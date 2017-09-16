@@ -1,18 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 html, body {
     height: 100%;
     margin: 0;
   }
 
-html {
-  overflow-y: scroll;
+.regular-spacer {
+  flex: 1 1 auto;
 }
 
-  .regular-spacer {
-    flex: 1 1 auto;
-  }
-
-  .test {
+.test {
     background-color: red;
+}
+
+.fill-parent{
+  height : 100%;
+}
+
+.add-pointer{
+  cursor: pointer;
 }

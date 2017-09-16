@@ -1,53 +1,47 @@
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCardModule, MdToolbarModule, MdMenuModule, MdGridListModule} from '@angular/material';
-import {MdTabsModule, MdChipsModule, MdListModule, MdProgressBarModule, MdTooltipModule} from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { ClarityModule } from 'clarity-angular';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './sections/home/home.component';
-import { HomeCardComponent } from './sections/home/home.component.card.class';
-import { NavbarComponent } from './sections/navbar/navbar.component';
-import { AboutComponent } from './sections/about/about.component';
-import { DeveloperComponent } from './sections/developer/developer.component';
-import { ArtistComponent } from './sections/artist/artist.component';
-import { ResearcherComponent } from './sections/researcher/researcher.component';
-import { InfocardComponent } from './sections/researcher/infocard/infocard.component';
-import { PublicationsComponent } from './sections/publications/publications.component';
+import { ROUTING } from "./app.routing";
+import { HomeComponent } from "./home/home.component";
+import { AboutComponent } from "./about/about.component";
+import { ResearcherComponent } from './researcher/researcher.component';
+import { DeveloperComponent } from './developer/developer.component';
+import { ArtistComponent } from './artist/artist.component';
+import { ContactComponent } from './contact/contact.component';
+import {MdSnackBarModule} from '@angular/material';
 import { ChartModule } from 'angular2-chartjs';
-
-const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'researcher', component: ResearcherComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'developer', component: DeveloperComponent },
-  { path: 'artist', component: ArtistComponent },
-  { path: '**', component: HomeComponent }
-];
-
+import { CampusComponent } from './developer/campus/campus.component';
+import { LifeComponent } from './developer/life/life.component';
+import { CreditsComponent } from './credits/credits.component';
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    HomeCardComponent,
-    NavbarComponent,
-    AboutComponent,
-    DeveloperComponent,
-    ArtistComponent,
-    ResearcherComponent,
-    InfocardComponent,
-    PublicationsComponent
-  ],
-  imports: [
-    RouterModule.forRoot(appRoutes),
-    BrowserModule, FlexLayoutModule,
-    BrowserAnimationsModule,
-    MdButtonModule, MdCardModule, MdToolbarModule, MdMenuModule, MdGridListModule,
-    MdTabsModule, MdChipsModule, MdListModule, MdProgressBarModule, MdTooltipModule,
-    ChartModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AboutComponent,
+        HomeComponent,
+        ResearcherComponent,
+        DeveloperComponent,
+        ArtistComponent,
+        ContactComponent,
+        CampusComponent,
+        LifeComponent,
+        CreditsComponent
+    ],
+    imports: [
+        BrowserAnimationsModule,
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        ClarityModule,
+        MdSnackBarModule,
+        ChartModule,
+        ROUTING
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -41,3 +41,18 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+
+
+coverage/
+dist/
+html-report/
+node_modules/
+typings/
+**/*npm-debug.log.*
+**/*yarn-error.log.*
+.idea/
+.DS_Store
+package-lock.json
+.npmrc
