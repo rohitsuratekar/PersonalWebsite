@@ -2,11 +2,15 @@
 
 <div fxFill fxLayoutAlign="center center" fxLayout="row">
     <div fxFlex="20%"></div>
-
-    <div fxFlex="50%" fxFlex.lt-md="100%" class="chart-container" >
-   
-    <chart  [type]="type" [data]="data" [options]="options"></chart>
-</div>
-
+    <div fxLayout="column" fxFlex="50%">
+        <div fxFlex="40%" fxFlex.lt-md="100%" class="chart-container">
+            <chart [type]="type" [data]="data" [options]="options"></chart>
+        </div>
+        <div><h2>Project Showcase</h2></div>
+        <md-card [style.background]="'#81d4fa'" style="cursor:pointer;" (click)= "gotoHub()">
+            <img md-card-avatar src="assets/img/GitHub-Mark.png" alt="GitHub Logo">
+            <div style= "padding : 10px;">GitHub Profile</div>
+        </md-card>
+    </div>
     <div fxFlex="20%"></div>
 </div>

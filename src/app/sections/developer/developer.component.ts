@@ -38,6 +38,10 @@ export class DeveloperComponent implements OnInit {
     }
   }
 
+  gotoHub() {
+    window.open('https://github.com/rohitsuratekar', '_blank');
+  }
+
 }
 
 
@@ -86,7 +90,7 @@ const opt = {
   },
   title: {
     display: true,
-    text: 'Skill Level'
+    text: 'Programming Skills'
   },
   legend: {
     display: false
