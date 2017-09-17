@@ -3,7 +3,7 @@
     <div class="branding">
       <a href="#" class="nav-link">
         <span class="clr-icon clr-clarity-logo"></span>
-        <span class="title">Clarity</span>
+        <span class="title">Rohit Suratekar</span>
       </a>
     </div>
     <div class="header-nav" [clr-nav-level]="1">
@@ -15,15 +15,15 @@
     </div>
     <div class="header-actions">
         <a href="#" [routerLink]="['/contact']" class="nav-link nav-icon" >
-            <clr-icon shape="pencil"></clr-icon>
+            <clr-icon shape="pencil" class="is-solid"></clr-icon>
         </a>
     </div>
-  </clr-header>
-
+  </clr-header> 
   <div class="content-container ">
     <div class="content-area">
       <router-outlet></router-outlet>
     </div>
   </div>
+  <div class="flex-items-xs-center app-footer hidden-md-down" *ngIf = "showFooter()">Website made by Rohit Suratekar :) See copyright and photo <a href="credits">credits</a>.</div>
 
 </clr-main-container>

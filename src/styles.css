@@ -19,3 +19,9 @@ html, body {
 .add-pointer{
   cursor: pointer;
 }
+.app-footer {
+  text-align:center;
+  font-size: 12px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}

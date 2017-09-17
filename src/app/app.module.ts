@@ -17,6 +17,7 @@ import { ChartModule } from 'angular2-chartjs';
 import { CampusComponent } from './developer/campus/campus.component';
 import { LifeComponent } from './developer/life/life.component';
 import { CreditsComponent } from './credits/credits.component';
+import { PublicationsComponent } from './researcher/publications/publications.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -28,7 +29,8 @@ import { CreditsComponent } from './credits/credits.component';
         ContactComponent,
         CampusComponent,
         LifeComponent,
-        CreditsComponent
+        CreditsComponent,
+        PublicationsComponent
     ],
     imports: [
         BrowserAnimationsModule,

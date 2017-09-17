@@ -1,10 +1,10 @@
 <clr-tabs>
   <clr-tab>
     <button clrTabLink>Background</button>
-    <clr-tab-content *clrIfActive>
+    <clr-tab-content *clrIfActive="true">
       <div class="row flex-items-xs-center flex-items-xs-bottom">
 
-        <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-11 col-xs-11">
+        <div class="card col-xl-4 col-lg-4 col-md-10 col-sm-11 col-xs-11">
           <div class="card-header">
             Background
           </div>
@@ -13,14 +13,14 @@
               I started coding with ‘C++’ in my bachelors. At that time, it was compulsory subject and I looked at it as credit gaining
               course. After that I used very little action script while creating some small flash games in my college. At
               the starting 2012, I started coding in Perl and Matlab as I was doing project on <a href="https://github.com/rohitsuratekar/codon"
-                target="_blank">Codons</a>. Later on, in 2015, shifted to Python for some serious computational biology projects.
+                target="_blank">Codons</a> which required data mining and statistics. Later on, in 2015, shifted to Python for some serious computational biology projects.
               During the course of my PhD tenure I used to learn various programming languages whenever I get free time.
               This led to building up many programming projects, some of them are showcased here. Most of my projects are
               ‘Open Source’ and can be found on <a href="https://github.com/rohitsuratekar" target="_blank">GitHub</a>.
             </div>
           </div>
         </div>
-        <div class="chart-container col-lg-5 col-md-5 col-sm-12 col-xs-12">
+        <div class="chart-container col-lg-5 col-md-10 col-sm-12 col-xs-12">
           <chart [type]="type" [data]="data" [options]="options"></chart>
         </div>
       </div>
@@ -29,7 +29,7 @@
 
   <clr-tab>
     <button clrTabLink>Showcase</button>
-    <clr-tab-content *clrIfActive="true">
+    <clr-tab-content *clrIfActive="false">
 
 
       <clr-datagrid>
@@ -43,7 +43,7 @@
           <clr-dg-cell>{{project.title}}</clr-dg-cell>
           <clr-dg-cell>{{project.platform}}</clr-dg-cell>
           <clr-dg-cell><img src="images/{{project.image}}" class="table-icon" alt=project.language />{{project.language}}</clr-dg-cell>
-          <clr-dg-cell>{{project.details}}</clr-dg-cell>
+          <clr-dg-cell>{{project.detailsShort}} <clr-icon shape="caret" dir="right" class="add-pointer is-info" (click)="openModal(project)" *ngIf="project.allowModal"></clr-icon></clr-dg-cell>
           <clr-dg-cell><a href={{project.link}}>{{project.linkText}}</a></clr-dg-cell>
         </clr-dg-row>
 
@@ -55,3 +55,15 @@
     </clr-tab-content>
   </clr-tab>
 </clr-tabs>
+
+
+<clr-modal [(clrModalOpen)]= "modalOpen">
+    <h3 class="modal-title">{{modalTitle}}</h3>
+    <div class="modal-body">
+        <p>{{modalDetails}}</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline" (click)="modalOpen = false">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="modalOpen = false">Ok</button>
+    </div>
+</clr-modal>

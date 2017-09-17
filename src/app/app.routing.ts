@@ -12,17 +12,20 @@ import { LifeComponent } from './developer/life/life.component';
 import { CreditsComponent } from './credits/credits.component';
 
 export const ROUTES: Routes = [
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: 'home', component: HomeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'researcher', component: ResearcherComponent},
-    {path: 'developer', component: DeveloperComponent},
-    {path: 'artist', component: ArtistComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'credits', component: CreditsComponent},
-    {path: 'demo/campus', component: CampusComponent},
-    {path: 'demo/life', component: LifeComponent},
-    {path: '**', component: HomeComponent}
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent, data: { title: 'Home' } },
+    { path: 'about', component: AboutComponent, data: { title: 'About Rohit' } },
+    { path: 'researcher', component: ResearcherComponent, data: { title: 'Some Research' } },
+    { path: 'developer', component: DeveloperComponent, data: { title: 'Hello World' } },
+    { path: 'artist', component: ArtistComponent, data: { title: 'As an artist' } },
+    { path: 'contact', component: ContactComponent, data: { title: 'Contact Me' } },
+    { path: 'credits', component: CreditsComponent, data: { title: 'Credits' } },
+    { path: 'demo/campus', component: CampusComponent, data: { title: 'Project Campus' } },
+    { path: 'demo/life', component: LifeComponent, data: { title: 'Life 1.0' } },
+    { path: '**', component: HomeComponent, data: { title: 'hmmm...' } }
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);
+
+// Routing code from
+// https://stackoverflow.com/questions/38644314/changing-the-page-title-using-the-angular-2-new-router
