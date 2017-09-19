@@ -1,0 +1,26 @@
+<div class="row flex-items-xs-center">
+  <div class="form-group row col-xs-10 flex-items-xs-center">
+
+      <a (click)="changeTag(t)" [ngClass]="getTag(t)" *ngFor="let t of allTags">
+          {{t}}
+          <span class="badge">{{galleryTags[t]}}</span>
+      </a>
+  </div>
+</div>
+
+<div class="row flex-items-xs-center flex-items-xs-middle">
+  <div class="col-xs-10 col-sm-5 col-md-5 col-lg-3" *ngFor="let photo of galleryPics">
+      <img class="myImg" (click)="onImageClick(photo)" src="images/photo/{{photo.image}}" alt={{photo.caption}}>
+  </div>
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" *ngIf="showImage" (click)="showImage=false">
+  <!-- The Close Button -->
+  <span class="close" (click)="showImage=false">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" src="images/photo/{{currentPic}}">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption">{{currentCaption}}</div>
+</div>

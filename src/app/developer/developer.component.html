@@ -42,7 +42,7 @@
         <clr-dg-row *clrDgItems="let project of projects">
           <clr-dg-cell>{{project.title}}</clr-dg-cell>
           <clr-dg-cell>{{project.platform}}</clr-dg-cell>
-          <clr-dg-cell><img src="images/{{project.image}}" class="table-icon" alt=project.language />{{project.language}}</clr-dg-cell>
+          <clr-dg-cell><img src="images/logos/{{project.image}}" class="table-icon" alt=project.language />{{project.language}}</clr-dg-cell>
           <clr-dg-cell>{{project.detailsShort}} <clr-icon shape="caret" dir="right" class="add-pointer is-info" (click)="openModal(project)" *ngIf="project.allowModal"></clr-icon></clr-dg-cell>
           <clr-dg-cell><a href={{project.link}}>{{project.linkText}}</a></clr-dg-cell>
         </clr-dg-row>

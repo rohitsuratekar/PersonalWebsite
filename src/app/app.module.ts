@@ -18,6 +18,10 @@ import { CampusComponent } from './developer/campus/campus.component';
 import { LifeComponent } from './developer/life/life.component';
 import { CreditsComponent } from './credits/credits.component';
 import { PublicationsComponent } from './researcher/publications/publications.component';
+import { PhotographyComponent } from './artist/photography/photography.component';
+import { DesigningComponent } from './artist/designing/designing.component';
+import { GalleryComponent } from './artist/gallery/gallery.component';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -30,7 +34,10 @@ import { PublicationsComponent } from './researcher/publications/publications.co
         CampusComponent,
         LifeComponent,
         CreditsComponent,
-        PublicationsComponent
+        PublicationsComponent,
+        PhotographyComponent,
+        DesigningComponent,
+        GalleryComponent
     ],
     imports: [
         BrowserAnimationsModule,
