@@ -21,6 +21,8 @@ import { PublicationsComponent } from './researcher/publications/publications.co
 import { PhotographyComponent } from './artist/photography/photography.component';
 import { DesigningComponent } from './artist/designing/designing.component';
 import { GalleryComponent } from './artist/gallery/gallery.component';
+import { SketchingComponent } from './artist/sketching/sketching.component';
+import { WritingComponent } from './artist/writing/writing.component';
 
 @NgModule({
     declarations: [
@@ -37,7 +39,9 @@ import { GalleryComponent } from './artist/gallery/gallery.component';
         PublicationsComponent,
         PhotographyComponent,
         DesigningComponent,
-        GalleryComponent
+        GalleryComponent,
+        SketchingComponent,
+        WritingComponent
     ],
     imports: [
         BrowserAnimationsModule,

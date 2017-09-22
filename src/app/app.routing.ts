@@ -13,6 +13,8 @@ import { CreditsComponent } from './credits/credits.component';
 import { PhotographyComponent } from './artist/photography/photography.component';
 import { DesigningComponent } from './artist/designing/designing.component';
 import { GalleryComponent } from './artist/gallery/gallery.component';
+import { SketchingComponent } from './artist/sketching/sketching.component';
+import { WritingComponent } from './artist/writing/writing.component';
 
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -24,6 +26,8 @@ export const ROUTES: Routes = [
     { path: 'artist/photography', component: PhotographyComponent, data: { title: 'Photography' } },
     { path: 'artist/designing', component: DesigningComponent, data: { title: 'Designing' } },
     { path: 'artist/gallery', component: GalleryComponent, data: { title: 'Photo Gallery' } },
+    { path: 'artist/sketching', component: SketchingComponent, data: { title: 'Sketching' } },
+    { path: 'artist/writing', component: WritingComponent, data: { title: 'Writing' } },
     { path: 'contact', component: ContactComponent, data: { title: 'Contact Me' } },
     { path: 'credits', component: CreditsComponent, data: { title: 'Credits' } },
     { path: 'demo/campus', component: CampusComponent, data: { title: 'Project Campus' } },

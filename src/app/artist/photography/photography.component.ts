@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-photography',
   templateUrl: './photography.component.html',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhotographyComponent implements OnInit {
 
-  constructor() {
+  cardStyle = "col-lg-3 col-md-6 col-sm-10";
+
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
+  }
+
+  navigate(path) {
+    this.router.navigate(['/artist/' + path]);
   }
 }

@@ -9,12 +9,18 @@ import { Title } from '@angular/platform-browser';
 export class AppComponent {
 
     currentPage = '';
+    showArtist = false;
     constructor(private titleService: Title, private router: Router, activatedRoute: ActivatedRoute) {
         router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
                 let title = this.getTitle(router.routerState, router.routerState.root).join('-');
                 titleService.setTitle(title);
                 this.currentPage = router.routerState.snapshot.url;
+                if (this.currentPage.indexOf('/artist/')) {
+                    this.showArtist = false;
+                } else {
+                    this.showArtist = true;
+                }
             }
         });
     }

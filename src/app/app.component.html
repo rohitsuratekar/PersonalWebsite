@@ -1,29 +1,48 @@
 <clr-main-container>
-  <clr-header class="header-7">
-    <div class="branding">
-      <a href="#" class="nav-link">
+    <clr-header class="header-7">
+        <div class="branding">
+            <a href="#" class="nav-link">
         <span class="clr-icon clr-clarity-logo"></span>
         <span class="title">Rohit Suratekar</span>
       </a>
+        </div>
+        <div class="header-nav" [clr-nav-level]="1">
+            <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active"><span class="nav-text">Home</span></a>
+            <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active"><span class="nav-text">About</span></a>
+            <a class="nav-link" href="#" [routerLink]="['/researcher']" routerLinkActive="active"><span class="nav-text">Researcher</span></a>
+            <a class="nav-link" href="#" [routerLink]="['/developer']" routerLinkActive="active"><span class="nav-text">Developer</span></a>
+            <a class="nav-link" href="#" [routerLink]="['/artist']" routerLinkActive="active"><span class="nav-text">Artist</span></a>
+        </div>
+        <div class="header-actions">
+            <a href="#" [routerLink]="['/contact']" class="nav-link nav-icon">
+                <clr-icon shape="pencil" class="is-solid"></clr-icon>
+            </a>
+        </div>
+    </clr-header>
+    <nav class="subnav" [clr-nav-level]="2" *ngIf="showArtist==true">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" [routerLink]="['/artist/photography']" routerLinkActive="active"><span class="nav-text">Photography</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" [routerLink]="['/artist/designing']" routerLinkActive="active"><span class="nav-text">Digital Designing</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" [routerLink]="['/artist/sketching']" routerLinkActive="active"><span class="nav-text">Sketching</span></a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#" [routerLink]="['/artist/writing']" routerLinkActive="active"><span class="nav-text">Writing</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" [routerLink]="['/artist/gallery']" routerLinkActive="active"><span class="nav-text">Gallery</span></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content-container ">
+        <div class="content-area">
+            <router-outlet></router-outlet>
+        </div>
     </div>
-    <div class="header-nav" [clr-nav-level]="1">
-      <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active"><span class="nav-text">Home</span></a>
-      <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active"><span class="nav-text">About</span></a>
-      <a class="nav-link" href="#" [routerLink]="['/researcher']" routerLinkActive="active"><span class="nav-text">Researcher</span></a>
-      <a class="nav-link" href="#" [routerLink]="['/developer']" routerLinkActive="active"><span class="nav-text">Developer</span></a>
-      <a class="nav-link" href="#" [routerLink]="['/artist']" routerLinkActive="active"><span class="nav-text">Artist</span></a>
-    </div>
-    <div class="header-actions">
-        <a href="#" [routerLink]="['/contact']" class="nav-link nav-icon" >
-            <clr-icon shape="pencil" class="is-solid"></clr-icon>
-        </a>
-    </div>
-  </clr-header> 
-  <div class="content-container ">
-    <div class="content-area">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-  <div class="flex-items-xs-center app-footer hidden-md-down" *ngIf = "showFooter()">Website made by Rohit Suratekar :) See copyright and photo <a href="credits">credits</a>.</div>
+    <div class="flex-items-xs-center app-footer hidden-md-down" *ngIf="showFooter()">Website made by Rohit Suratekar :) See copyright and photo <a href="credits">credits</a>.</div>
 
 </clr-main-container>
