@@ -1,3 +1,27 @@
-<p>
-  sketching works!
-</p>
+<div class="row flex-items-xs-center">
+  <div class=" row col-lg-10 flex-items-xs-center">
+    <h3>Background</h3>
+    <p>I started drawing very young. I use to draw on blank space on newspaper and color empty spaces. My mother was very encouraging
+        and provided me all tools needed to develop drawing skills. She herself was good painter. Hence, I improved my drawing
+        skills faster than other children at my age. Participation in various drawing exams also boosted my formal knowledge
+        about drawing. However, I never took it as serious hobby. This resulted into average sketching skills. I still actively
+        practice sketching in my free time. I generally do black and white pencil sketching. I like sketching with normal
+        pencils and sometimes ball pen. Now a day I am practicing comic art.</p>
+</div>
+<div></div>
+
+<div class="row flex-items-xs-center flex-items-xs-middle col-lg-10">
+    <div class="col-xs-10 col-sm-5 col-md-5 col-lg-3" *ngFor = "let p of pics">
+        <img class="myImg" (click)="onImageClick(p)" src="images/draw/{{p}}">
+    </div>
+</div>
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" *ngIf="showImage" (click)="showImage=false">
+    <!-- The Close Button -->
+    <span class="close" (click)="showImage=false">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" src="images/draw/{{currentPic}}">
+  </div>

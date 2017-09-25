@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WritingComponent implements OnInit {
 
+  poemClass = "col-lg-6";
+
   constructor() { }
 
   ngOnInit() {

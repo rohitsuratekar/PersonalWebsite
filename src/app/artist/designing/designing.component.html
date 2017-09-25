@@ -1,3 +1,38 @@
-<p>
-  designing works!
-</p>
+<div class="row flex-items-xs-center">
+    <div class="form-group row col-xs-10 flex-items-xs-center">
+
+        <a (click)="changeKeyword(t)" [ngClass]="getKeyword(t)" *ngFor="let t of allKeys">
+                  {{t}}
+                  <span class="badge">{{keywords[t]}}</span>
+              </a>
+    </div>
+    <div class="col-xs-11 col-sm-5 col-md-5 col-lg-3" *ngFor="let project of projects">
+        <div class="card">
+            <div class="card-img">
+                <img src="images/design/{{project.image}}">
+            </div>
+            <div class="card-block">
+                <h4 class="card-title">{{project.title}}</h4>
+                <p class="card-text">
+                    {{project.details}}
+                </p>
+                <a (click)="changeKeyword(t)" [ngClass]="getKeyword(t)" *ngFor="let t of project.keywords">
+                {{t}}</a>
+            </div>
+            <div class="card-footer">
+                <button (click) = "onProjectClick(project.link)" class="btn btn-sm btn-link">
+                    {{project.linkText}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" *ngIf="showImage" (click)="showImage=false">
+    <!-- The Close Button -->
+    <span class="close" (click)="showImage=false">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" src="images/design/{{currentPic}}">
+  </div>
