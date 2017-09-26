@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  cardClass = "col-lg-4";
+  cardClass = "col-lg-4 col-md-4 col-sm-6";
   constructor() { }
 
   ngOnInit() {

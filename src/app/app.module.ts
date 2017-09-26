@@ -23,6 +23,7 @@ import { DesigningComponent } from './artist/designing/designing.component';
 import { GalleryComponent } from './artist/gallery/gallery.component';
 import { SketchingComponent } from './artist/sketching/sketching.component';
 import { WritingComponent } from './artist/writing/writing.component';
+import { VideographyComponent } from './artist/videography/videography.component';
 
 @NgModule({
     declarations: [
@@ -41,7 +42,8 @@ import { WritingComponent } from './artist/writing/writing.component';
         DesigningComponent,
         GalleryComponent,
         SketchingComponent,
-        WritingComponent
+        WritingComponent,
+        VideographyComponent
     ],
     imports: [
         BrowserAnimationsModule,

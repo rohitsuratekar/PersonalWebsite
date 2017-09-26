@@ -15,6 +15,7 @@ import { DesigningComponent } from './artist/designing/designing.component';
 import { GalleryComponent } from './artist/gallery/gallery.component';
 import { SketchingComponent } from './artist/sketching/sketching.component';
 import { WritingComponent } from './artist/writing/writing.component';
+import { VideographyComponent } from './artist/videography/videography.component';
 
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,6 +29,7 @@ export const ROUTES: Routes = [
     { path: 'artist/gallery', component: GalleryComponent, data: { title: 'Photo Gallery' } },
     { path: 'artist/sketching', component: SketchingComponent, data: { title: 'Sketching' } },
     { path: 'artist/writing', component: WritingComponent, data: { title: 'Writing' } },
+    { path: 'artist/videography', component: VideographyComponent, data: { title: 'Videography' } },
     { path: 'contact', component: ContactComponent, data: { title: 'Contact Me' } },
     { path: 'credits', component: CreditsComponent, data: { title: 'Credits' } },
     { path: 'demo/campus', component: CampusComponent, data: { title: 'Project Campus' } },
