@@ -71,8 +71,8 @@ class LangClass {
   }
 }
 
-const laguage = ['Python', 'Java', 'C++', 'MatLab', 'Perl', 'JavaScript', 'C#', 'LateX'];
-const level = [75, 60, 30, 45, 40, 50, 20, 40];
+const laguage = ['Python', 'Java', 'C++', 'MatLab', 'Perl', 'JavaScript', 'C#', 'LateX', 'Haskell'];
+const level = [75, 60, 30, 45, 40, 50, 20, 40, 10];
 
 const opt = {
   responsive: true,

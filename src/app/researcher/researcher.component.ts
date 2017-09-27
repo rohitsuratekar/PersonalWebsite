@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MdSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-researcher',
@@ -10,7 +9,7 @@ export class ResearcherComponent implements OnInit {
   currentTag = "Lipid Signaling";
   alertHide = true;
   projects = [];
-  constructor(public snackBar: MdSnackBar) {
+  constructor() {
     for (let i = 0; i < ProjectDetails.length; i++) {
       this.projects.push(new Infocard(ProjectDetails[i]))
     }
@@ -29,9 +28,6 @@ export class ResearcherComponent implements OnInit {
 
 
   setTag(tag) {
-    this.snackBar.open(tag + ' projects', 'Ok', {
-      duration: 2000,
-    });
     this.currentTag = tag;
   }
 

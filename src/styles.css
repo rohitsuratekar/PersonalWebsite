@@ -58,6 +58,8 @@ html, body {
   display: block;
   max-width: 100%;
   max-height: 80%;
+  object-fit: contain;
+  height: auto;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -113,4 +115,8 @@ html, body {
   .modal-content {
       width: 100%;
   }
+}
+.fill-justify {
+  text-align: justify;
+  text-justify: inter-word;
 }

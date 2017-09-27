@@ -9,14 +9,16 @@
             Background
           </div>
           <div class="card-block">
-            <div class="card-text">
-              I started coding with ‘C++’ in my bachelors. At that time, it was compulsory subject and I looked at it as credit gaining
-              course. After that I used very little action script while creating some small flash games in my college. At
-              the starting 2012, I started coding in Perl and Matlab as I was doing project on <a href="https://github.com/rohitsuratekar/codon"
-                target="_blank">Codons</a> which required data mining and statistics. Later on, in 2015, shifted to Python for some serious computational biology projects.
-              During the course of my PhD tenure I used to learn various programming languages whenever I get free time.
-              This led to building up many programming projects, some of them are showcased here. Most of my projects are
-              ‘Open Source’ and can be found on <a href="https://github.com/rohitsuratekar" target="_blank">GitHub</a>.
+            <div class="card-text fill-justify ">
+              My stint with coding started with <b>C++</b> during my bachelors. I also had some
+              experience in coding for flash games in <b>Action Script</b>. In early 2012, I shifted
+              to coding in higher level languages like, Perl and Matlab while pursuing a project on
+              <a href="https://github.com/rohitsuratekar/codon" target="_blank">Codons</a>, which
+              required data mining and statistics. Later on, in 2015, I gradually started shifting 
+              my coding base to Python to aid the ongoing computational biology projects in my PhD.
+              During the course of my PhD, I have learnt various programming languages as a hobby.
+              These were the building blocks of many projects and research assignments, some of which
+              are <b>open source</b> and can be accessed from <a href="https://github.com/rohitsuratekar" target="_blank">GitHub</a>.
             </div>
           </div>
         </div>
@@ -59,11 +61,10 @@
 
 <clr-modal [(clrModalOpen)]= "modalOpen">
     <h3 class="modal-title">{{modalTitle}}</h3>
-    <div class="modal-body">
+    <div class="modal-body fill-justify ">
         <p>{{modalDetails}}</p>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-outline" (click)="modalOpen = false">Cancel</button>
         <button type="button" class="btn btn-primary" (click)="modalOpen = false">Ok</button>
     </div>
 </clr-modal>

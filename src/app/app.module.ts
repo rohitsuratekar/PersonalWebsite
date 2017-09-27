@@ -12,7 +12,6 @@ import { ResearcherComponent } from './researcher/researcher.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { ArtistComponent } from './artist/artist.component';
 import { ContactComponent } from './contact/contact.component';
-import {MdSnackBarModule} from '@angular/material';
 import { ChartModule } from 'angular2-chartjs';
 import { CampusComponent } from './developer/campus/campus.component';
 import { LifeComponent } from './developer/life/life.component';
@@ -51,7 +50,6 @@ import { VideographyComponent } from './artist/videography/videography.component
         FormsModule,
         HttpModule,
         ClarityModule,
-        MdSnackBarModule,
         ChartModule,
         ROUTING
     ],

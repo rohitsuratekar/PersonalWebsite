@@ -13,12 +13,9 @@
                 {{card.duration}}
               </div>
               <div><span class={{getTagClass(word)}} *ngFor="let word of card.keywords" (click)='setTag(word)'>{{word}}</span></div>
-              <div class="card-text">
+              <div class="card-text fill-justify" style="margin:5px;">
                 {{card.details}}
               </div>
-            </div>
-            <div class="card-footer">
-              <button class="btn btn-sm btn-link">More</button>
             </div>
           </div>
         </div>
