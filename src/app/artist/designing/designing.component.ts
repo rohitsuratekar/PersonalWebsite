@@ -88,6 +88,22 @@ class DesignCard {
 
 const designs = [
   {
+    't': 'Single cell to being us ',
+    'i': 'develop.jpg',
+    'd': 'Human embryo development explained with clay stop motion.',
+    'k': ['Animation'],
+    'l': 'Check on Youtube',
+    'h': 'https://www.youtube.com/watch?v=3WHdpnrcq5I'
+  },
+  {
+    't': 'The journey of Malarial Parasite',
+    'i': 'malaria.jpg',
+    'd': 'Simple stop motion video explaining how malarial parasite infect human body. ',
+    'k': ['Animation'],
+    'l': 'Check on Youtube',
+    'h': 'https://www.youtube.com/watch?v=B9-SjKAaHdg'
+  },
+  {
     't': 'Fly and the Machine',
     'i': 'fly.jpg',
     'd': 'Hybrid illustration of Drosophila.',
