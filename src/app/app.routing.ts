@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { ResearcherComponent } from './researcher/researcher.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { ArtistComponent } from './artist/artist.component';
+import { RedirectComponent } from './redirect/redirect.component';
 import { ContactComponent } from './contact/contact.component';
 import { CampusComponent } from './developer/campus/campus.component';
 import { LifeComponent } from './developer/life/life.component';
@@ -24,6 +25,7 @@ export const ROUTES: Routes = [
     { path: 'researcher', component: ResearcherComponent, data: { title: 'Some Research' } },
     { path: 'developer', component: DeveloperComponent, data: { title: 'Hello World' } },
     { path: 'artist', component: ArtistComponent, data: { title: 'As an artist' } },
+    { path: 'blog', component: RedirectComponent, data: { title: 'Blog Redirect' } },
     { path: 'artist/photography', component: PhotographyComponent, data: { title: 'Photography' } },
     { path: 'artist/designing', component: DesigningComponent, data: { title: 'Designing' } },
     { path: 'artist/gallery', component: GalleryComponent, data: { title: 'Photo Gallery' } },
