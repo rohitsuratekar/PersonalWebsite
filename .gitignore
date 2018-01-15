@@ -56,3 +56,4 @@ typings/
 .DS_Store
 package-lock.json
 .npmrc
+2.4.2

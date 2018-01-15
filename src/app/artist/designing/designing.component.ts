@@ -88,6 +88,14 @@ class DesignCard {
 
 const designs = [
   {
+    't': 'Research Poster',
+    'i': 'poster_small.jpg',
+    'd': 'My PhD research explained in the form of comic strip .',
+    'k': ['Poster Design', 'Illustration'],
+    'l': 'Check It Out',
+    'h': 'poster.jpg'
+  },
+  {
     't': 'Single cell to being us ',
     'i': 'develop.jpg',
     'd': 'Human embryo development explained with clay stop motion.',
@@ -102,6 +110,14 @@ const designs = [
     'k': ['Animation'],
     'l': 'Check on Youtube',
     'h': 'https://www.youtube.com/watch?v=B9-SjKAaHdg'
+  },
+  {
+    't': 'IISc building',
+    'i': 'iisc_3d.jpg',
+    'd': 'Trying out newly learned 3D modelling technique with the help of Blender.',
+    'k': ['3D Modelling'],
+    'l': 'Check It Out',
+    'h': 'iisc_3d.jpg'
   },
   {
     't': 'Fly and the Machine',

@@ -189,6 +189,25 @@ const projectDetails = [
     'link': 'http://rohitsuratekar.co.in/'
   },
   {
+    'title': "Personal Blog",
+    'platform': 'Web',
+    'language': 'Jekyll',
+    'image': 'jekyllthemes.png',
+    'details': 'Even after searching for a long time some very good platform for blogging  '
+    + ' I did not get any good option. Hence finally I created my own blogging template with the help of amazing Jekyll.',
+    'linkText': 'Check Live',
+    'link': 'https://rohitsuratekar.github.io/'
+  },
+  {
+    'title': "Minimal Quiz",
+    'platform': 'Android',
+    'language': 'Java',
+    'image': 'Android_Robot_100.png',
+    'details': 'Android trivia app which retrieves quiz question from open database and provides you with small quiz. ',
+    'linkText': 'Check on PlayStore',
+    'link': 'https://play.google.com/store/apps/details?id=com.secretbiology.minimalquiz'
+  },
+  {
     'title': "SRTMaker",
     'platform': 'Windows, Unix, iOS',
     'language': 'Python 3',
