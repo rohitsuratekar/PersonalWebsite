@@ -28,6 +28,7 @@ export const ROUTES: Routes = [
     { path: 'blog', component: RedirectComponent, data: { title: 'Blog Redirect' } },
     { path: 'artist/photography', component: PhotographyComponent, data: { title: 'Photography' } },
     { path: 'artist/designing', component: DesigningComponent, data: { title: 'Designing' } },
+    { path: 'design', component: DesigningComponent, data: { title: 'Designing' } },
     { path: 'artist/gallery', component: GalleryComponent, data: { title: 'Photo Gallery' } },
     { path: 'artist/sketching', component: SketchingComponent, data: { title: 'Sketching' } },
     { path: 'artist/writing', component: WritingComponent, data: { title: 'Writing' } },
