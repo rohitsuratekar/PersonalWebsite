@@ -154,8 +154,8 @@ const projectDetails = [
     'language': 'Java',
     'image': 'Android_Robot_100.png',
     'details': 'My android development experience started with MIT App Inventor. '
-    + 'Soon I realized I was hitting limitations of it. Then I started leaning actual '
-    + 'Java Coding for the same. During that time, as a learning project, I started '
+    + 'Soon I realized that I was hitting limitations of it. Then I started learning '
+    + 'Java for the same. During that time, as a learning project, I started '
     + 'building small app for checking transport timings for our university bus services.'
     + ' But soon this utility spread across campus and now this android app has around 500 daily users (as of August 2017).',
     'linkText': 'Check on PlayStore',
@@ -170,7 +170,7 @@ const projectDetails = [
     + 'Many people were requesting me to make similar app for iOS. However, that very '
     + 'difficult considering I do not have resources to test and develop it. Hence, '
     + 'I started building web app which can be accessible to any platform. That is how '
-    + 'I got interested in website development and learn related languages like Angular, Javascript, Html, CSS etc.',
+    + 'I got interested in website development and learned related languages like Angular, Javascript, Html, CSS etc.',
     'linkText': 'Check Live',
     'link': 'http://secretbiology.com/'
   },
@@ -181,7 +181,7 @@ const projectDetails = [
     'image': 'angular.png',
     'details': 'I built this website from scratch. Initially I was using web template '
     + 'to build this personal website. All free templates were very limited in functionality. '
-    + 'Hence, I decided to make one from scratch. AS I had made one before for ‘Secret Biology’, '
+    + 'Hence, I decided to make one from scratch. As I had made one before for ‘Secret Biology’, '
     + 'I thought this will be easy. However, I realize Angular 2 had released. To keep up '
     + 'with latest technology, I decided to learn Angular 2 and Typescript to make this website. '
     + 'This current website is outcome of that effort. ',
@@ -222,9 +222,9 @@ const projectDetails = [
     'language': 'Java, Python',
     'image': 'Android_Robot_100.png',
     'details': 'Once we were playing Taboo in one of the party. Android app which we were using was very bad. It'
-    + ' was filled with only adds and repetitive words. We were enjoying game but these adds and bad UI'
+    + ' was filled with only adds and repetitive words. We were enjoying game but these ads and bad UI'
     + 'design were ruining our fun. Hence, I decided to make my own app. I scrapped some Taboo word '
-    + 'providing websites with Python and build android game. Because of copywrite issue with original'
+    + 'providing websites with Python and built an android game. Because of copywrite issue with original'
     +  'company, I had to change name of this app. '
     ,
     'linkText': 'Check on PlayStore',

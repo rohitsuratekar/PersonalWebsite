@@ -29,8 +29,8 @@ class HomeCard {
 const sectionNames = ['About Me', 'Academic Profile', 'Developers Profile', 'Art Profile'];
 const sectionAction = ['/about', '/researcher', '/developer', '/artist'];
 const sectionColors = ['#81d4fa', '#4fc3f7', '#29b6f6', '#03a9f4'];
-const sectionImage = ['rohit_suratekar_acad_back.jpg', 'rohit_suratekar_design.jpg',
-    'rohit_suratekar_explore.jpg', 'rohit_suratekar_photo.jpg'];
+const sectionImage = ['rohit_suratekar_acad_back.jpg',
+    'rohit_suratekar_explore.jpg', 'rohit_suratekar_design.jpg', 'rohit_suratekar_photo.jpg'];
 const sectionDetails = [
     'Who am I ?',
     'Research Work',

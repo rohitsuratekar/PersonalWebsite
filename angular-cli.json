@@ -1,7 +1,7 @@
 {
     "project": {
-        "version": "1.0.0-beta.20-4",
-        "name": "clarity-seed"
+        "version": "2.0.0",
+        "name": "RohitSuratekarWeb"
     },
     "apps": [
         {
@@ -9,7 +9,8 @@
             "outDir": "dist",
             "assets": [
                 "images",
-                "favicon.ico"
+                "favicon.ico",
+                "assets"
             ],
             "index": "index.html",
             "main": "main.ts",

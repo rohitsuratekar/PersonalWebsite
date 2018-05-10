@@ -1,7 +1,13 @@
 <clr-tabs>
   <clr-tab>
+    <button clrTabLink>Publications and Talks</button>
+    <clr-tab-content *clrIfActive="true">
+      <app-publications></app-publications>
+    </clr-tab-content>
+  </clr-tab>
+  <clr-tab>
     <button clrTabLink id="link1">Projects</button>
-    <clr-tab-content id="content1" *clrIfActive="true">
+    <clr-tab-content id="content1" *clrIfActive="false">
       <div class="row flex-items-xs-center">
         <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12" *ngFor="let card of projects">
           <div class="card">
@@ -12,7 +18,9 @@
               <div class="card-title">
                 {{card.duration}}
               </div>
-              <div><span class={{getTagClass(word)}} *ngFor="let word of card.keywords" (click)='setTag(word)'>{{word}}</span></div>
+              <div>
+                <span class={{getTagClass(word)}} *ngFor="let word of card.keywords" (click)='setTag(word)'>{{word}}</span>
+              </div>
               <div class="card-text fill-justify" style="margin:5px;">
                 {{card.details}}
               </div>
@@ -24,10 +32,5 @@
 
     </clr-tab-content>
   </clr-tab>
-  <clr-tab>
-    <button clrTabLink>Publications and Talks</button>
-    <clr-tab-content *clrIfActive="false">
-      <app-publications></app-publications>
-    </clr-tab-content>
-  </clr-tab>
+
 </clr-tabs>

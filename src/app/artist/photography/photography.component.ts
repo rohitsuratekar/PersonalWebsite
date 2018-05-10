@@ -18,4 +18,7 @@ export class PhotographyComponent implements OnInit {
   navigate(path) {
     this.router.navigate(['/artist/' + path]);
   }
+  goTo(path) {
+    window.location.href = path;
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-redirect',
@@ -6,11 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./redirect.component.scss']
 })
 export class RedirectComponent implements OnInit {
-
-  constructor() { }
+  currentPage = '';
+  redirectState = 0;
+  constructor(private router: Router, activatedRoute: ActivatedRoute) {
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        switch (router.routerState.snapshot.url) {
+          case "/blog": this.redirectState = 1; break;
+          case "/cv": this.redirectState = 2; break;
+        }
+      }
+    });
+  }
 
   ngOnInit() {
-    window.location.href = "https://rohitsuratekar.github.io/";
+    if (this.redirectState === 1) {
+      window.location.href = "https://rohitsuratekar.github.io/";
+    }
   }
 
 }

@@ -37,6 +37,7 @@ export const ROUTES: Routes = [
     { path: 'credits', component: CreditsComponent, data: { title: 'Credits' } },
     { path: 'demo/campus', component: CampusComponent, data: { title: 'Project Campus' } },
     { path: 'demo/life', component: LifeComponent, data: { title: 'Life 1.0' } },
+    { path: 'cv', component: RedirectComponent, data: { title: 'Resume' } },
     { path: '**', component: HomeComponent, data: { title: 'hmmm...' } }
 ];
 
@@ -44,3 +45,4 @@ export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);
 
 // Routing code from
 // https://stackoverflow.com/questions/38644314/changing-the-page-title-using-the-angular-2-new-router
+
