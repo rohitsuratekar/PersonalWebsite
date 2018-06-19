@@ -88,6 +88,14 @@ class DesignCard {
 
 const designs = [
   {
+    't': 'Mathematical Modelling',
+    'i': 'pip2_small.png',
+    'd': 'Poster I made for news and outreach about my paper which deals with mathematical modelling.',
+    'k': ['Poster Design', 'Illustration'],
+    'l': 'Check It Out',
+    'h': 'pip2.png'
+  },
+  {
     't': 'Research Poster',
     'i': 'poster_small.jpg',
     'd': 'My PhD research explained in the form of comic strip .',

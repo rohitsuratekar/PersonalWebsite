@@ -53,7 +53,7 @@ const ProjectDetails = [
   {
     'projectID': 0,
     'title': 'Regulation of lipid signaling pathway in Drosophila melanogaster',
-    'duration': '2014 to present',
+    'duration': '2014 to 2018',
     'keywords': ['Lipid Signaling', 'Steady State'],
     'details': 'PLC mediated PIP2 hydrolysis is everywhere. Even after lot of research, how PIP2 signalling'
     + ' is regulated is still not clear. To understand regulation in this signaling pathway, we built mathematical '
