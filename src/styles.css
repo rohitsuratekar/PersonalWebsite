@@ -29,3 +29,13 @@ body {
 .research-subtitle{
 font-size: 0.8rem
 }
+
+.justify-this{
+  text-align: justify; 
+  text-justify: inter-word;
+}
+
+.align-vertically{
+  display: flex;
+  justify-content: center; 
+}

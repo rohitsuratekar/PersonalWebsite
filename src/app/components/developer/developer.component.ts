@@ -7,14 +7,50 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeveloperComponent implements OnInit {
   projects = [];
+  project_sets = [];
+  show_modal = '';
+  modal_title = '';
+  modal_details = '';
 
   constructor() {
     for (let j = 0; j < projectDetails.length; j++) {
       this.projects.push(new ProjectCard(j));
     }
+
+    let tempList = [];
+    for (const m in this.projects) {
+      if (tempList.length < 3) {
+        tempList.push(this.projects[m]);
+      } else {
+        this.project_sets.push(tempList);
+        tempList = [];
+        tempList.push(this.projects[m]);
+      }
+    }
+    this.project_sets.push(tempList);
+
+    console.log(this.project_sets);
   }
 
   ngOnInit() {
+  }
+
+  toggleModal() {
+    if (this.show_modal === 'is-active') {
+      this.show_modal = '';
+    } else {
+      this.show_modal = 'is-active';
+    }
+  }
+
+  showModal(element) {
+    this.modal_title = element.title;
+    this.modal_details = element.details;
+    this.toggleModal();
+  }
+
+  goto(url) {
+    window.location.href = url;
   }
 
 }
@@ -61,19 +97,6 @@ const projectDetails = [
     'link': 'https://play.google.com/store/apps/details?id=com.rohitsuratekar.NCBSinfo'
   },
   {
-    'title': 'Secret Biology Webpage',
-    'platform': 'Web',
-    'language': 'AngularJS 1',
-    'image': 'angular.png',
-    'details': 'When I made android app for transportation services in our university.'
-      + 'Many people were requesting me to make similar app for iOS. However, that very '
-      + 'difficult considering I do not have resources to test and develop it. Hence, '
-      + 'I started building web app which can be accessible to any platform. That is how '
-      + 'I got interested in website development and learned related languages like Angular, Javascript, Html, CSS etc.',
-    'linkText': 'Check Live',
-    'link': 'http://secretbiology.com/'
-  },
-  {
     'title': 'This Website !!',
     'platform': 'Web',
     'language': 'AngularJS 2',
@@ -85,7 +108,7 @@ const projectDetails = [
       + 'with latest technology, I decided to learn Angular 2 and Typescript to make this website. '
       + 'This current website is outcome of that effort. ',
     'linkText': 'Check Live',
-    'link': 'http://rohitsuratekar.co.in/'
+    'link': 'https://rohitsuratekar.com/'
   },
   {
     'title': 'Personal Blog',
@@ -97,6 +120,17 @@ const projectDetails = [
     'linkText': 'Check Live',
     'link': 'https://rohitsuratekar.github.io/'
   },
+
+  {
+    'title': 'WeridData',
+    'platform': 'Web',
+    'language': 'Jekyll',
+    'image': 'jekyllthemes.png',
+    'details': 'My adventures of data-science and visualization. This blog template I designed to create minimal experience.',
+    'linkText': 'Check Live',
+    'link': 'https://weirddata.github.io/'
+  },
+
   {
     'title': 'Minimal Quiz',
     'platform': 'Android',
@@ -202,5 +236,18 @@ const projectDetails = [
     'details': 'One more expense manager app. ',
     'linkText': 'Check on GitHub',
     'link': 'https://github.com/secretBiology/ManageSmart'
+  },
+  {
+    'title': 'Secret Biology Webpage',
+    'platform': 'Web',
+    'language': 'AngularJS 1',
+    'image': 'angular.png',
+    'details': 'When I made android app for transportation services in our university.'
+      + 'Many people were requesting me to make similar app for iOS. However, that very '
+      + 'difficult considering I do not have resources to test and develop it. Hence, '
+      + 'I started building web app which can be accessible to any platform. That is how '
+      + 'I got interested in website development and learned related languages like Angular, Javascript, Html, CSS etc.',
+    'linkText': 'Check Live',
+    'link': 'https://secretbiology.com/'
   },
 ]

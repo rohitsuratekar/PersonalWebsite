@@ -10,6 +10,8 @@ import { ResearchComponent } from './components/research/research.component';
 import { DeveloperComponent } from './components/developer/developer.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {LifeComponent} from './components/developer/life/life.component';
+import {CampusComponent} from './components/developer/campus/campus.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     DeveloperComponent,
     ArtistComponent,
     FooterComponent,
+    LifeComponent,
+    CampusComponent
   ],
   imports: [
     BrowserModule,

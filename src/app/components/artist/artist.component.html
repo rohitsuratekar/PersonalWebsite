@@ -1,3 +1,17 @@
-<p>
-  artist works!
-</p>
+<div class="columns is-centered is-multiline" *ngFor="let card of artCardList">
+  <div class="columns column is-7 box is-paddingless shadow-box" style="margin:8px" >
+    <div class="column is-4 is-paddingless">
+      <figure class="image is-16by9" >
+        <img src="assets/img/art/{{card.image}}">
+      </figure>
+    </div>
+    <div class="column">
+
+      <p class="title is-4">{{card.name}}</p>
+      <p>
+          {{card.description}}
+      </p>
+
+    </div>
+  </div>
+</div>
