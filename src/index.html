@@ -1,73 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name = "description" content="Currently, I am engaged in research on cell signalling pathways 
-    at the National Centre for Biological Sciences (NCBS), Bengaluru. 
-    Besides science, I also draw, write and code :)"/>
-    <meta name="keywords" content="Research, Science, PhD, Biology">
-    <title>Rohit Suratekar</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
-    <style>
-        #myProgress {
-            width: 100%;
-            background-color: #ddd;
-        }
+  <meta charset="utf-8">
+  <title>RohitSuratekar</title>
+  <base href="/">
 
-        #myBar {
-            color: white;
-            width: 1%;
-            text-align: center;
-            height: 25px;
-            background-color: #4CAF50;
-        }
-
-    </style>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Serif' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
 </head>
 
 <body>
-    <my-app>
-        <div id="myProgress">
-            <div id="myBar"></div>
-        </div>
-        <div><b>Loading...</b><br>This website will function properly, only if Javascript is enabled on your browser.</div>
-        <script>
-            var elem = document.getElementById("myBar");
-            var width = 1;
-            var id = setInterval(frame, 10);
-
-            function frame() {
-                if (width >= 80) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + '%';
-                }
-            }
-
-        </script>
-    </my-app>
+  <app-root></app-root>
 </body>
-
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Rohit Suratekar",
-        "url": "https://rohitsuratekar.co.in",
-        "sameAs": [
-            "https://www.facebook.com/rohitsuratekar",
-            "https://instagram.com/rohitsuratekar",
-            "https://twitter.com/rohitsuratekar",
-            "https://www.linkedin.com/in/rohitsuratekar",
-            "https://plus.google.com/u/0/+RohitSuratekar"
-        ]
-    }
-
-</script>
 
 </html>

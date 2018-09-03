@@ -1,5 +1,5 @@
-# Website
+### Website
 
-Personal website building with AngularJS 2
+Personal website building with AngularJS
 
 Build with CLI : ng build --prod --aot false

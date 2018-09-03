@@ -30,30 +30,12 @@
 /coverage
 /libpeerconnection.log
 npm-debug.log
+yarn-error.log
 testem.log
 /typings
-yarn-error.log
-
-# e2e
-/e2e/*.js
-/e2e/*.map
 
 # System Files
 .DS_Store
 Thumbs.db
-
-
-
-
-coverage/
-dist/
-html-report/
-node_modules/
-typings/
-**/*npm-debug.log.*
-**/*yarn-error.log.*
-.idea/
-.DS_Store
+e2e/
 package-lock.json
-.npmrc
-2.4.2

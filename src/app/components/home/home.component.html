@@ -1,0 +1,23 @@
+<div class="columns is-mobile is-multiline">
+  <div class="column is-12-mobile is-6-tablet is-3-desktop" *ngFor="let card of homecards">
+    <a [routerLink]="[card.action]">
+      <div class="card shadow-box">
+        <div class="card-image">
+          <figure class="image">
+            <img src="assets\img\home\{{card.image}}" alt="About me">
+          </figure>
+        </div>
+        <div class="card-content" [ngStyle]="{'background' : card.color}">
+          <div class="media" style="margin:0px">
+            <div class="media-content" >
+              <p class="title is-4" style="color: white">{{card.name}}</p>
+            </div>
+          </div>
+          <div class="content" style="color: white">
+            {{card.details}}
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
