@@ -1,0 +1,41 @@
+<div class="columns is-centered is-multiline">
+
+  <div class="columns column is-10 is-centered">
+    <div class="column is-2" *ngFor="let t of allKeys">
+      <div (click)="changeKeyword(t)" [ngClass]="getKeyword(t)" [attr.data-badge]="getNumber(t)" >
+        {{t}}
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-3" *ngFor="let d of projects">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image">
+          <img src="assets/img/design/{{d.image}}" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="content">
+          <p class="title is-5">{{d.title}}</p>
+          <p>{{d.details}}</p>
+        </div>
+      </div>
+
+      <footer class="card-footer">
+        <a (click)="onProjectClick(d.link)" class="card-footer-item">
+          {{d.linkText}}
+        </a>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+<!-- The Modal -->
+<div class="my-modal" *ngIf="showImage" (click)="showImage=false">
+  <!-- The Close Button -->
+  <span class="close" (click)="showImage=false">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="my-modal-content" src="assets/img/design/{{currentPic}}">
+</div>

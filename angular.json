@@ -27,7 +27,7 @@
               "node_modules/bulma/css/bulma.min.css",
               "node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
-              "node_modules/bulma-extensions/bulma-ribbon/dist/css/bulma-ribbon.min.css"
+              "node_modules/bulma-extensions/bulma-badge/dist/css/bulma-badge.min.css"
             ],
             "scripts": [
               "node_modules/bulma-extensions/bulma-quickview/dist/js/bulma-quickview.min.js"

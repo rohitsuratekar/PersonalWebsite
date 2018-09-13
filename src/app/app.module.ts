@@ -12,6 +12,16 @@ import { ArtistComponent } from './components/artist/artist.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {LifeComponent} from './components/developer/life/life.component';
 import {CampusComponent} from './components/developer/campus/campus.component';
+import { PhotographyComponent } from './components/photography/photography.component';
+import { DrawComponent } from './components/draw/draw.component';
+import { DesignComponent } from './components/design/design.component';
+import { CinematographyComponent } from './components/cinematography/cinematography.component';
+import { WritingComponent } from './components/writing/writing.component';
+import { ComicsComponent } from './components/comics/comics.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { CreditsComponent } from './components/credits/credits.component';
+import { CvComponent } from './components/cv/cv.component';
+import { RedirectComponent } from './components/redirect/redirect.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +34,17 @@ import {CampusComponent} from './components/developer/campus/campus.component';
     ArtistComponent,
     FooterComponent,
     LifeComponent,
-    CampusComponent
+    CampusComponent,
+    PhotographyComponent,
+    DrawComponent,
+    DesignComponent,
+    CinematographyComponent,
+    WritingComponent,
+    ComicsComponent,
+    ContactComponent,
+    CreditsComponent,
+    CvComponent,
+    RedirectComponent
   ],
   imports: [
     BrowserModule,

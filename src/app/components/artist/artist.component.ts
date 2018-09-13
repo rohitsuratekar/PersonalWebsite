@@ -28,6 +28,7 @@ class ArtCard {
   image = '';
   description = '';
   link = '';
+  color = '';
 
 
   constructor(item) {
@@ -35,6 +36,7 @@ class ArtCard {
     this.image = item['image'];
     this.description = item['des'];
     this.link = item['link'];
+    this.color = item['color'];
   }
 }
 
@@ -43,21 +45,45 @@ class ArtCard {
 const artForms = {
   'a1': {
     'name': 'Photography',
-    'image': 'test.png',
-    'des': 'In recent year I have found a new hobby. ...',
-    'link': '/draw'
+    'image': 'photography.png',
+    'des': 'The inevitable attraction',
+    'link': '/photography',
+    'color': '#e0f0ff'
   },
-  'a२': {
-    'name': 'Pencil Drawing',
-    'image': 'test.png',
-    'des': 'This is very old art form which I was always fascinated.',
-    'link': '/draw'
+  'a2': {
+    'name': 'Pencil Sketching',
+    'image': 'sketch.png',
+    'des': 'Oldest surviving art form',
+    'link': '/draw',
+    'color': '#fff5f2'
   },
-  'a३': {
+  'a3': {
     'name': 'Digital Drawing',
-    'image': 'test.png',
-    'des': 'This is very old art form which I was always fascinated.',
-    'link': '/draw'
+    'image': 'digital.png',
+    'des': 'Old habits with little touch of technology',
+    'link': '/design',
+    'color': '#e6ffe7'
+  },
+  'a4': {
+    'name': 'Writing',
+    'image': 'writing.png',
+    'des': 'Thoughts on paper',
+    'link': '/write',
+    'color': '#fafafa'
+  },
+  'a5': {
+    'name': 'Cinematography',
+    'image': 'cinematography.png',
+    'des': 'Started along with photography. Still newbie!',
+    'link': '/cinematography',
+    'color': '#f3f2ff'
+  },
+  'a6': {
+    'name': 'Comics',
+    'image': 'comic.png',
+    'des': 'My most recent fascination',
+    'link': '/comics',
+    'color': '#e8ffd4'
   }
 };
 

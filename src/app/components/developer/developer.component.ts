@@ -28,8 +28,6 @@ export class DeveloperComponent implements OnInit {
       }
     }
     this.project_sets.push(tempList);
-
-    console.log(this.project_sets);
   }
 
   ngOnInit() {
