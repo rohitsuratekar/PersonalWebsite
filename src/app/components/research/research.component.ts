@@ -146,7 +146,7 @@ const talks = {
     'type': type_talk
   },
   'p4': {
-    'name': 'Celebrating diversity in Biology - NCBS Annual Talks',
+    'name': 'Futures in Biology - NCBS Annual Talks',
     'url': 'https://www.ncbs.res.in/events/annual-talks-2017',
     'date': 'January 11-14, 2017',
     'place': 'Bangalore, India',

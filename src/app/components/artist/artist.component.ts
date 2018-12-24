@@ -53,35 +53,35 @@ const artForms = {
   'a2': {
     'name': 'Pencil Sketching',
     'image': 'sketch.png',
-    'des': 'Oldest surviving art form',
+    'des': 'The oldest surviving art form',
     'link': '/draw',
     'color': '#fff5f2'
   },
   'a3': {
     'name': 'Digital Drawing',
     'image': 'digital.png',
-    'des': 'Old habits with little touch of technology',
+    'des': 'Old habits with a touch of technology',
     'link': '/design',
     'color': '#e6ffe7'
   },
   'a4': {
     'name': 'Writing',
     'image': 'writing.png',
-    'des': 'Thoughts on paper',
+    'des': 'Thoughts penned on paper',
     'link': '/write',
     'color': '#fafafa'
   },
   'a5': {
     'name': 'Cinematography',
     'image': 'cinematography.png',
-    'des': 'Started along with photography. Still newbie!',
+    'des': 'Started along with photography. Still a newbie!',
     'link': '/cinematography',
     'color': '#f3f2ff'
   },
   'a6': {
     'name': 'Comics',
     'image': 'comic.png',
-    'des': 'My most recent fascination',
+    'des': 'The most recent fascination',
     'link': '/comics',
     'color': '#e8ffd4'
   }

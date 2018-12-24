@@ -12,7 +12,7 @@ export class ComicsComponent implements OnInit {
   showImage = false;
   constructor() {
 
-    for (let i = 1; i < 4; i++) {
+    for (let i = 1; i < 10; i++) {
       this.pics.push('comic' + i + '.jpg');
     }
 

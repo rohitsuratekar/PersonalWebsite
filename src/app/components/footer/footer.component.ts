@@ -28,4 +28,5 @@ function scrollFunction() {
   } else {
     document.getElementById('myBtn').style.display = 'none';
   }
+}
 
