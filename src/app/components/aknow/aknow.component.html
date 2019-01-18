@@ -1,0 +1,63 @@
+<div class="columns  is-centered is-multiline">
+  <div class="column is-12 columns is-centered">
+    <div class="column is-4 has-text-centered is-paddingless">
+      <img src="assets/img/aknow/aknow_header.jpg">
+    </div>
+  </div>
+  <div class="column is-12 content has-text-centered is-paddingless">
+    <h1 class="title">Chronicles of the GreatFool Soul</h1>
+    <strong>Rohit Suratekar</strong>
+  </div>
+  <div class="column is-12 columns is-centered ">
+    <div class="column is-8 has-text-centered is-paddingless">
+      I defended my PhD thesis at National Centre for Biological Sciences on 29th October 2018.
+      One of the most important parts of my thesis was the 'Acknowledgements'.
+      I was working in this institute for almost 6 years and this long journey would not have
+      been possible without help and support from multiple people.
+      Generally one can express their sentiments through words or pictures.
+      However, I decided to acknowledge them in my own style. I converted my acknowledgements
+      into a comic strip. Every panel is carefully designed to convey my memories and
+      sentiments. You won't be able to understand many of these unless you know the characters,
+      my apologies for that. However, I want to cherish these memories (out of millions)
+      the most. You can download this comic by clicking on following buttons. 
+    </div>
+  </div>
+  <div class="column is-12 content has-text-centered is-paddingless">
+    <a href="/assets/acknow/chapter1.pdf" target="_blank">
+      <div class="button is-primary ">Read Full Comic (5.6 MB)</div> 
+    </a>
+  </div>
+  <div class="column is-12 content has-text-centered is-paddingless">
+    or
+  </div>
+  <div class="column is-12 content has-text-centered is-paddingless">
+    <a href="/assets/acknow/page1.pdf" target="_blank">
+      <div class="button is-small" style="margin:4px;">Page 1 (1.7 MB)</div> 
+    </a>
+    <a href="/assets/acknow/page2.pdf" target="_blank">
+      <div class="button is-small " style="margin:4px;">Page 2 (1.3 MB)</div> 
+    </a>
+    <a href="/assets/acknow/page3.pdf" target="_blank">
+      <div class="button is-small " style="margin:4px;">Page 3 (1.5 MB)</div> 
+    </a>
+    <a href="/assets/acknow/page4.pdf" target="_blank">
+      <div class="button is-small " style="margin:4px;">Page 4 (1.9 MB)</div> 
+    </a>
+  </div>
+  <div class="column is-12 content has-text-centered is-paddingless">
+    Introduction to the characters of this comic
+  </div>
+
+
+  <div class="column notification is-9 columns is-centered is-multiline is-paddingless" *ngFor="let cat of categoryList"
+    style="margin:4px;">
+    <!-- <div class="column  is-12 has-text-centered">
+      <p class="title is-5">{{cat[0].category}}</p>
+    </div> -->
+    <div class="column is-2 has-text-centered is-centered" *ngFor="let people of cat">
+      <img src="assets/img/aknow/{{people.image}}" width="96px" alt="{{people.name}}">
+      <p class="title is-6">{{people.name}}</p>
+      <p class="subtitle is-6" style="font-size: 0.8rem">{{people.location}}</p>
+    </div>
+  </div>
+</div>

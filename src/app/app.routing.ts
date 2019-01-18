@@ -18,6 +18,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CreditsComponent } from './components/credits/credits.component';
 import { CvComponent } from './components/cv/cv.component';
 import { RedirectComponent } from './components/redirect/redirect.component';
+import { AknowComponent } from './components/aknow/aknow.component';
+import { PracticeComponent } from './components/practice/practice.component';
 
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -37,6 +39,9 @@ export const ROUTES: Routes = [
     { path: 'comics', component: ComicsComponent, data: { title: 'Comics' } },
     { path: 'contact', component: ContactComponent, data: { title: 'Contact Me' } },
     { path: 'credits', component: CreditsComponent, data: { title: 'Credits' } },
+    { path: 'acknow', component: AknowComponent, data: { title: 'Acknowledgments' } },
+    { path: 'aknow', component: AknowComponent, data: { title: 'Acknowledgments' } },
+    { path: 'comics/practice', component: PracticeComponent, data: { title: 'Practice' } },
     { path: 'artist/photography', redirectTo: 'photography' },
     { path: 'artist/videography', redirectTo: 'cinematography' },
     { path: 'artist/designing', redirectTo: 'design' },
@@ -46,6 +51,7 @@ export const ROUTES: Routes = [
     { path: 'cv', component: CvComponent, data: { title: 'CV' } },
     { path: 'redirect', component: RedirectComponent, data: { title: 'redirecting' } },
     { path: 'blog', component: RedirectComponent, data: { title: 'Blog' } },
+    { path: 'showAcknow', component: RedirectComponent, data: { title: 'Acknowledgments' } },
     // Following is needed at the end of all routing components
     { path: '**', component: HomeComponent, data: { title: 'hmmm...' } }
 ];

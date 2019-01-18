@@ -22,6 +22,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CreditsComponent } from './components/credits/credits.component';
 import { CvComponent } from './components/cv/cv.component';
 import { RedirectComponent } from './components/redirect/redirect.component';
+import { AknowComponent } from './components/aknow/aknow.component';
+import { PracticeComponent } from './components/practice/practice.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { RedirectComponent } from './components/redirect/redirect.component';
     ContactComponent,
     CreditsComponent,
     CvComponent,
-    RedirectComponent
+    RedirectComponent,
+    AknowComponent,
+    PracticeComponent
   ],
   imports: [
     BrowserModule,

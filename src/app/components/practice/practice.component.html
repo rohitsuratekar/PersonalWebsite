@@ -1,0 +1,21 @@
+<div class="columns is-centered is-multiline">
+    <div class="column is-8 content">
+      <p>
+        Recently I have been practicing <a href="https://en.wikipedia.org/wiki/Manga" target="_blank">Manga</a>
+        style comic designs. Here are some examples of my practice drawings. </p>
+    </div>
+    <div class="columns column is-8 is-multiline is-centered">
+      <div class="column is-4" *ngFor="let p of pics">
+        <img class="myImg" (click)="onImageClick(p)" src="assets/img/comics/practice/{{p}}">
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- The Modal -->
+  <div class="my-modal" *ngIf="showImage" (click)="showImage=false">
+    <!-- The Close Button -->
+    <span class="close" (click)="showImage=false">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="my-modal-content" src="assets/img/comics/practice/{{currentPic}}">
+  </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-comics',
@@ -8,15 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ComicsComponent implements OnInit {
 
   pics = [];
-  currentPic = '';
-  showImage = false;
-  constructor() {
-
-    for (let i = 1; i < 10; i++) {
-      this.pics.push('comic' + i + '.jpg');
-    }
-
-    this.pics = shuffleArray(this.pics);
+  constructor(public router: Router) {
+    this.pics.push('chapter1.png');
+    this.pics.push('practice.png');
 
   }
 
@@ -25,17 +20,11 @@ export class ComicsComponent implements OnInit {
 
 
   onImageClick(photo) {
-    this.currentPic = photo;
-    this.showImage = true;
+    if (photo === this.pics[0]) {
+      this.router.navigateByUrl('/acknow');
+    } else if (photo === this.pics[1]) {
+      this.router.navigateByUrl('comics/practice');
+    }
   }
-
-}
-
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
 
 }

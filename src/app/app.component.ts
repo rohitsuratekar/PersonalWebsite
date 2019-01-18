@@ -33,10 +33,17 @@ export class AppComponent {
   }
 
   showNav() {
-    if (this.currentPage === '/home' || this.currentPage === '/') {
+    if (this.currentPage === '/home' || this.currentPage === '/' || this.currentPage === '/acknow') {
         return false;
     }
     return true;
+}
+
+showFooter() {
+  if (this.currentPage === '/home' || this.currentPage === '/') {
+      return false;
+  }
+  return true;
 }
 
 }
