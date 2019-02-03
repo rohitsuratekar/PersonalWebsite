@@ -92,6 +92,22 @@ class DesignCard {
 
 const designs = [
   {
+    't': 'Archive Concept Art',
+    'i': 'archive.jpg',
+    'd': 'Unfinished concept art I made for NCBS archives.',
+    'k': ['Poster Design', 'Illustration'],
+    'l': 'Check It Out',
+    'h': 'archive_large.jpg'
+  },
+  {
+    't': 'Single cell to being us ',
+    'i': 'develop.jpg',
+    'd': 'Human embryo development explained with clay stop motion.',
+    'k': ['Animation'],
+    'l': 'Check on Youtube',
+    'h': 'https://www.youtube.com/watch?v=3WHdpnrcq5I'
+  },
+  {
     't': 'Mathematical Modelling',
     'i': 'pip2_small.png',
     'd': 'Poster I made for news and outreach about my paper which deals with mathematical modelling.',
@@ -107,14 +123,7 @@ const designs = [
     'l': 'Check It Out',
     'h': 'poster.jpg'
   },
-  {
-    't': 'Single cell to being us ',
-    'i': 'develop.jpg',
-    'd': 'Human embryo development explained with clay stop motion.',
-    'k': ['Animation'],
-    'l': 'Check on Youtube',
-    'h': 'https://www.youtube.com/watch?v=3WHdpnrcq5I'
-  },
+ 
   {
     't': 'The journey of Malarial Parasite',
     'i': 'malaria.jpg',
