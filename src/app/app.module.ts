@@ -24,6 +24,7 @@ import { CvComponent } from './components/cv/cv.component';
 import { RedirectComponent } from './components/redirect/redirect.component';
 import { AknowComponent } from './components/aknow/aknow.component';
 import { PracticeComponent } from './components/practice/practice.component';
+import { FactsComponent } from './components/facts/facts.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { PracticeComponent } from './components/practice/practice.component';
     CvComponent,
     RedirectComponent,
     AknowComponent,
-    PracticeComponent
+    PracticeComponent,
+    FactsComponent
   ],
   imports: [
     BrowserModule,
