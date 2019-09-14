@@ -1,21 +1,38 @@
 <div class="columns is-multiline is-centered">
   <div class="content column is-8">
+      <p class={{title_class}}>Area of Research</p>
+    <p>Computational Biology and Mathematical Modelling</p>
     <p class={{title_class}}>Current Project</p>
-      <p>Understanding the dynamics of transcriptional regulatory networks of heart development with mathematical modelling.</p>
+    <p>Deciphering the dynamics of transcriptional regulatory networks of
+      zebrafish heart development with mathematical modelling. ( in <a
+        href="http://zdglab.iimcb.gov.pl/" target="_blank"> Winata Lab </a>,
+      IIMCB, Warsaw ) </p>
     <p class={{title_class}}>PhD Thesis</p>
-    <p>Understanding structure and dynamics of the <span class="is-italic">Drosophila</span> PI(4,5)P<sub>2</sub>
-      cycle with mathematical models.</p>
-    <p class={{title_class}}>Area of Research</p>
-    <p>Computational Biology</p>
+    <p>Understanding structure and dynamics of the <span class="is-italic">Drosophila</span>
+      PI(4,5)P<sub>2</sub>
+      cycle with mathematical models. ( in
+      <a href="https://theory.ncbs.res.in/sandeep/index.html"
+         target="_blank">Krishna Lab</a>,
+         NCBS, Bangalore )</p>
+    <p class={{title_class}}>B.Tech. Thesis</p>
+    <p>Indirect and Direct Effect of Turbulence on Bacterial growth.</p>
+
     <p class={{title_class}}>Publications and Preprints</p>
-    <p>Suratekar R, Panda A, Padinjat R, Krishna S (2018). Evidence of sinks and sources in the phospholipase C activated
-      PIP 2 cycle. <span class="is-italic">FEBS Lett.</span>; 592(6):962-972. PubMed PMID: 29427502. doi: <a href="https://doi.org/10.1002/1873-3468.12998"
+    <p>Suratekar R, Panda A, Padinjat R, Krishna S (2018). Evidence of sinks
+      and sources in the phospholipase C activated
+      PIP 2 cycle. <span class="is-italic">FEBS Lett.</span>; 592(6):962-972.
+      PubMed PMID: 29427502. doi: <a
+        href="https://doi.org/10.1002/1873-3468.12998"
         target="_blank">10.1002/1873-3468.12998</a></p>
 
-    <p>Suratekar R, Padinjat R, Krishna S. Evidence of sinks and sources in the PLC activated PIP 2 cycle.
-      <span class="is-italic">bioRxiv</span> 183509; 2018 Sep 1. doi: <a href="https://doi.org/10.1101/183509" target="_blank">10.1101/183509</a></p>
-      <p class={{title_class}}>Data Science</p>
-      <a href="http://weirddata.github.io/" target="_blank">WeirdData</a> - Data Science and Visualization Blog
+    <p>Suratekar R, Padinjat R, Krishna S. Evidence of sinks and sources in the
+      PLC activated PIP 2 cycle.
+      <span class="is-italic">bioRxiv</span> 183509; 2018 Sep 1. doi: <a
+        href="https://doi.org/10.1101/183509"
+        target="_blank">10.1101/183509</a></p>
+    <p class={{title_class}}>Data Science</p>
+    <a href="http://weirddata.github.io/" target="_blank">WeirdData</a> - Data
+    Science and Visualization Blog
   </div>
   <div class="column is-8">
     <p class={{title_class}}>Research Talks and Posters</p>
@@ -29,10 +46,14 @@
             <img src="assets\img\flags\{{getFlag(card.place)}}.png">
           </div>
           <div class="timeline-content">
-            <p class="heading">{{card.date}}, <strong>{{card.place}} </strong> <span *ngIf="isTalk(card.type)" class="tag is-info">Talk</span>
-              <span *ngIf="card.special.length>0" class="tag is-success" style="margin-left:4px">{{card.special}}</span></p>
-            <p> <a href="{{card.url}}" target="_blank">{{card.name}} </a></p>
-            <p> <span class="research-subtitle"> {{getQualifier(card.type)}} Title: </span> <span class="research-subtitle" [innerHTML]=card.title>
+            <p class="heading">{{card.date}}, <strong>{{card.place}} </strong>
+              <span *ngIf="isTalk(card.type)" class="tag is-info">Talk</span>
+              <span *ngIf="card.special.length>0" class="tag is-success"
+                    style="margin-left:4px">{{card.special}}</span></p>
+            <p><a href="{{card.url}}" target="_blank">{{card.name}} </a></p>
+            <p><span class="research-subtitle"> {{getQualifier(card.type)}}
+              Title: </span> <span class="research-subtitle"
+                                   [innerHTML]=card.title>
               </span></p>
           </div>
         </div>
@@ -46,12 +67,17 @@
     <p class={{title_class}}>Other conferences</p>
     <ul>
       <li>Bangalore Complexity meeting, Bangalore, India (4 - 6 Feb 2017)</li>
-      <li>Inositide signalling in health and disease, Coorge, India (28 Nov – 2 Dec 2012)</li>
-      <li>Bioprospecting: Access for Sustainable Development, Allahabad, India (19-20 Feb, 2010)</li>
+      <li>Inositide signalling in health and disease, Coorge, India (28 Nov – 2
+        Dec 2012)
+      </li>
+      <li>Bioprospecting: Access for Sustainable Development, Allahabad, India
+        (19-20 Feb, 2010)
+      </li>
     </ul>
     <br>
     <p class={{title_class}}>Workshop Organization</p>
-    <a href="https://ncbs-students.github.io/Workshop2017/" target="_blank"> Informal Programming Workshop </a>, NCBS, Bangalore,
+    <a href="https://ncbs-students.github.io/Workshop2017/" target="_blank">
+      Informal Programming Workshop </a>, NCBS, Bangalore,
     India
   </div>
 

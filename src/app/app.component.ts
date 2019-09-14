@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import { Title } from '@angular/platform-browser';
+import {Component} from '@angular/core';
+import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
   currentPage = '';
+  noHeader = ['/home', '/', '/acknow'];
 
   constructor(private titleService: Title, private router: Router, activatedRoute: ActivatedRoute) {
     router.events.subscribe(event => {
@@ -27,23 +28,17 @@ export class AppComponent {
     }
 
     if (state && parent) {
-      data.push(... this.getTitle(state, state.firstChild(parent)));
+      data.push(...this.getTitle(state, state.firstChild(parent)));
     }
     return data;
   }
 
   showNav() {
-    if (this.currentPage === '/home' || this.currentPage === '/' || this.currentPage === '/acknow') {
-        return false;
-    }
-    return true;
-}
-
-showFooter() {
-  if (this.currentPage === '/home' || this.currentPage === '/') {
-      return false;
+    return !this.noHeader.includes(this.currentPage);
   }
-  return true;
-}
+
+  showFooter() {
+    return !(this.currentPage === '/home' || this.currentPage === '/');
+  }
 
 }

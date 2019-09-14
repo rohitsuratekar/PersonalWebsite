@@ -25,6 +25,7 @@ import { RedirectComponent } from './components/redirect/redirect.component';
 import { AknowComponent } from './components/aknow/aknow.component';
 import { PracticeComponent } from './components/practice/practice.component';
 import { FactsComponent } from './components/facts/facts.component';
+import { SheComponent } from './components/she/she.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FactsComponent } from './components/facts/facts.component';
     RedirectComponent,
     AknowComponent,
     PracticeComponent,
-    FactsComponent
+    FactsComponent,
+    SheComponent
   ],
   imports: [
     BrowserModule,

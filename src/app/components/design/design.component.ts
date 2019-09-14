@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-design',
@@ -80,6 +80,7 @@ class DesignCard {
   details;
   linkText;
   link;
+
   constructor(l) {
     this.image = l['i'];
     this.title = l['t'];
@@ -91,6 +92,14 @@ class DesignCard {
 }
 
 const designs = [
+  {
+    't': 'PCR Noodles',
+    'i': 'pcr.jpg',
+    'd': 'My imagination of how PCR will look like if it was cooking recipe.',
+    'k': ['Animation'],
+    'l': 'Check on Youtube',
+    'h': 'https://www.youtube.com/watch?v=vdASAvlreZg'
+  },
   {
     't': 'Archive Concept Art',
     'i': 'archive.jpg',
@@ -123,7 +132,7 @@ const designs = [
     'l': 'Check It Out',
     'h': 'poster.jpg'
   },
- 
+
   {
     't': 'The journey of Malarial Parasite',
     'i': 'malaria.jpg',
@@ -260,4 +269,4 @@ const designs = [
     'l': 'Check It Out',
     'h': 'brain_large.jpg'
   }
-]; 
+];

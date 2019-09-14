@@ -95,6 +95,15 @@ const projectDetails = [
     'link': 'https://play.google.com/store/apps/details?id=com.rohitsuratekar.NCBSinfo'
   },
   {
+    'title': 'SecretColors',
+    'platform': 'Python 3+',
+    'language': 'Python 3+',
+    'image': 'python-powered-h-140x182.png',
+    'details': 'My first Python library. I created this to have pretty visualization in my data-science workflow.',
+    'linkText': 'Check on GitHub',
+    'link': 'https://github.com/secretBiology/SecretColors'
+  },
+  {
     'title': 'This Website !!',
     'platform': 'Web',
     'language': 'AngularJS 2',

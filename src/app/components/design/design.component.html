@@ -2,7 +2,8 @@
 
   <div class="columns column is-10 is-centered">
     <div class="column is-2" *ngFor="let t of allKeys">
-      <div (click)="changeKeyword(t)" [ngClass]="getKeyword(t)" [attr.data-badge]="getNumber(t)" >
+      <div (click)="changeKeyword(t)" [ngClass]="getKeyword(t)"
+           [attr.data-badge]="getNumber(t)">
         {{t}}
       </div>
     </div>
