@@ -10,6 +10,7 @@ import {Title} from '@angular/platform-browser';
 export class AppComponent {
   currentPage = '';
   noHeader = ['/home', '/', '/acknow'];
+  noFooter = ['/', '/home'];
 
   constructor(private titleService: Title, private router: Router, activatedRoute: ActivatedRoute) {
     router.events.subscribe(event => {
@@ -38,7 +39,7 @@ export class AppComponent {
   }
 
   showFooter() {
-    return !(this.currentPage === '/home' || this.currentPage === '/');
+    return !this.noFooter.includes(this.currentPage);
   }
 
 }

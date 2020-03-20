@@ -22,6 +22,8 @@ import {AknowComponent} from './components/aknow/aknow.component';
 import {PracticeComponent} from './components/practice/practice.component';
 import {FactsComponent} from './components/facts/facts.component';
 import {SheComponent} from './components/she/she.component';
+import {CryptoComponent} from './components/crypto/crypto.component';
+
 
 export const ROUTES: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -58,6 +60,7 @@ export const ROUTES: Routes = [
   {path: 'showAcknow', component: RedirectComponent, data: {title: 'Acknowledgments'}},
   {path: 'thesis', component: RedirectComponent, data: {title: 'Thesis'}},
   {path: 'facts', component: FactsComponent, data: {title: 'Facts'}},
+  {path: 'crypto', component: CryptoComponent, data: {title: 'Crypto'}},
 
   // Following is needed at the end of all routing components
   {path: '**', component: HomeComponent, data: {title: 'hmmm...'}}

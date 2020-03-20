@@ -26,6 +26,7 @@ import { AknowComponent } from './components/aknow/aknow.component';
 import { PracticeComponent } from './components/practice/practice.component';
 import { FactsComponent } from './components/facts/facts.component';
 import { SheComponent } from './components/she/she.component';
+import { CryptoComponent } from './components/crypto/crypto.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { SheComponent } from './components/she/she.component';
     AknowComponent,
     PracticeComponent,
     FactsComponent,
-    SheComponent
+    SheComponent,
+    CryptoComponent
   ],
   imports: [
     BrowserModule,
