@@ -1,6 +1,5 @@
 <template>
     <v-app-bar app color="primary">
-        <v-spacer/>
         <v-toolbar-title class="white--text">
             <i18n path="title"/>
         </v-toolbar-title>

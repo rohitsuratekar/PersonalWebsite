@@ -1,3 +1,25 @@
 {
-  "title": "Rohit Suratekar"
+  "title": "Rohit Suratekar",
+  "nav": {
+    "home": "Home",
+    "professional": "Professional",
+    "artist": "Artist",
+    "settings": "Settings",
+    "academic": "Academic",
+    "develop": "Developer",
+    "about": "About Me"
+  },
+  "about": {
+    "details": "Hello :) I am Rohit Suratekar and this website portrays my skill set! I was born and grew up in a middle-class family in the small city of Kolhapur in the western Indian state of Maharashtra, known for its vibrant culture. Since my childhood, my dream profession has shifted from becoming a Pokemon master, WWE wrestler, poet, engineer to finally a scientist. By the way, I know Marathi, Hindi and English. In addition, I have formally studied Sanskrit and Russian.",
+    "alma": "Alma Mater",
+    "postdoctoral": "Postdoctoral Fellow",
+    "development": "in Developmental Biology",
+    "phd": "Doctor of Philosophy",
+    "comp": "in Computational Biology",
+    "btech": "Bachelor of Technology",
+    "biotech": "in Biotechnology",
+    "ncbs": "National Centre for Biological Sciences, TIFR, Bangalore, India",
+    "iimcb": "International Institute of Molecular and Cell Biology, Warsaw, Poland",
+    "mnnit": "Motilal Nehru National Institute of Technology, Allahabad, India"
+  }
 }

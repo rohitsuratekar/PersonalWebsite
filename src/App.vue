@@ -1,26 +1,27 @@
 <template>
     <v-app id="app">
         <Header/>
-        <router-view/>
+        <v-content>
+            <v-container fluid>
+                <router-view/>
+            </v-container>
+        </v-content>
+        <BottomNav/>
     </v-app>
 </template>
 
 
 <script>
     import Header from "@/views/Header";
+    import BottomNav from "@/views/BottomNav";
 
     export default {
-        components: {Header}
+        components: {BottomNav, Header}
     }
 </script>
 
 
 <style>
     #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
     }
 </style>
