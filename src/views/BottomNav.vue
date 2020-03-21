@@ -12,7 +12,7 @@
             <span>
             <i18n :path="item.text"/>
             </span>
-            <v-icon class="material-icons">{{item.icon}}</v-icon>
+            <v-icon :class="item.icon"></v-icon>
         </v-btn>
 
     </v-bottom-navigation>
@@ -27,42 +27,42 @@
                 items: [
                     {
                         text: "nav.about",
-                        icon: "person_pin",
+                        icon: "fas fa-user-secret",
                         hasSwitch: false,
                         showLarge: true,
                         link: "about"
                     },
                     {
                         text: "nav.professional",
-                        icon: "school",
+                        icon: "fas fa-graduation-cap",
                         hasSwitch: true,
                         showLarge: false,
                         link: "professional"
                     },
                     {
-                        text: "nav.academic",
-                        icon: "school",
+                        text: "nav.research",
+                        icon: "fas fa-microscope",
                         hasSwitch: true,
                         showLarge: true,
-                        link: "academic"
+                        link: "research"
                     },
                     {
-                        text: "nav.develop",
-                        icon: "laptop_windows",
+                        text: "nav.developer",
+                        icon: "fas fa-laptop-code",
                         hasSwitch: true,
                         showLarge: true,
                         link: "developer"
                     },
                     {
                         text: "nav.artist",
-                        icon: "emoji_objects",
+                        icon: "fas fa-hat-wizard",
                         hasSwitch: false,
                         showLarge: true,
                         link: "artist"
                     },
                     {
                         text: "nav.settings",
-                        icon: "settings",
+                        icon: "fas fa-cogs",
                         hasSwitch: false,
                         showLarge: true,
                         link: "settings"

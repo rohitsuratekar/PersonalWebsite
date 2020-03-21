@@ -1,12 +1,15 @@
 {
   "title": "Rohit Suratekar",
+  "common": {
+    "go_there": "Go There"
+  },
   "nav": {
     "home": "Home",
     "professional": "Professional",
     "artist": "Artist",
     "settings": "Settings",
-    "academic": "Academic",
-    "develop": "Developer",
+    "research": "Research",
+    "developer": "Developer",
     "about": "About Me"
   },
   "about": {
@@ -21,5 +24,63 @@
     "ncbs": "National Centre for Biological Sciences, TIFR, Bangalore, India",
     "iimcb": "International Institute of Molecular and Cell Biology, Warsaw, Poland",
     "mnnit": "Motilal Nehru National Institute of Technology, Allahabad, India"
+  },
+  "research": {
+    "area_title": "Area of Research",
+    "area": "Computational Biology and Mathematical Modelling",
+    "current_title": "Current Project",
+    "current": "Deciphering the dynamics of transcriptional regulatory networks of zebrafish heart development with mathematical modelling. ( in {lab} , IIMCB, Warsaw )",
+    "winata_lab": "Winata Lab",
+    "thesis_title": "PhD Thesis",
+    "thesis": "Understanding structure and dynamics of the Drosophila PI(4,5)P2 cycle with mathematical models. ( in {lab}, NCBS, Bangalore )",
+    "krishna_lab": "Krishna Lab",
+    "btech_title": "B.Tech. Thesis",
+    "btech": "Indirect and Direct Effect of Turbulence on Bacterial growth.",
+    "publications": "Publications and Preprints",
+    "data_title": "Data Science",
+    "data": "{lab} - Data Science and Visualization Blog ",
+    "weird": "WeirdData",
+    "conference": "Research Talks and Posters",
+    "talk": "Research Talk",
+    "talk_title": "Talk Title",
+    "poster_title": "Poster Title"
+  },
+  "developer": {
+    "background_title": "Background",
+    "background": "My stint with coding started with C++ during my bachelors. I also had some experience in coding for flash games in Action Script. In early 2012, I shifted to coding in higher level languages like, Perl and Matlab while pursuing a project on {codons}, which required data mining and statistics. Later on, in 2015, I gradually started shifting my coding base to Python to aid the ongoing computational biology projects in my PhD. During the course of my PhD, I have learnt various programming languages as a hobby. These were the building blocks of many projects and research assignments, some of which are open source and can be accessed from {github}.",
+    "codons": "Codons",
+    "github": "GitHub",
+    "platforms_title": "Platforms",
+    "platforms": "Android, Angular, Windows, Linux, Unity, Jekyll, Arduino",
+    "proficient": "Proficient",
+    "can_code": "Can Code",
+    "learning": "Learning",
+    "case_studies": "Case Studies",
+    "check": "Check it here",
+    "public_title": "Public Profiles",
+    "bitbucket": "Bitbucket",
+    "gitlab": "GitLab",
+    "stack": "StackOverflow",
+    "public": "Almost all of my projects are Open Source and are available freely on famous public repositories. Please check my following public profiles which enlists all of my public projects.",
+    "ncbs": {
+      "title": "Information About NCBS",
+      "platform": "Android",
+      "details": "My android development experience started with MIT App Inventor. Soon I realized that I was hitting limitations of it. Then I started learning Java for the same. During that time, as a learning project, I started building small app for checking transport timings for our university bus services. But soon this utility spread across campus and now it has around 400 daily users (as of March 2020)"
+    },
+    "web": {
+      "title": "This Website",
+      "platform": "Vue.js",
+      "details": "I built this website from scratch. Initially I was using web template to build this personal website. All free templates were very limited in functionality. Hence, I decided to make one from scratch. To keep up with latest technology, I decided to learn Angular 2 and Typescript to make this website. Later on I shifted to Vue.js .This current website is outcome of that effort."
+    },
+    "secretcolor": {
+      "title": "SecretColor Library",
+      "platform": "Python",
+      "details": "My first Python library. I created this to have pretty visualization in my data-science workflow."
+    },
+    "cardio": {
+      "title": "CardioPipeLine",
+      "platform": "SnakeMake, R, Python",
+      "details": "Automated NGS analysis which uses state of art methods and algorithms to analyze public RNA-seq data."
+    }
   }
 }

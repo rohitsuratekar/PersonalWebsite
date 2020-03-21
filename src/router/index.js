@@ -17,13 +17,32 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "about" */ '../components/About')
+    },
+    {
+        path: '/research',
+        name: 'Research',
+        component: () => import(/* webpackChunkName: "about" */ '../components/Research')
+    },
+    {
+        path: '/developer',
+        name: 'Developer',
+        component: () => import(/* webpackChunkName: "about" */ '../components/Developer')
+    },
+    {
+        path: '/professional',
+        name: 'Professional',
+        component: () => import(/* webpackChunkName: "about" */ '../components/Professional')
     }
 ];
 
 const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
-    routes
+    routes,
+    // Following needed to adjust the scroll behaviour of the router
+    scrollBehavior(to, from, savedPosition) {
+        return {x: 0, y: 0}
+    }
 });
 
 export default router

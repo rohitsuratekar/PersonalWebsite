@@ -17,6 +17,7 @@
     "vuetify": "^2.2.18"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^4.2.3",
     "@vue/cli-plugin-router": "^4.2.3",

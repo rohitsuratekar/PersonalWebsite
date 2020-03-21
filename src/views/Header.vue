@@ -9,7 +9,7 @@
             <template slot="activator" slot-scope="{ on }">
                 <v-btn outlined v-on="on" color="white">
                     {{loc}}
-                    <v-icon right class="material-icons">language</v-icon>
+                    <v-icon right class="fas fa-language"></v-icon>
                 </v-btn>
             </template>
             <v-list dense>
@@ -28,17 +28,29 @@
     </v-app-bar>
 </template>
 <script>
+    import i18n from "@/i18n";
+
     export default {
         name: "Header",
         data() {
             return {
-                loc: "EN"
+                loc: localStorage.getItem('locale')
             }
         },
         methods: {
             changeLocale(value) {
                 this.$i18n.locale = value;
-                this.loc = value
+                this.loc = value;
+                localStorage.locale = value;
+            }
+        },
+        mounted() {
+            if (localStorage.locale) {
+                i18n.locale = localStorage.locale;
+            } else {
+                localStorage.locale = "en";
+                i18n.locale = localStorage.locale;
+                this.loc = "en";
             }
         }
     }
