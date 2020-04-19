@@ -21,17 +21,37 @@ const routes = [
     {
         path: '/research',
         name: 'Research',
-        component: () => import(/* webpackChunkName: "about" */ '../components/Research')
+        component: () => import('../components/Research')
     },
     {
         path: '/developer',
         name: 'Developer',
-        component: () => import(/* webpackChunkName: "about" */ '../components/Developer')
+        component: () => import('../components/Developer')
     },
     {
         path: '/professional',
         name: 'Professional',
-        component: () => import(/* webpackChunkName: "about" */ '../components/Professional')
+        component: () => import('../components/Professional')
+    },
+    {
+        path: '/artist',
+        name: 'Artist',
+        component: () => import('../components/Artist')
+    },
+    {
+        path: '/photography',
+        name: 'Photography',
+        component: () => import('../components/Photography')
+    },
+    {
+        path: '/draw',
+        name: 'Drawing',
+        component: () => import('../components/Drawing')
+    },
+    {
+        path: '/design',
+        name: 'Designing',
+        component: () => import('../components/Digital')
     }
 ];
 

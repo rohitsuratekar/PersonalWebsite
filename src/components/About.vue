@@ -1,7 +1,6 @@
 <template>
     <div class="fill-height">
         <BreadCrumbs :bread="breadItems"/>
-
         <v-row justify="center">
             <v-col :cols="colControl.cols" :sm="colControl.sm" :md="colControl.md" :xl="colControl.xl">
                 <v-card outlined>
