@@ -1,6 +1,12 @@
 <template>
     <div class="fill-height">
         <BreadCrumbs :bread="breadItems"/>
+        <v-skeleton-loader
+                max-width="50%"
+                type="image"
+        >
+            <v-img src="../assets/img/draw/sketch1.jpg"/>
+        </v-skeleton-loader>
     </div>
 </template>
 
