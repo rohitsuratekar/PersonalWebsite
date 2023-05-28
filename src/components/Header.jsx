@@ -7,7 +7,7 @@ const Header = () => {
         navigate("/");
     }
     return (
-        <div className="flex justify-center items-center h-24">
+        <div className="flex justify-center items-center h-20">
            <span className="font-sans text-2xl antialiased cursor-pointer" onClick={goHome}>Rohit Suratekar</span>
         </div>
     )
