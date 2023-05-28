@@ -8,9 +8,9 @@ const MainNavBar = () => {
   
   const addClass = (element) => {
     var baseClass =
-      " h-full text-center cursor-pointer hover:text-primary";
+      " h-full text-center cursor-pointer hover:text-primary py-1";
     if (location.pathname == element.url) {
-      baseClass += " text-black border-b-4";
+      baseClass += " text-black border-b-4 tracking-tight";
     } else {
       baseClass += " text-background";
     }
@@ -21,7 +21,7 @@ const MainNavBar = () => {
   };
   return (
     <>
-      <nav className="grid grid-cols-4 border-y-2">
+      <nav className="grid grid-cols-4 border-y-2 content-center">
         {navList.map((element) => (
           <div
             key={element.id}
