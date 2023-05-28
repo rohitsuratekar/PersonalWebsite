@@ -1,5 +1,3 @@
-
-
 const ResearchPage = () => {
     return (
         <div>
@@ -7,5 +5,4 @@ const ResearchPage = () => {
         </div>
     )
 };
-
 export default ResearchPage;

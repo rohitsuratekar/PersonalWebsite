@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import MainNavBar from "@/components/MainNavBar";
-import Header from "@/components/Header";
+import MainHeader from "@/components/MainHeader";
 
 const MainLayout = () => {
   return (
@@ -8,7 +8,7 @@ const MainLayout = () => {
       <div className="h-screen grid grid-cols-1 sm:grid-cols-12">
         <div className="hidden sm:block bg-background-100 col-span-2" />
         <div className="col-span-8">
-          <Header />
+          <MainHeader />
           <MainNavBar />
           <Outlet />
         </div>

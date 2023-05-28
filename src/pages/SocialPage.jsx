@@ -1,5 +1,5 @@
 const SocialPage = () => {
-  return <>Social</>;
-};
-
+    return <>Social</>;
+  };
+  
 export default SocialPage;

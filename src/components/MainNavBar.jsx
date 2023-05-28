@@ -1,15 +1,11 @@
 import { useNavigate, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const MainNavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
-  const navList = [
-    { id: 1, name: "research", url: "/" },
-    { id: 2, name: "technology", url: "/technology" },
-    { id: 3, name: "creativity", url: "/creativity" },
-    { id: 4, name: "social", url: "/social" },
-  ];
+  const navList = useSelector(state=> state.app.mainNav);
+  
   const addClass = (element) => {
     var baseClass =
       " h-full text-center cursor-pointer hover:text-primary";
