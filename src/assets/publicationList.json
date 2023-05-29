@@ -1,0 +1,74 @@
+{
+  "publications": [
+    {
+      "year": 2022,
+      "month": 9,
+      "doi": "https://doi.org/10.3390/vaccines10091509",
+      "authors": "Venkatakrishnan, A. J., Praveen Anand, Patrick J. Lenehan, Rohit Suratekar, Bharathwaj Raghunathan, Michiel J. M. Niesen, and Venky Soundararajan",
+      "title": "On the Origins of Omicron's Unique Spike Gene Insertion",
+      "journal": "Vaccines",
+      "rest": "10, no. 9 (September 9, 2022): 1509.",
+      "preprint": false
+    },
+    {
+      "year": 2021,
+      "month": 5,
+      "doi": "https://doi.org/10.1101/2021.07.01.21259833",
+      "authors": "Niesen, Michiel J.M., Praveen Anand, Eli Silvert, Rohit Suratekar, Colin Pawlowski, Pritha Ghosh, Patrick Lenehan, et al.",
+      "title": "COVID-19 Vaccines Dampen Genomic Diversity of SARS-CoV-2: Unvaccinated Patients Exhibit More Antigenic Mutational Variance",
+      "journal": "MedRxiv",
+      "rest": "July 5, 2021.",
+      "preprint": true
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "doi": "https://doi.org/10.1038/s41598-022-26646-5",
+      "authors": "Venkatakrishnan, A. J., Praveen Anand, Patrick J. Lenehan, Pritha Ghosh, Rohit Suratekar, Eli Silvert, Colin Pawlowski, et al.",
+      "title": "Expanding Repertoire of SARS-CoV-2 Deletion Mutations Contributes to Evolution of Highly Transmissible Variants",
+      "journal": "Scientific Reports",
+      "rest": "13, no. 1 (January 5, 2023): 257.",
+      "preprint": false
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "doi": "https://doi.org/10.15252/msb.202110673",
+      "authors": "Rohit Suratekar, Pritha Ghosh, Michiel J M Niesen, Gregory Donadio, Praveen Anand, Venky Soundararajan, and A J Venkatakrishnan",
+      "title": "High Diversity in Delta Variant across Countries Revealed by Genome-wide Analysis of SARS-CoV-2 beyond the Spike Protein",
+      "journal": "Molecular Systems Biology",
+      "rest": "18, no. 2 (February 2022): e10673.",
+      "preprint": false
+    },
+    {
+      "year": 2021,
+      "month": 4,
+      "doi": "https://doi.org/10.2139/ssrn.3820634",
+      "authors": "Venkatakrishnan, A. J., Praveen Kumar-M, Eli Silvert, Enrique Garcia-Rivera, Mariola Szenk, Rohit Suratekar, Patrick Lenehan, et al.",
+      "title": "Female-Male Differences in COVID Vaccine Adverse Events Have Precedence in Seasonal Flu Shots: A Potential Link to Sex-Associated Baseline Gene Expression Patterns",
+      "journal": "SSRN Scholarly Paper",
+      "rest": "April 13, 2021.",
+      "preprint": true
+    },
+    {
+      "year": 2018,
+      "month": 3,
+      "doi": "https://doi.org/10.1002/1873-3468.12998",
+      "authors": "Rohit Suratekar, Aniruddha Panda, Padinjat Raghu, and Sandeep Krishna",
+      "title": "Evidence of Sinks and Sources in the Phospholipase C-Activated PIP2 Cycle",
+      "journal": "FEBS Letters",
+      "rest": "592, no. 6 (March 2018): 962-72.",
+      "preprint": false
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "doi": "https://doi.org/10.1093/pnasnexus/pgac018",
+      "authors": "Murugadoss, Karthik, Michiel J M Niesen, Bharathwaj Raghunathan, Patrick J Lenehan, Pritha Ghosh, Tyler Feener, Praveen Anand, Safak Simsek, Rohit Suratekar, et al.",
+      "title": "Continuous Genomic Diversification of Long Polynucleotide Fragments Drives the Emergence of New SARS-CoV-2 Variants of Concern",
+      "journal": "PNAS Nexus",
+      "rest": "1, no. 1 (April 15, 2022): pgac018.",
+      "preprint": false
+    }
+  ]
+}

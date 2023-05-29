@@ -6,13 +6,15 @@ import ResearchPage from "@/pages/ResearchPage";
 import TechPage from "@/pages/TechPage";
 import CreativePage from "@/pages/CreativePage";
 import SocialPage from "@/pages/SocialPage";
+import PublicationPage from "@/pages/PublicationPage";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<ResearchPage />} />
+          <Route index element={<ResearchPage />}/>
+          <Route path="/publications" element={<PublicationPage />}/>
           <Route path="technology" element={<TechPage />} />
           <Route
             exact
