@@ -9,12 +9,12 @@
     {
       "icon": "microscope",
       "title": "Selected Projects",
-      "url": "/creativity"
+      "url": "/projects"
     },
     {
       "icon": "globe",
       "title": "Conferences and Talks",
-      "url": "/social"
+      "url": "/conferences"
     }
   ],
   "workExp": [
@@ -66,8 +66,7 @@
       "degree": "B.Tech.",
       "institute": "NIT Allahabad",
       "topic": "Biotechnology",
-      "thesis": "Direct and Indirect effect of turbulence on bacterial growth.",
-      "lab": ""
+      "thesis": "Direct and Indirect effect of turbulence on bacterial growth."
     }
   ]
 }

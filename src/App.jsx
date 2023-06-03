@@ -7,6 +7,8 @@ import TechPage from "@/pages/TechPage";
 import CreativePage from "@/pages/CreativePage";
 import SocialPage from "@/pages/SocialPage";
 import PublicationPage from "@/pages/PublicationPage";
+import ConferencePage from "@/pages/ConferencePage";
+import ResearchProjectPage from "@/pages/ResearchProjectPage";
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<ResearchPage />}/>
-          <Route path="/publications" element={<PublicationPage />}/>
+          <Route path="publications" element={<PublicationPage />}/>
+          <Route path="conferences" element={<ConferencePage/>}/>
+          <Route path="projects" element={<ResearchProjectPage/>}/>
           <Route path="technology" element={<TechPage />} />
           <Route
             exact
