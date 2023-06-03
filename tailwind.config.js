@@ -10,11 +10,12 @@ export default {
         primary: '#9DA65D',
         secondary: '#6C733D',
         background: {
+          50: '#E0E0DE',
           100 : '#D1D1D1',
           DEFAULT : '#8C8C88',
           900 : '#8C8C88'
-        }
-      },
+        },
+      }
     },
   },
   plugins: [],

@@ -7,6 +7,8 @@ export const researchSlice = createSlice({
   initialState: {
     focus: researchData["focus"],
     quickLinks: researchData["quickLinks"],
-    publications: publicationData["publications"]
+    publications: publicationData["publications"],
+    workExp: researchData["workExp"],
+    education: researchData["education"]
   },
 });

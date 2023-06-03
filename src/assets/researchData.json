@@ -16,5 +16,58 @@
       "title": "Conferences and Talks",
       "url": "/social"
     }
+  ],
+  "workExp": [
+    {
+      "company": "nference Labs, Bangalore",
+      "position": "Lead Scientist",
+      "description": "AI in Healthcare",
+      "start": "Apr 2023",
+      "end": null
+    },
+    {
+      "company": "nference Labs, Bangalore",
+      "position": "Senior Research Scientist",
+      "description": "AI in Healthcare",
+      "start": "Apr 2022",
+      "end": "Mar 2023"
+    },
+    {
+      "company": "nference Labs, Bangalore",
+      "position": "Reseach Scientist",
+      "description": "COVID19 Research",
+      "start": "Jan 2021",
+      "end": "Mar 2022"
+    },
+    {
+      "company": "IIMCB in Warsaw, Poland",
+      "position": "Postdoctoral Researcher",
+      "description": "Developmental Genomics",
+      "start": "Feb 2019",
+      "end": "Jan 2021"
+    },
+    {
+      "company": "NCBS-TIFR, Bangalore",
+      "position": "Postdoctoral Researcher",
+      "description": "Feedback Optimization",
+      "start": "May 2018",
+      "end": "Feb 2019"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D.",
+      "institute": "NCBS-TIFR, Bangalore",
+      "topic": "Mathematical Modelling",
+      "thesis": "Understanding structure and dynamics of the Drosophila PI(4,5)P2 cycle with mathematical models.",
+      "lab": "Krishna Lab"
+    },
+    {
+      "degree": "B.Tech.",
+      "institute": "NIT Allahabad",
+      "topic": "Biotechnology",
+      "thesis": "Direct and Indirect effect of turbulence on bacterial growth.",
+      "lab": ""
+    }
   ]
 }
