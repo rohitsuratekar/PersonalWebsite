@@ -68,5 +68,108 @@
       "topic": "Biotechnology",
       "thesis": "Direct and Indirect effect of turbulence on bacterial growth."
     }
+  ],
+  "conference": [
+    {
+      "name": "2nd International FishMed Conference on Zebrafish Research, FishMed2018",
+      "url": "http://fishmed2018.pl/",
+      "date": "March 25-27, 2018",
+      "place": "Warsaw",
+      "country": "Poland",
+      "title": "Evidence of sinks and sources in the PLC activated PIP<sub>2</sub> cycle",
+      "special": "Young FishMed Speaker",
+      "type": "talk"
+    },
+    {
+      "name": "2nd International FishMed Conference on Zebrafish Research, FishMed2018",
+      "url": "http://fishmed2018.pl/",
+      "date": "March 25-27, 2018",
+      "place": "Warsaw",
+      "country": "Poland",
+      "title": "Evidence of sinks and sources in the PLC activated PIP<sub>2</sub> cycle",
+      "type": "poster"
+    },
+    {
+      "name": "EMBL Symposium: Tissue Self-Organisation",
+      "url": "https://www.embo-embl-symposia.org/symposia/2018/EES18-01/index.html",
+      "date": "March 11-14, 2018",
+      "place": "Heidelberg",
+      "country": "Germany",
+      "title": "Evidence of sinks and sources in the PLC activated PIP<sub>2</sub> cycle",
+      "type": "poster"
+    },
+    {
+      "name": "Aspects of Gene and Cellular Regulation",
+      "url": "https://www.imsc.res.in/~rsidd/aogcr2018/",
+      "date": "January 12-13, 2018",
+      "place": "Chennai",
+      "country": "India",
+      "title": "Evidence of sinks and sources in the PLC activated PIP<sub>2</sub> cycle",
+      "type": "talk"
+    },
+    {
+      "name": "Celebrating diversity in Biology - NCBS Annual Talks",
+      "url": "https://www.ncbs.res.in/events/at2018",
+      "date": "January 3-5, 2018",
+      "place": "Bangalore",
+      "country": "India",
+      "title": "Evidence of sinks and sources in the PLC activated PIP<sub>2</sub> cycle",
+      "special": "Best Poster",
+      "type": "poster"
+    },
+    {
+      "name": "Physical Concepts in Stem Cell Biology",
+      "url": "http://stemphys.nbi.ku.dk/workshops/workshop-on-physical-concepts-in-stem-cell-biology/",
+      "date": "August 6-10, 2017",
+      "place": "Tisvildeleje",
+      "country": "Denmark",
+      "title": "Evidence of sinks and sources in the PLC activated PIP<sub>2</sub> cycle",
+      "type": "talk"
+    },
+    {
+      "name": "Futures in Biology - NCBS Annual Talks",
+      "url": "https://www.ncbs.res.in/events/annual-talks-2017",
+      "date": "January 11-14, 2017",
+      "place": "Bangalore",
+      "country": "India",
+      "title": "The Hitchhiker\"s Guide to The Regulation of PI(4,5)P<sub>2</sub> Cycle During <i>Drosophila melanogaster</i> Phototransduction",
+      "type": "poster"
+    },
+    {
+      "name": "NCBS-RIKEN joint meeting for theoretical approaches in biology",
+      "url": "http://ncbs-theobio2.riken.jp/",
+      "date": "April 7-10, 2015",
+      "place": "Wako",
+      "country": "Japan",
+      "title": "Speeding up PI(4,5)P<sub>2</sub> recovery with top gear",
+      "type": "talk"
+    },
+    {
+      "name": "Biology across scale - NCBS Annual Talks",
+      "url": "https://www.ncbs.res.in/past-events",
+      "date": "January 5-8, 2015",
+      "place": "Bangalore",
+      "country": "India",
+      "title": "Regulation of levels of PI(4,5)P<sub>2</sub> on the plasma membrane",
+      "type": "poster"
+    },
+    {
+      "name": "Aspects of Gene and Cellular Regulation",
+      "url": "https://www.imsc.res.in",
+      "date": "December 16, 2014",
+      "place": "Chennai",
+      "country": "India",
+      "title": "PI(4,5)P<sub>2</sub> dynamics during <i>Drosophila melanogaster</i> phototransduction",
+      "type": "poster"
+    },
+    {
+      "name": "NCBS Annual Talks",
+      "url": "https://www.ncbs.res.in/past-events",
+      "date": "January 15-17, 2014",
+      "place": "Bangalore",
+      "country": "India",
+      "title": "PI(4,5)P<sub>2</sub> dynamics during <i>Drosophila melanogaster</i> phototransduction",
+      "type": "poster"
+    }
   ]
 }

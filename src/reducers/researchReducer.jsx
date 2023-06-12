@@ -9,6 +9,7 @@ export const researchSlice = createSlice({
     quickLinks: researchData["quickLinks"],
     publications: publicationData["publications"],
     workExp: researchData["workExp"],
-    education: researchData["education"]
+    education: researchData["education"],
+    conference: researchData["conference"]
   },
 });

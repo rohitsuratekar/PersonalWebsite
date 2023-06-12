@@ -56,7 +56,7 @@ const ResearchPage = () => {
   return (
     <div className="p-5 grid grid-cols-1">
       <div className="text-xs text-secondary mb-2">Current Research Focus</div>
-      <div className="tracking-normal text-base antialiased">
+      <div className="tracking-normal text-base antialiased ">
         {selector.focus}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:h-12  my-3 gap-3 cursor-pointer">

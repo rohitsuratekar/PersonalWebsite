@@ -15,6 +15,7 @@ export default {
           DEFAULT : '#8C8C88',
           900 : '#8C8C88'
         },
+        link : '#3273dc'
       }
     },
   },
