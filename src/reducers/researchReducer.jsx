@@ -10,6 +10,9 @@ export const researchSlice = createSlice({
     publications: publicationData["publications"],
     workExp: researchData["workExp"],
     education: researchData["education"],
-    conference: researchData["conference"]
+    conference: researchData["conference"],
+    projects: researchData["projects"],
+    skills: researchData["skills"],
+    tools: researchData["tools"]
   },
 });

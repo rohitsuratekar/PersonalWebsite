@@ -65,7 +65,7 @@ const EducationBox = ({ item }) => {
         <span>{item.lab}</span> {item.hasOwnProperty("lab") && <span>,</span>}{" "}
         <span>{item.institute}</span>
       </div>
-      <div className="font-light mt-1">Thesis Topic: {item.thesis}</div>
+      <div className="font-light mt-1 text-sm">Thesis Topic: {item.thesis}</div>
     </div>
   );
 };

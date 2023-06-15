@@ -171,5 +171,79 @@
       "title": "PI(4,5)P<sub>2</sub> dynamics during <i>Drosophila melanogaster</i> phototransduction",
       "type": "poster"
     }
+  ],
+  "skills":[
+    {
+      "topic": "Clinical Work on Diseases",
+      "details": "Cardiac Amyloidosis, Liver Cirrhosis, COVID-19, Non-Small Cell Lung Cancer, Prostate Cancer, Preclampsia, Esophageal Adenocarcinoma, Idiopathic Pulmonary Fibrosis"
+    },
+    {
+      "topic": "Regulatory Affairs",
+      "details": "FDA BDD, US Patent Filing, Clinical Site Strategies, FAERS Analysis, VAERS Analysis"
+    },
+    {
+      "topic": "Genomics",
+      "details": "Clinical Genomics, Multiomics Integrations, Developmental Genomics, Bulk Pipeline Development, Bulk RNA-seq, single cell RNA-seq, Variant Calling, Differential Expression, Comparative Genomics, Mutation Mapping"
+    },
+    {
+      "topic": "Fundamental Research",
+      "details": "Mathematical Modelling of Signalling Pathways, Transcription Regulatory Networks, Genomic Embeddings for BERT, Statistical Modelling, Feedback Optimization"
+    }
+  ],
+  "tools": [
+    {
+      "type": "Data Science/Mathematics",
+      "details": "Boolean Modelling, Neural Networks, Random Forest, Clustering, Transformers, Graph Theory"
+    },
+    {
+      "type": "ML Tools",
+      "details": "Tensorflow, Keras, nltk, sklearn, PyTorch, huggingface"
+    },
+    {
+      "type": "Genomics",
+      "details": "STAR, Salmon, Kallisto, GATK, DESeq2, MOFA++"
+    },
+    {
+      "type": "Mathematics",
+      "details": "networkX, numpy, scipy, Z3, sympy, geopandas"
+    },
+    {
+      "type": "Technologies",
+      "details": "Docker, GCP, Kedro, Snakemake, Spark SQL"
+    },
+    {
+      "type": "Experimental",
+      "details": "Protein Purification, Fly pushing, ERG, Gene Cloning, Fluorescence imaging"
+    }
+  ],
+  "projects": [
+    {
+      "title": "AI-ECG model for detection of Cardiac Amyloidosis",
+      "institute": "anumana, Inc.",
+      "status": "on-going",
+      "url": "https://anumana.ai/pipeline",
+      "keywords": ["AI", "ECG", "Rare-Disease", "CNN"],
+      "milestone": "Breakthrough Device Designation from FDA",
+      "details": "Lead team to develop a AI CNN model to detect Cardiac Amyloidosis. This project had granted breakthrough designation from FDA."
+    },
+    {
+      "title": "Identification of genomic diversity in COVID-19 Delta variant",
+      "institute": "nference Labs",
+      "status": "finished",
+      "url": "https://www.embopress.org/doi/full/10.15252/msb.202110673",
+      "keywords": ["COVID-19", "Genomics", "Statistics"],
+      "milestone": "Manuscript published in peer-revied publication",
+      "details": "Design novel method to identify the vast diversity of genomic variants in Delta variant of COVID-19."
+    },
+    {
+      "title": "Development of full scale RNA-seq piepline",
+      "institute": "IIMCB in Warsaw",
+      "status": "finished",
+      "url": "https://github.com/rohitsuratekar/CardioPipeLine",
+      "keywords": ["RNA-Seq", "Genomics", "Zebrafish"],
+      "milestone": "Open source pipeline made available",
+      "details": "Start to end modular RNA-seq pipeline to analyse large scale RNA-seq data."
+    }
+
   ]
 }

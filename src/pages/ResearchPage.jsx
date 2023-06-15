@@ -65,7 +65,7 @@ const ResearchPage = () => {
         ))}
       </div>
       <div className="text-xs text-secondary mb-2">Professional Experiance</div>
-      <div className="bg-background-50 grid grid-cols-1 py-3 my-2">
+      <div className="bg-background-50 grid grid-cols-1 py-3 my-2 drop-shadow">
         {arangeItems(selector.workExp).map((element, index) => (
           <WorkPosition key={index} item={element} />
         ))}

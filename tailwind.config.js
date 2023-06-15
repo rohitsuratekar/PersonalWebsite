@@ -13,7 +13,7 @@ export default {
           50: '#E0E0DE',
           100 : '#D1D1D1',
           DEFAULT : '#8C8C88',
-          900 : '#8C8C88'
+          900 : '#545454'
         },
         link : '#3273dc'
       }
