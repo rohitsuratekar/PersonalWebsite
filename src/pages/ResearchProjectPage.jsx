@@ -46,7 +46,7 @@ const ProjectBox = ({ item }) => {
       <div className="bg-background-50 p-2 mb-5 drop-shadow">
         <div>{item.title}</div>
         <div className="flex flex-row items-center">
-          <div className=" fill-background">
+          <div className="w-4 fill-background">
             <AppIcons icon="building" />
           </div>
           <div className="font-light italic mx-2 ">{item.institute}</div>
@@ -62,10 +62,10 @@ const ProjectBox = ({ item }) => {
         </div>
         {item.hasOwnProperty("milestone") && (
           <div className="flex flex-row items-center mt-3">
-            <div className=" fill-secondary">
+            <div className=" fill-secondary h-3 w-3">
               <AppIcons icon="star" />
             </div>
-            <div className="text-xs ml-2 text-link">
+            <div className="text-xs ml-2 text-link italic">
               <a href={item.url} target="_blank" rel="noreferrer">
                 {item.milestone}
               </a>

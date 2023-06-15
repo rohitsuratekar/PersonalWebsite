@@ -15,7 +15,7 @@ const WorkPosition = ({ item }) => {
             {item.start} - {item.end}
           </div>
           <div className="col-span-1 lg:hidden"></div>
-          <div className="col-span-11 lg:col-span-8  flex items-center">
+          <div className="col-span-11 lg:col-span-8  block sm:flex items-center ">
             <span>{item.position}</span>{" "}
             <span className="pl-2 text-xs font-light">{item.description}</span>
           </div>
@@ -40,13 +40,13 @@ const QuickLink = ({ item }) => {
   return (
     <>
       <div
-        className="bg-red grid grid-cols-6 content-cente group"
+        className="flex flex-row items-center content-center group"
         onClick={() => goTo(item.url)}
       >
-        <div className="col-span-1 flex items-center fill-background group-hover:fill-primary">
+        <div className="h-6 w-6 fill-background group-hover:fill-primary">
           <AppIcons icon={item.icon} />
         </div>
-        <div className="col-span-5 p-2 flex items-center text-sm group-hover:text-primary">
+        <div className=" p-2 text-sm group-hover:text-primary">
           {item.title}
         </div>
       </div>

@@ -13,7 +13,7 @@
     },
     {
       "icon": "globe",
-      "title": "Conferences and Talks",
+      "title": "Conferences",
       "url": "/conferences"
     }
   ],
@@ -232,7 +232,7 @@
       "status": "finished",
       "url": "https://www.embopress.org/doi/full/10.15252/msb.202110673",
       "keywords": ["COVID-19", "Genomics", "Statistics"],
-      "milestone": "Manuscript published in peer-revied publication",
+      "milestone": "Manuscript published in peer-reviewed publication",
       "details": "Design novel method to identify the vast diversity of genomic variants in Delta variant of COVID-19."
     },
     {

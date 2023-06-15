@@ -17,7 +17,7 @@ const ConfBox = ({ item }) => {
           </div>
         </div>
         <div className="flex-grow ml-3 grid grid-cols-1">
-          <div className="uppercase mb-1">
+          <div className="mb-1">
             <span className="text-xs font-light">{item.date}</span>
             {", "}
             <span className="text-sm font-medium">
@@ -29,8 +29,8 @@ const ConfBox = ({ item }) => {
               </span>
             )}
           </div>
-          <div>{item.name}</div>
-          <div className="text-sm text-background mb-3">
+          <div className="font-medium bg-background-50/50 rounded-md px-2 py-1 text-sm">{item.name}</div>
+          <div className="text-sm text-background mb-3 mt-1">
             <span> Talk Title: </span>{" "}
             <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
           </div>

@@ -10,7 +10,7 @@ const PublicationBox = ({ item }) => {
         <span className="text-black">{parts[1]}</span>
         <span className="text-background">{parts[2]}</span>
         <span className="text-black ml-1">{item.title}</span>
-        <span className="text-secondary ml-1 italic underline">
+        <span className="text-link ml-1 italic underline">
           <a href={item.doi} target="_blank" rel="noopener noreferrer">
             {item.journal}
           </a>
