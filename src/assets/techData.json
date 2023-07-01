@@ -1,0 +1,46 @@
+{
+  "languges": [
+    {
+      "name": "Python",
+      "level": 9
+    },
+    {
+      "name": "Javascript/TS",
+      "level": 7
+    },
+    {
+      "name": "Java/Kotiln",
+      "level": 6
+    },
+    {
+      "name": "SQL",
+      "level": 5
+    },
+    {
+      "name": "R",
+      "level": 5
+    },
+    {
+      "name": "C/C++",
+      "level": 4
+    },
+    {
+      "name": "Shell",
+      "level": 4
+    },
+    {
+      "name": "C#",
+      "level": 3
+    }
+  ],
+  "langugeSections": [
+    {
+      "header": "Platforms",
+      "text": "Android, Angular, Windows, Linux, Unity, Jekyll, Arduino"
+    },
+    {
+      "header": "Proficient Markup Languages",
+      "text": "HTML, CSS, LaTeX, Markdown"
+    }
+  ]
+}
