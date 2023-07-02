@@ -9,6 +9,7 @@ import SocialPage from "@/pages/SocialPage";
 import PublicationPage from "@/pages/PublicationPage";
 import ConferencePage from "@/pages/ConferencePage";
 import ResearchProjectPage from "@/pages/ResearchProjectPage";
+import TechProjectPage from "@/pages/TechProjectPage"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             path="developer"
             element={<Navigate to="/technology" replace />}
           />
+          <Route path="techprojects" element={<TechProjectPage />} />
           <Route path="creativity" element={<CreativePage />} />
           <Route path="social" element={<SocialPage />} />
           <Route exact path="researech" element={<Navigate to="/" replace />} />

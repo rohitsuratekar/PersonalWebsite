@@ -1,4 +1,24 @@
 {
+  "focus":"During my undergrad, I began coding with C++, building a solid foundation. I also gained experience in flash game development using ActionScript. As I advanced, I embraced higher-level languages like Perl, Matlab, Python, and even functional ones like Haskell and Lisp. Currently, my focus is primarily on Python, but I'm always eager to learn new languages and their nuances. Adaptability is key in the ever-evolving programming landscape.",
+  "quickLinks": [
+    {
+      "icon": "code",
+      "title": "Selected Projects",
+      "url": "/techprojects"
+    },
+    {
+      "icon": "github",
+      "title": "GitHub Profile",
+      "url": "/",
+      "external": "https://github.com/rohitsuratekar"
+    },
+    {
+      "icon": "stackoverflow",
+      "title": "SE Profile",
+      "url": "/",
+      "external": "https://stackoverflow.com/users/5284595/dexter"
+    }
+  ],
   "languges": [
     {
       "name": "Python",
@@ -19,28 +39,32 @@
     {
       "name": "R",
       "level": 5
-    },
-    {
-      "name": "C/C++",
-      "level": 4
-    },
-    {
-      "name": "Shell",
-      "level": 4
-    },
-    {
-      "name": "C#",
-      "level": 3
     }
   ],
   "langugeSections": [
     {
-      "header": "Platforms",
-      "text": "Android, Angular, Windows, Linux, Unity, Jekyll, Arduino"
+      "header": "Additional Programming Languages",
+      "text": "Matlab, Shell, Ruby, Perl, C++, C#"
+    },
+    {
+      "header": "Platforms Worked on",
+      "text": "Android, Web, Windows, Linux, Unity, Jekyll, Arduino, Flash"
+    },
+    {
+      "header": "Javascript Frameworks",
+      "text": "React, Angular, Vue, Tailwindcss, Materializecss"
     },
     {
       "header": "Proficient Markup Languages",
       "text": "HTML, CSS, LaTeX, Markdown"
+    },
+    {
+      "header": "Databases Worked with",
+      "text": "MySQL/MariaDB, SparkSQL, MongoDB, Firebase"
+    },
+    {
+      "header": "Miscellaneous Technologies",
+      "text": "Git, Docker, GCP, PyTest, Selenium"
     }
   ]
 }

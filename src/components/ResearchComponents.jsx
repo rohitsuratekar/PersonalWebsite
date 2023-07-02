@@ -34,14 +34,18 @@ const WorkPosition = ({ item }) => {
 
 const QuickLink = ({ item }) => {
   const navigate = useNavigate();
-  const goTo = (link) => {
-    navigate(link);
+  const goTo = (link, isExternal) => {
+    if (typeof isExternal === "undefined") {
+      navigate(link);
+    } else {
+      window.open(isExternal, '_blank');
+    }
   };
   return (
     <>
       <div
         className="flex flex-row items-center content-center group"
-        onClick={() => goTo(item.url)}
+        onClick={() => goTo(item.url, item.external)}
       >
         <div className="h-6 w-6 fill-background group-hover:fill-primary">
           <AppIcons icon={item.icon} />
