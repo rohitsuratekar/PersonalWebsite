@@ -74,4 +74,14 @@ const EducationBox = ({ item }) => {
   );
 };
 
-export { WorkPosition, QuickLink, EducationBox };
+const Chip = ({ text }) => {
+  return (
+    <>
+      <div className="text-xs bg-background px-1 text-white rounded-lg">
+        {text}
+      </div>
+    </>
+  );
+};
+
+export { WorkPosition, QuickLink, EducationBox, Chip };

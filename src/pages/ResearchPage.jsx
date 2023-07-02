@@ -3,7 +3,7 @@ import {
   WorkPosition,
   QuickLink,
   EducationBox,
-} from "@/components/ResearchComponents";
+} from "@/components/CommonComponents";
 
 const ResearchPage = () => {
   const selector = useSelector((state) => state.research);

@@ -1,5 +1,5 @@
 {
-  "focus":"During my undergrad, I began coding with C++, building a solid foundation. I also gained experience in flash game development using ActionScript. As I advanced, I embraced higher-level languages like Perl, Matlab, Python, and even functional ones like Haskell and Lisp. Currently, my focus is primarily on Python, but I'm always eager to learn new languages and their nuances. Adaptability is key in the ever-evolving programming landscape.",
+  "focus": "During my undergrad, I began coding with C++, building a solid foundation. I also gained experience in flash game development using ActionScript. As I advanced, I embraced higher-level languages like Perl, Matlab, Python, and even functional ones like Haskell and Lisp. Currently, my focus is primarily on Python, but I'm always eager to learn new languages and their nuances. Adaptability is key in the ever-evolving programming landscape.",
   "quickLinks": [
     {
       "icon": "code",
@@ -65,6 +65,57 @@
     {
       "header": "Miscellaneous Technologies",
       "text": "Git, Docker, GCP, PyTest, Selenium"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Information about NCBS",
+      "platform": "android",
+      "languages": ["Java", "Kotlin"],
+      "desc": "Starting with MIT App Inventor, I soon outgrew its limitations and embarked on learning Java for Android development. As a personal learning project, I created an app to check university bus timings. Surprisingly, it gained popularity across campus, attracting 500 daily users at its peak (in August 2017). Although now defunct, this project exemplifies my growth and ability to create impactful apps.",
+      "link": "https://play.google.com/store/apps/details?id=com.rohitsuratekar.NCBSinfo",
+      "button": "Playstore"
+    },
+    {
+      "title": "SecretColors",
+      "platform": "cli",
+      "languages": ["Python"],
+      "desc": "As my inaugural Python library, I developed a visualization tool to enhance my data science workflow with aesthetically pleasing graphics. Since its creation, this library has gained traction among users, accumulating over 30 stars on GitHub and attracting multiple adopters as of June 2023. It stands as a testament to my commitment to creating useful and widely appreciated solutions in the field of data science.",
+      "link": "https://github.com/secretBiology/SecretColors",
+      "button": "GitHub"
+    },
+    {
+      "title": "Personal Website",
+      "platform": "web",
+      "languages": ["Javascript", "CSS"],
+      "desc": "Crafted from the ground up, I initially relied on web templates for my personal website. However, the limited functionality prompted me to embark on building one from scratch. Having prior experience with 'Secret Biology,' I underestimated the task, only to discover the release of Angular 2. To stay current, I delved into Angular 2 and Typescript. The culmination of my efforts resulted in this website. Moreover, I embraced React and subsequently rewrote the entire site using ReactJS, further enhancing its capabilities.",
+      "link": "https://rohitsuratekar.com/",
+      "button": "Live"
+    },
+    {
+      "title": "WeridData Blog",
+      "platform": "web",
+      "languages": ["Jekyll", "Javascript"],
+      "desc": "Embarking on my data science and visualization adventures, I designed a minimalist blog template to share my experiences. Leveraging GitHub and Jekyll, this template enables autohosting of the website. Its clean design ensures a seamless reading experience, allowing me to focus on sharing insights and discoveries in the realm of data science and visualization.",
+      "link": "https://weirddata.github.io/",
+      "button": "Live"
+    },
+    {
+      "title": "Word Guessing Game",
+      "platform": "android",
+      "languages": ["Java"],
+      "desc":"During a party game of Taboo, we were frustrated by a poorly designed Android app filled with excessive ads and repetitive words. Determined to enhance our gaming experience, I took matters into my own hands. Using Python, I scraped Taboo word provider websites and created my own Android game. Due to copyright concerns with the original company, I had to change the app's name, but the revamped version now guarantees an enjoyable and ad-free gaming experience.",
+      "link": "https://play.google.com/store/apps/details?id=com.secretbiology.taboo",
+      "button": "Playstore"
+    },
+    {
+      "title": "CardioPipeLine",
+      "platform": "cli",
+      "languages": ["Python", "Shell", "R"],
+      "desc":"I developed a powerful and scalable pipeline for RNA-seq analysis. Leveraging a combination of common RNA-seq analysis tools, R scripts, and Shell scripts, this pipeline is designed to handle large-scale datasets efficiently. Built using Snakemake, it offers horizontal scalability, enabling seamless scaling across multiple computing resources. With this comprehensive and adaptable pipeline, conducting RNA-seq analysis becomes streamlined and accessible, empowering researchers in their genomics studies.",
+      "link":"https://github.com/rohitsuratekar/CardioPipeLine",
+      "button": "GitHub"
+
     }
   ]
 }

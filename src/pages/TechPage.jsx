@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { QuickLink } from "@/components/ResearchComponents";
+import { QuickLink } from "@/components/CommonComponents";
 
 const BarComp = ({ item }) => {
   const getSpan = (val, add_border, add_color) => {

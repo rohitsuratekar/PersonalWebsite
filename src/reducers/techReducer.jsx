@@ -8,5 +8,6 @@ export const techSlice = createSlice({
     languges: techData["languges"],
     langugeSections: techData["langugeSections"],
     quickLinks: techData["quickLinks"],
+    projects: techData["projects"]
   },
 });

@@ -1,15 +1,7 @@
 import { useSelector } from "react-redux";
 import AppIcons from "@/components/IconLibrary";
+import { Chip } from "@/components/CommonComponents";
 
-const Chip = ({ text }) => {
-  return (
-    <>
-      <div className="text-xs bg-background px-1 text-white rounded-lg">
-        {text}
-      </div>
-    </>
-  );
-};
 
 const KeyHolder = ({ items }) => {
   return (
