@@ -47,10 +47,10 @@ const QuickLink = ({ item }) => {
         className="flex flex-row items-center content-center group"
         onClick={() => goTo(item.url, item.external)}
       >
-        <div className="h-6 w-6 fill-background group-hover:fill-primary">
+        <div className="h-6 w-6 fill-link group-hover:fill-primary">
           <AppIcons icon={item.icon} />
         </div>
-        <div className=" p-2 text-sm group-hover:text-primary">
+        <div className=" p-2 text-sm group-hover:text-primary text-link">
           {item.title}
         </div>
       </div>

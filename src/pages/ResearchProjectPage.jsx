@@ -96,6 +96,13 @@ const ResearchProjectPage = () => {
         </ul>
         <div className="mb-3"></div>
         <div className="text-xs text-secondary mb-3">
+          Data Science Blog
+        </div>
+        <div className="mb-3">
+        Explore the fascinating world of data science and visualization on my blog, where I delved into the art of extracting insights from data.
+        Check it out at <a className="text-link" href="https://weirddata.github.io/" target="_blank" rel="noreferrer">WeirdData Blog</a>.
+        </div>
+        <div className="text-xs text-secondary mb-3">
           Selected Research Projects
         </div>
         {selector.map((element, index) => (

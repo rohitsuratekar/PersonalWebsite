@@ -10,5 +10,27 @@ export const appSlice = createSlice({
       { id: 3, name: "creativity", url: "/creativity" },
       { id: 4, name: "social", url: "/social" },
     ],
+    homeLinks: [
+      {
+        title: "👨‍🔬 Research",
+        url: "research",
+        details: "Research, publications and projects",
+      },
+      {
+        title: "🧑‍💻 Technology",
+        url: "technology",
+        details: "Programming, applications and software",
+      },
+      {
+        title: "👨‍🎨 Creativity",
+        url: "creativity",
+        details: "Photography, sketching and rest",
+      },
+      {
+        title: "🦸‍♂️ Social",
+        url: "social",
+        details: "Social profiles and miscellaneous",
+      },
+    ],
   },
 });

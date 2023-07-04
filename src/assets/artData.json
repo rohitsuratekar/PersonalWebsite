@@ -1,0 +1,34 @@
+{
+    "sections":[
+        {
+            "title":"Photography",
+            "description": "Capturing moments and stories through the lens.",
+            "icon": ""
+        },
+        {
+            "title":"Pencil Sketching",
+            "description": "Bringing imagination to life with intricate pencil strokes.",
+            "icon": ""
+        },
+        {
+            "title":"Digital Drawing",
+            "description": "Combining technology and artistry to create vibrant digital art.",
+            "icon": ""
+        },
+        {
+            "title":"Writing",
+            "description": "Expressing thoughts, emotions, and ideas through the power of words.",
+            "icon": ""
+        },
+        {
+            "title":"Cinematography",
+            "description": "Crafting visually stunning narratives that come to life on the screen.",
+            "icon": ""
+        },
+        {
+            "title":"Comics",
+            "description": "Weaving humor and storytelling into visually captivating comic strips.",
+            "icon": ""
+        }
+    ]
+}

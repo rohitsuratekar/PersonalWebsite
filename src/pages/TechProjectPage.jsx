@@ -29,10 +29,10 @@ const ProjectItem = ({ item }) => {
               className="text-xs bg-background-100 w-full p-1 cursor-pointer group-hover:bg-background flex flex-row items-center"
               onClick={() => gotoURL(item.link)}
             >
-              <div className="h-4 w-4 fill-background group-hover:fill-background-50">
+              <div className="h-4 w-4 fill-link group-hover:fill-background-50">
                 <AppIcons icon="linkout" />
               </div>
-              <div className="ml-2 group-hover:text-background-50">
+              <div className="ml-2 group-hover:text-background-50 text-link">
                 {item.button}
               </div>
             </div>

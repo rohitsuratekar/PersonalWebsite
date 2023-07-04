@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom";
 import MainNavBar from "@/components/MainNavBar";
 import MainHeader from "@/components/MainHeader";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const MainLayout = () => {
-  const navigate = useNavigate();
   const location = useLocation();
   return (
     <>
