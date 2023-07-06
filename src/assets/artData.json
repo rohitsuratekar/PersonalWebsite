@@ -1,34 +1,44 @@
 {
+    "background": "From my early school years to my time in university, I have embarked on a journey of artistic exploration, delving into diverse art forms ranging from the captivating realm of poetry to the enchanting world of cinematography. Here, I showcase some of the prominent art forms that have shaped my creative path. However, this is only the beginning of my artistic odyssey as I continuously seek to push boundaries and discover new horizons.",
     "sections":[
         {
             "title":"Photography",
             "description": "Capturing moments and stories through the lens.",
-            "icon": ""
+            "icon": "camera",
+            "link": "/photography"
         },
         {
             "title":"Pencil Sketching",
             "description": "Bringing imagination to life with intricate pencil strokes.",
-            "icon": ""
+            "icon": "pencil",
+            "link": "/draw"
         },
         {
             "title":"Digital Drawing",
             "description": "Combining technology and artistry to create vibrant digital art.",
-            "icon": ""
+            "icon": "mouse",
+            "link": "/design"
         },
         {
             "title":"Writing",
             "description": "Expressing thoughts, emotions, and ideas through the power of words.",
-            "icon": ""
+            "icon": "pen",
+            "link": "/write"
         },
         {
             "title":"Cinematography",
             "description": "Crafting visually stunning narratives that come to life on the screen.",
-            "icon": ""
+            "icon": "film",
+            "link": "/cinematography"
         },
         {
             "title":"Comics",
             "description": "Weaving humor and storytelling into visually captivating comic strips.",
-            "icon": ""
+            "icon": "face",
+            "link": "/comics"
         }
-    ]
+    ],
+    "photography":{
+        "summary": "From an early age, I had a deep fascination with visual art, dedicating a significant portion of my childhood to capturing photographs using my father's classic camera. As the digital era unfolded, I, like countless others, embraced the advancements in technology and began documenting moments with my new digital camera, a thoughtful gift from my father to commemorate my college graduation. Nevertheless, it was in early 2014 that my genuine journey into the realm of photography truly commenced, when I obtained an SLR camera. Since then, I have eagerly explored both photography and cinematography, embracing the label of an enthusiastic amateur in both fields."
+    }
 }

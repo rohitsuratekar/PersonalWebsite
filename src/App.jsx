@@ -11,6 +11,13 @@ import PublicationPage from "@/pages/PublicationPage";
 import ConferencePage from "@/pages/ConferencePage";
 import ResearchProjectPage from "@/pages/ResearchProjectPage";
 import TechProjectPage from "@/pages/TechProjectPage";
+import DigitalPage from "@/pages/ArtPages/DigitalPage";
+import PhotographyPage from "@/pages/ArtPages/PhotographyPage";
+import SketchingPage from "@/pages/ArtPages/SketchingPage";
+import ComicPage from "@/pages/ArtPages/ComicPage";
+import CinematographyPage from "@/pages/ArtPages/CinematographyPage";
+import WritingPage from "@/pages/ArtPages/WritingPage";
+
 
 function App() {
   return (
@@ -31,7 +38,12 @@ function App() {
           <Route path="techprojects" element={<TechProjectPage />} />
           <Route path="creativity" element={<CreativePage />} />
           <Route path="social" element={<SocialPage />} />
-          <Route exact path="researech" element={<Navigate to="/" replace />} />
+          <Route path="photography" element={<PhotographyPage/>}/>
+          <Route path="design" element={<DigitalPage/>}/>
+          <Route path="draw" element={<SketchingPage/>}/>
+          <Route path="comics" element={<ComicPage/>}/>
+          <Route path="write" element={<WritingPage/>}/>
+          <Route path="cinematography" element={<CinematographyPage/>}/>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

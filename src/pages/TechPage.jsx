@@ -45,7 +45,7 @@ const TechPage = () => {
     <>
       <div className="p-5 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">
-          Developer Background
+        Developer Chronicles
         </div>
         <div className="tracking-normal text-base antialiased ">
           {selector.focus}
