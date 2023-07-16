@@ -19,6 +19,9 @@ export default {
         },
         link: "#3273dc",
       },
+      screens: {
+        'xxl': '1600px',
+      },
     },
   },
   plugins: [],
