@@ -114,5 +114,34 @@
   },
   "drawing": {
     "summary": "As a child, I was drawn to any blank space, be it newspapers or empty walls, where I'd scribble with enthusiasm. My mother, a talented painter, nurtured the artist in me. Today, I cherish the art of sketching and delve into various aspects of comic art. On this platform, I proudly present some of my earliest pencil sketches, dating back to 2002. Join me on this journey of creativity and imagination!"
+  },
+  "digital": {
+    "summary": "Embracing technology, I harmonize my time-honored painting and drawing skills to create captivating digital art pieces. Journey through a diverse realm of my digital art gallery, where imaginative landscapes and mesmerizing portraits come to life. Witness the seamless blend of the past and the future, where each stroke on the digital canvas tells a unique and heartfelt story.",
+    "skills": [
+      {
+        "title": "Photo Editing",
+        "desc": "Adobe Photoshop, Darktable, Lightroom, Photopea, GIMP"
+      },
+      {
+        "title": "Vector Drawing",
+        "desc": "Adobe Illustrator, InkSpace"
+      },
+      {
+        "title": "Digital Sketching",
+        "desc": "Adobe Photoshop, Krita"
+      },
+      {
+        "title": "3D Art",
+        "desc": "Blender, Autodesk 3ds Max"
+      },
+      {
+        "title": "Video Editing",
+        "desc": "Premiere Pro, Media Encoder, Kdenlive"
+      },
+      {
+        "title": "Animation and Stop Motion",
+        "desc": "After Effects, Dragonframe"
+      }
+    ]
   }
 }

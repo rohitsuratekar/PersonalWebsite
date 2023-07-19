@@ -7,6 +7,7 @@ export const artSlice = createSlice({
     background: artData["background"],
     sections: artData["sections"],
     photography: artData["photography"],
-    drawing: artData["drawing"]
+    drawing: artData["drawing"],
+    digital: artData["digital"]
   },
 });

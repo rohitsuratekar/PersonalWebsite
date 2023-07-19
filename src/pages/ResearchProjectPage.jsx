@@ -83,7 +83,7 @@ const ResearchProjectPage = () => {
             <div className="mb-3">{item.details}</div>
           </div>
         ))}
-        <div className="text-xs text-secondary mb-3">Tools and Techniques</div>
+        <div className="text-xs text-secondary">Tools and Techniques</div>
         <ul className="m-3" style={{ listStyleType: 'square' }}>
           {toolSelector.map((item, key) => (
             <li key={key}>
