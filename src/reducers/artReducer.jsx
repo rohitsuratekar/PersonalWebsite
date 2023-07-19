@@ -6,6 +6,7 @@ export const artSlice = createSlice({
   initialState: {
     background: artData["background"],
     sections: artData["sections"],
-    photography: artData["photography"]
+    photography: artData["photography"],
+    drawing: artData["drawing"]
   },
 });

@@ -41,11 +41,39 @@
   "photography": {
     "summary": "From an early age, I had a deep fascination with visual art, dedicating a significant portion of my childhood to capturing photographs using my father's classic camera. As the digital era unfolded, I, like countless others, embraced the advancements in technology and began documenting moments with my new digital camera, a thoughtful gift from my father to commemorate my college graduation. Nevertheless, it was in early 2014 that my genuine journey into the realm of photography truly commenced, when I obtained an SLR camera. Since then, I have eagerly explored both photography and cinematography, embracing the label of an enthusiastic amateur in both fields.",
     "gearsDetails": "In my photography arsenal, I have a range of versatile and high-quality equipment to capture stunning images. Here's a list of the gear I use.",
+    "galleryLinks": [
+      {
+        "title": "Instagram",
+        "icon": "insta",
+        "url": "",
+        "external": "http://instagram.com/rohitsuratekar"
+      },
+      {
+        "title": "500px",
+        "icon": "500px",
+        "url": "",
+        "external": "https://500px.com/p/rohitsuratekar"
+      },
+      {
+        "title": "GuruShots",
+        "icon": "circle",
+        "url": "",
+        "external": "https://gurushots.com/rohitsuratekar/photos"
+      }
+    ],
     "gears": {
       "Camera": [
         {
           "item": "Canon 600D",
           "desc": "A reliable and capable DSLR camera that delivers excellent image quality."
+        },
+        {
+          "item": "GoPro HERO 2018",
+          "desc": "Compact and rugged action camera that can go anywhere with you in your adventure."
+        },
+        {
+          "item": "Canon G7x Mark III",
+          "desc": "A compact powerhouse with exceptional performance, perfect for quick travel."
         }
       ],
       "Lenses": [
@@ -65,7 +93,26 @@
           "item": "Canon EF 100mm f/2.8L Macro",
           "desc": "A specialized macro lens for detailed close-up photography."
         }
+      ],
+      "Tripods": [
+        {
+          "item": "Vanguard CX203AGH Espod",
+          "desc": "Sturdy tripod that provides stable support for my camera during long exposures or when shooting in challenging conditions."
+        },
+        {
+          "item": "Fotopro C-4i",
+          "desc": "Lightweight tripod, perfect for travel photography, allowing you to capture steady shots on the go."
+        }
+      ],
+      "Triggers and Filters": [
+        {
+          "item": "Hoya/Yongnuo/NiSi",
+          "desc": "My collection of triggers and filters adds a professional touch to the photography, enhancing the colors, reducing glare, and expanding your creative possibilities."
+        }
       ]
     }
+  },
+  "drawing": {
+    "summary": "As a child, I was drawn to any blank space, be it newspapers or empty walls, where I'd scribble with enthusiasm. My mother, a talented painter, nurtured the artist in me. Today, I cherish the art of sketching and delve into various aspects of comic art. On this platform, I proudly present some of my earliest pencil sketches, dating back to 2002. Join me on this journey of creativity and imagination!"
   }
 }
