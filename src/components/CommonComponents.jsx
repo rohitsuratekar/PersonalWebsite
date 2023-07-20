@@ -1,5 +1,6 @@
 import AppIcons from "@/components/IconLibrary";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const WorkPosition = ({ item }) => {
   const pcolor = item.end === "Present" ? "bg-primary" : "bg-background";
@@ -38,7 +39,7 @@ const QuickLink = ({ item }) => {
     if (typeof isExternal === "undefined") {
       navigate(link);
     } else {
-      window.open(isExternal, '_blank');
+      window.open(isExternal, "_blank");
     }
   };
   return (
@@ -84,4 +85,28 @@ const Chip = ({ text }) => {
   );
 };
 
-export { WorkPosition, QuickLink, EducationBox, Chip };
+const FullscreenImagePopup = ({ image, onClose }) => {
+  // Event listener to handle keydown
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+      onClick={onClose}
+    >
+      <img src={image} className="max-h-full max-w-full" />
+    </div>
+  );
+};
+
+export { WorkPosition, QuickLink, EducationBox, Chip, FullscreenImagePopup };

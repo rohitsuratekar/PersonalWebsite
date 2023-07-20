@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import allDigitalArt from "@/components/DigitalArtExporter";
 import { useState } from "react";
+import { FullscreenImagePopup } from "@/components/CommonComponents";
 
 const Tag = ({ tag, count, isSelected, onTagClick }) => {
   return (
@@ -24,7 +25,14 @@ const Tag = ({ tag, count, isSelected, onTagClick }) => {
   );
 };
 
-const ProjectItem = ({ item }) => {
+const ProjectItem = ({ item, openPopup }) => {
+  const takeAction = (vals) => {
+    if (vals.h.startsWith("http")) {
+      window.open(vals.h, "_blank");
+    } else {
+      openPopup(vals.h);
+    }
+  };
   return (
     <>
       <div className="flex flex-col">
@@ -32,10 +40,18 @@ const ProjectItem = ({ item }) => {
           {" "}
           <img src={item.i} />{" "}
         </div>
-        <div className=" bg-background-100 px-2 font-medium text-sm shadow-sm">
-        {item.t}
+        <div className=" bg-background-50 p-2 font-medium text-sm shadow-sm">
+          {item.t}
         </div>
-        
+        <div className=" text-xs bg-background-100 p-2">{item.d}</div>
+        <div>
+          <div
+            className="text-xs bg-background-50 text-center text-link py-1 cursor-pointer"
+            onClick={() => takeAction(item)}
+          >
+            {item.l}
+          </div>
+        </div>
       </div>
     </>
   );
@@ -44,6 +60,18 @@ const ProjectItem = ({ item }) => {
 const DigitalPage = () => {
   const selector = useSelector((state) => state.art.digital);
   const [selectedTags, setSelectedTags] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [clickedImage, setClickedImage] = useState(null);
+
+  const openPopup = (image) => {
+    setClickedImage(image);
+    setIsOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsOpen(false);
+    setClickedImage(null);
+  };
 
   const allTags = Array.from(
     new Set(allDigitalArt.flatMap((project) => project.k))
@@ -89,8 +117,8 @@ const DigitalPage = () => {
             </li>
           ))}
         </ul>
-        <div className="text-xs text-secondary">E-Canvas Gallery</div>
-        <div className="flex flex-wrap gap-2 mt-4">
+        <div className="text-xs text-secondary">Gallery of Curated Work</div>
+        <div className="flex flex-wrap gap-2 mt-4 mb-3">
           {
             <div
               className={`flex cursor-pointer bg-background-50 rounded-sm text-xs ${
@@ -118,11 +146,18 @@ const DigitalPage = () => {
             />
           ))}
         </div>
-        <div className="mt-3 grid grid-cols-3 gap-2">
+        <div className="mb-2 text-xs text-background">
+          [ Showing {filteredProjects.length} out of {allDigitalArt.length}{" "}
+          projects. Refine your view by selecting specific Tags.]
+        </div>
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xxl:grid-cols-4 gap-3">
           {filteredProjects.map((project, index) => (
-            <ProjectItem key={index} item={project} />
+            <ProjectItem key={index} item={project} openPopup={openPopup} />
           ))}
         </div>
+        {isOpen && clickedImage && (
+          <FullscreenImagePopup image={clickedImage} onClose={closePopup} />
+        )}
       </div>
     </>
   );

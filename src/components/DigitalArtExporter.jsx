@@ -15,8 +15,10 @@ import compImg from "@/assets/design/comp.jpg";
 import comp_largeImg from "@/assets/design/comp_large.jpg";
 import cccpImg from "@/assets/design/cccp.jpg";
 import msImg from "@/assets/design/ms.jpg";
+import ms_largeImg from "@/assets/design/ms_large.png";
 import annual_talkImg from "@/assets/design/annual_talk.jpg";
 import colorsImg from "@/assets/design/colors.jpg";
+import colors_largeImg from "@/assets/design/colors_large.jpg";
 import musicImg from "@/assets/design/music.jpg";
 import fishImg from "@/assets/design/fish.jpg";
 import oddisiImg from "@/assets/design/oddisi.jpg";
@@ -114,7 +116,7 @@ const allDigitalArt = [
     d: "Paper art illusion created for Conference poster about Biology and Computer Science.",
     k: ["Poster Design"],
     l: "Check It Out",
-    h: "comp_large.jpg",
+    h: comp_largeImg,
   },
   {
     t: "CCCP",
@@ -130,7 +132,7 @@ const allDigitalArt = [
     d: "Low poly art made for the poster of M S Subbulakshmi Music Concert.",
     k: ["Illustration", "Poster Design"],
     l: "Check It Out",
-    h: "ms_large.png",
+    h: ms_largeImg,
   },
   {
     t: "Biology Across Scales",
@@ -146,7 +148,7 @@ const allDigitalArt = [
     d: "Poster designed for dance program highlighting diversity in Indian culture.",
     k: ["Poster Design"],
     l: "Check It Out",
-    h: comp_largeImg,
+    h: colors_largeImg,
   },
   {
     t: "Introducing Music Club",

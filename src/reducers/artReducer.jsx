@@ -8,6 +8,8 @@ export const artSlice = createSlice({
     sections: artData["sections"],
     photography: artData["photography"],
     drawing: artData["drawing"],
-    digital: artData["digital"]
+    digital: artData["digital"],
+    writing: artData["writing"],
+    cinematography: artData["cinematography"]
   },
 });
