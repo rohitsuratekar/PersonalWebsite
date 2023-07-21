@@ -17,7 +17,7 @@ import SketchingPage from "@/pages/ArtPages/SketchingPage";
 import ComicPage from "@/pages/ArtPages/ComicPage";
 import CinematographyPage from "@/pages/ArtPages/CinematographyPage";
 import WritingPage from "@/pages/ArtPages/WritingPage";
-
+import ErdosPage from "@/pages/AdditionalPages/Erdos";
 
 function App() {
   return (
@@ -38,12 +38,13 @@ function App() {
           <Route path="techprojects" element={<TechProjectPage />} />
           <Route path="creativity" element={<CreativePage />} />
           <Route path="social" element={<SocialPage />} />
-          <Route path="photography" element={<PhotographyPage/>}/>
-          <Route path="design" element={<DigitalPage/>}/>
-          <Route path="draw" element={<SketchingPage/>}/>
-          <Route path="comics" element={<ComicPage/>}/>
-          <Route path="write" element={<WritingPage/>}/>
-          <Route path="cinematography" element={<CinematographyPage/>}/>
+          <Route path="photography" element={<PhotographyPage />} />
+          <Route path="design" element={<DigitalPage />} />
+          <Route path="draw" element={<SketchingPage />} />
+          <Route path="comics" element={<ComicPage />} />
+          <Route path="write" element={<WritingPage />} />
+          <Route path="cinematography" element={<CinematographyPage />} />
+          <Route path="erdos" element={<ErdosPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

@@ -1,0 +1,84 @@
+{
+  "profiles": [
+    {
+      "title": "Social Networks",
+      "links": {
+        "Twitter": "https://twitter.com/rohitsuratekar",
+        "Instagram": "http://instagram.com/rohitsuratekar",
+        "Facebook": "http://facebook.com/rohitsuratekar",
+        "Reddit": "https://www.reddit.com/user/rohitsuratekar"
+      }
+    },
+    {
+      "title": "Professional Profiles",
+      "links": {
+        "ORCID": "http://orcid.org/0000-0002-6281-5526",
+        "LinkedIn": "https://www.linkedin.com/in/rohitsuratekar/",
+        "ResearchGate": "https://www.researchgate.net/profile/Rohit_Suratekar"
+      }
+    },
+    {
+      "title": "Developer Profiles",
+      "links": {
+        "GitHub": "https://github.com/rohitsuratekar",
+        "StackOverflow": "https://stackoverflow.com/users/5284595/dexter",
+        "BitBucket": "https://bitbucket.org/rohitsuratekar/"
+      }
+    },
+    {
+      "title": "Photography",
+      "links": {
+        "Instagram": "http://instagram.com/rohitsuratekar",
+        "500px": "https://500px.com/rohitsuratekar",
+        "GuruShots": "https://gurushots.com/rohitsuratekar/photos"
+      }
+    },
+    {
+      "title": "Art",
+      "links": {
+        "Old Personal Blog": "https://rohitsuratekar.wordpress.com/",
+        "Behance": "https://www.behance.net/rohitsuratekar",
+        "YouTube": "https://www.youtube.com/user/superrcs",
+        "Old Science Blog": "https://theunknowndna.wordpress.com/"
+      }
+    },
+    {
+      "title": "Other",
+      "links": {
+        "BoardGameGeek": "https://boardgamegeek.com/user/thedexter",
+        "GoodReads": "https://www.goodreads.com/rohitsuratekar",
+        "Wikipedia": "https://en.wikipedia.org/wiki/User:Rohitsuratekar"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "title": "My Journey",
+      "description": "From a middle-class family in Kolhapur, Maharashtra, I dreamed of becoming a Pokemon master, WWE wrestler, poet, and engineer before settling on a career as a scientist."
+    },
+    {
+      "title": "Multilingual",
+      "description": "Proficient in Marathi, Hindi, and English, I have formally studied Sanskrit and Russian, with the ability to understand Bangla."
+    },
+    {
+      "title": "Advocate for Open Source",
+      "description": "I firmly support open-source initiatives and promote an ad-free internet for a better online experience."
+    },
+    {
+      "title": "Passion for Board Games",
+      "description": "I find joy in playing and even designing board games, a hobby that flourished during my PhD."
+    },
+    {
+      "title": "Social Impact",
+      "description": "Engaging in social work, I've taught underprivileged orphans, donated to cancer research, and supported underfunded schools, believing education and research can improve various aspects of human life."
+    },
+    {
+      "title": "Open to Collaboration",
+      "description": "Always ready for new projects, art, challenges, and collaborations, I'm open to exploring diverse opportunities."
+    },
+    {
+      "title": "Travel Adventures",
+      "description": "Thanks to my wife, Pritha, I now enjoy traveling and going on long drives together."
+    }
+  ]
+}
