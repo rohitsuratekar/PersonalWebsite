@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import SubNavBar from "@/components/SubNavBar";
 
 const PublicationBox = ({ item }) => {
   const parts = item.authors.split(new RegExp(`(Rohit Suratekar)`, "gi"));
@@ -22,7 +23,9 @@ const PublicationBox = ({ item }) => {
 };
 
 const PublicationPage = () => {
-  const publicationList = useSelector((state) => state.research.publications);
+  const mainSelector = useSelector((state) => state.research);
+  const publicationList = mainSelector.publications;
+  const crumbs = mainSelector.crumbs;
 
   const sortItems = (items) => {
     return items.sort((b, a) => {
@@ -54,16 +57,19 @@ const PublicationPage = () => {
   };
 
   return (
-    <div className="p-5 grid grid-cols-1 gap-3">
-      <div className="text-xs text-secondary mb-2">Publications</div>
-      {getPapers().map((citation, index) => (
-        <PublicationBox item={citation} key={index} />
-      ))}
-      <div className="text-xs text-secondary my-2">Preprints</div>
-      {getPriprints().map((citation, index) => (
-        <PublicationBox item={citation} key={index} />
-      ))}
-    </div>
+    <>
+      <SubNavBar itemList={crumbs} />
+      <div className="p-5 grid grid-cols-1 gap-3">
+        <div className="text-xs text-secondary mb-2">Publications</div>
+        {getPapers().map((citation, index) => (
+          <PublicationBox item={citation} key={index} />
+        ))}
+        <div className="text-xs text-secondary my-2">Preprints</div>
+        {getPriprints().map((citation, index) => (
+          <PublicationBox item={citation} key={index} />
+        ))}
+      </div>
+    </>
   );
 };
 

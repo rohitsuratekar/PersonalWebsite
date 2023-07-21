@@ -3,6 +3,7 @@ import profilePhoto from "@/assets/photography/rohit_suratekar_photo.jpg";
 import { QuickLink } from "@/components/CommonComponents";
 import flyPhoto from "@/assets/photography/fly.jpg";
 import cameraPhoto from "@/assets/photography/camera.jpg";
+import SubNavBar from "@/components/SubNavBar";
 
 const GearBox = ({ item, title }) => {
   return (
@@ -23,26 +24,30 @@ const GearBox = ({ item, title }) => {
 };
 
 const PhotographyPage = () => {
-  const selector = useSelector((state) => state.art);
+  const mainSelector = useSelector((state) => state.art);
+  const selector = mainSelector.photography;
+  const crumbs = mainSelector.crumbs;
+
   return (
     <>
+      <SubNavBar itemList={crumbs} />
       <div className="p-5 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">How it all started?</div>
         <div>
           <div className="md:w-1/2 xxl:w-1/4 float-left mb-4 sm:mb-0 mr-4">
             <img src={profilePhoto} className="w-full" alt="Rohit Photo" />
           </div>
-          <p>{selector.photography.summary}</p>
+          <p>{selector.summary}</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 sm:h-12  my-3 gap-3 cursor-pointer">
-          {selector.photography.galleryLinks.map((item, index) => (
+          {selector.galleryLinks.map((item, index) => (
             <QuickLink item={item} key={index} />
           ))}
         </div>
         <div className="text-xs text-secondary mb-2 mt-3">What do I have ?</div>
-        <div>{selector.photography.gearsDetails}</div>
+        <div>{selector.gearsDetails}</div>
         <div>
-          {Object.entries(selector.photography.gears).map(([key, value]) => (
+          {Object.entries(selector.gears).map(([key, value]) => (
             <GearBox key={key} title={key} item={value} />
           ))}
         </div>

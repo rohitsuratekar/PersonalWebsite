@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import getImageURL from "@/components/ImageLoader";
+import SubNavBar from "@/components/SubNavBar";
 
 const ConfBox = ({ item }) => {
   return (
@@ -29,7 +30,9 @@ const ConfBox = ({ item }) => {
               </span>
             )}
           </div>
-          <div className="font-medium bg-background-50/50 rounded-md px-2 py-1 text-sm">{item.name}</div>
+          <div className="font-medium bg-background-50/50 rounded-md px-2 py-1 text-sm">
+            {item.name}
+          </div>
           <div className="text-sm text-background mb-3 mt-1">
             <span> Talk Title: </span>{" "}
             <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
@@ -41,14 +44,20 @@ const ConfBox = ({ item }) => {
 };
 
 const ConferencePage = () => {
-  const selector = useSelector((state) => state.research.conference);
+  const mainSelector = useSelector((state) => state.research);
+  const selector = mainSelector.conference;
+  const crumbs = mainSelector.crumbs;
+
   return (
-    <div className="p-4 grid grid-cols-1 ">
-      <div className="text-xs text-secondary mb-2">Conferences and Talks</div>
-      {selector.map((item, index) => (
-        <ConfBox key={index} item={item} />
-      ))}
-    </div>
+    <>
+      <SubNavBar itemList={crumbs} />
+      <div className="p-4 grid grid-cols-1 ">
+        <div className="text-xs text-secondary mb-2">Conferences and Talks</div>
+        {selector.map((item, index) => (
+          <ConfBox key={index} item={item} />
+        ))}
+      </div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import allDigitalArt from "@/components/DigitalArtExporter";
 import { useState } from "react";
 import { FullscreenImagePopup } from "@/components/CommonComponents";
+import SubNavBar from "@/components/SubNavBar";
 
 const Tag = ({ tag, count, isSelected, onTagClick }) => {
   return (
@@ -58,7 +59,10 @@ const ProjectItem = ({ item, openPopup }) => {
 };
 
 const DigitalPage = () => {
-  const selector = useSelector((state) => state.art.digital);
+  const mainSelector = useSelector((state) => state.art);
+  const selector = mainSelector.digital;
+  const crumbs = mainSelector.crumbs;
+
   const [selectedTags, setSelectedTags] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [clickedImage, setClickedImage] = useState(null);
@@ -105,6 +109,7 @@ const DigitalPage = () => {
 
   return (
     <>
+      <SubNavBar itemList={crumbs} />
       <div className="p-5 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">Digital Art Fusion</div>
         <div>{selector.summary}</div>

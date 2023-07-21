@@ -66,6 +66,9 @@ const AppIcons = ({icon}) => {
             case "circle":
                 return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256-96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+            case "chevron-right":
+                return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
 }
 
         return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

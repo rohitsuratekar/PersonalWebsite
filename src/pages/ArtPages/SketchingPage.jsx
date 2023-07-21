@@ -2,11 +2,13 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import allSketches from "@/components/DrawingExporter";
 import { FullscreenImagePopup } from "@/components/CommonComponents";
-
-
+import SubNavBar from "@/components/SubNavBar";
 
 const SketchingPage = () => {
-  const selector = useSelector((state) => state.art.drawing);
+  const mainSelector = useSelector((state) => state.art);
+  const selector = mainSelector.drawing;
+  const crumbs = mainSelector.crumbs;
+
   const [isOpen, setIsOpen] = useState(false);
   const [clickedImage, setClickedImage] = useState(null);
 
@@ -31,6 +33,7 @@ const SketchingPage = () => {
 
   return (
     <>
+      <SubNavBar itemList={crumbs} />
       <div className="p-5 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">
           From Scribbles to Sketches

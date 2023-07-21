@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import AppIcons from "@/components/IconLibrary";
 import { Chip } from "@/components/CommonComponents";
-
+import SubNavBar from "@/components/SubNavBar";
 
 const KeyHolder = ({ items }) => {
   return (
@@ -70,12 +70,15 @@ const ProjectBox = ({ item }) => {
 };
 
 const ResearchProjectPage = () => {
-  const selector = useSelector((state) => state.research.projects);
-  const skillSelector = useSelector((state) => state.research.skills);
-  const toolSelector = useSelector((state) => state.research.tools);
+  const mainSelector = useSelector((state) => state.research);
+  const selector = mainSelector.projects;
+  const skillSelector = mainSelector.skills;
+  const toolSelector = mainSelector.tools;
+  const crumbs = mainSelector.crumbs;
 
   return (
     <>
+      <SubNavBar itemList={crumbs} />
       <div className="p-5 grid grid-cols-1">
         {skillSelector.map((item, key) => (
           <div key={key}>
@@ -84,7 +87,7 @@ const ResearchProjectPage = () => {
           </div>
         ))}
         <div className="text-xs text-secondary">Tools and Techniques</div>
-        <ul className="m-3" style={{ listStyleType: 'square' }}>
+        <ul className="m-3" style={{ listStyleType: "square" }}>
           {toolSelector.map((item, key) => (
             <li key={key}>
               <span className="text-sm">{item.type}</span> {": "}{" "}
@@ -95,12 +98,20 @@ const ResearchProjectPage = () => {
           ))}
         </ul>
         <div className="mb-3"></div>
-        <div className="text-xs text-secondary mb-3">
-          Data Science Blog
-        </div>
+        <div className="text-xs text-secondary mb-3">Data Science Blog</div>
         <div className="mb-3">
-        Explore the fascinating world of data science and visualization on my blog, where I delved into the art of extracting insights from data.
-        Check it out at <a className="text-link" href="https://weirddata.github.io/" target="_blank" rel="noreferrer">WeirdData Blog</a>.
+          Explore the fascinating world of data science and visualization on my
+          blog, where I delved into the art of extracting insights from data.
+          Check it out at{" "}
+          <a
+            className="text-link"
+            href="https://weirddata.github.io/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            WeirdData Blog
+          </a>
+          .
         </div>
         <div className="text-xs text-secondary mb-3">
           Selected Research Projects

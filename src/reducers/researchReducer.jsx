@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import researchData from '@/assets/researchData.json';
-import publicationData from '@/assets/publicationList.json'
+import researchData from "@/assets/researchData.json";
+import publicationData from "@/assets/publicationList.json";
 
 export const researchSlice = createSlice({
   name: "research",
@@ -13,6 +13,11 @@ export const researchSlice = createSlice({
     conference: researchData["conference"],
     projects: researchData["projects"],
     skills: researchData["skills"],
-    tools: researchData["tools"]
+    tools: researchData["tools"],
+    crumbs: [
+      { name: "Publication List", link: "/publications" },
+      { name: "Skills and Work", link: "/projects" },
+      { name: "Conferences", link: "/conferences" },
+    ],
   },
 });

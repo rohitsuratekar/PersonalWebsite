@@ -249,5 +249,34 @@
         ]
       }
     ]
+  },
+  "comics": {
+    "summary": "Embarking on my latest artistic venture, I find myself captivated by the enchanting realm of comic creation. Blending digital finesse with the charm of traditional techniques, I breathe life into captivating characters and weave intricate narratives on vibrant panels. Every stroke of the pen or brush exudes a vivid imagination, guiding readers through compelling visual stories that transcend the boundaries of reality. This journey into the world of comics has become an exhilarating fusion of technology and timeless artistry, invigorating my passion for storytelling with each new creation.",
+    "projects": [
+      {
+        "thumb": "acknowThumb",
+        "header": "Chronicles of the GreatFool Soul",
+        "authors": "Rohit Suratekar",
+        "pdf": "acknowPdf",
+        "size": "5.6MB",
+        "desc": "After successfully defending my PhD thesis at the National Centre for Biological Sciences on 29th October 2018, I felt immense gratitude towards the countless individuals who contributed to my academic journey of nearly 6 years. The \"Acknowledgements\" section was an opportunity to express my appreciation, but I wanted to do it uniquely. I decided to transform my heartfelt sentiments into a captivating comic strip.<br><br>Each panel of this carefully crafted comic strip holds cherished memories and emotions, paying tribute to the wonderful people who played significant roles in my academic pursuit. While some references may be familiar only to those acquainted with the characters, this comic remains a cherished memento of our shared experiences. Amidst millions of memories, this heartfelt creation remains closest to my heart.<br>Feel free to download this heartfelt comic by clicking the buttons below, and join me in celebrating the incredible people who shaped my academic journey."
+      },
+      {
+        "thumb": "sheThumb",
+        "header": "(S)he",
+        "authors": "Aparna Agarwal and Rohit Suratekar",
+        "pdf": "shePdf",
+        "size": "440.4kB",
+        "desc": "In a whimsical exploration, I ventured beyond traditional comic storytelling, embracing a new challenge - comedicizing a poem. Aparna, a talented poet and my Ph.D. batchmate, graciously allowed me to reimagine her work. The result? A delightful comic fusion that celebrates artistry and humor.<br><br>This collaborative journey infused new poetic scenarios, adding a unique twist to the original verses. With meticulous attention to detail and heartfelt arrangements, I captured my emotions and perspectives within this artistic creation.<br><br>Witness the beauty of Aparna's poem, now adorned with a sprinkle of laughter, in this creative ode to the boundless realms of creativity. Enjoy the poetic gem, as art takes on diverse interpretations and celebrates the joy of artistic discovery."
+      },
+      {
+        "thumb": "republicThumb",
+        "header": "Republic of Bacteria",
+        "authors": "Rohit Suratekar",
+        "pdf": "republicPdf",
+        "size": "598kB",
+        "desc": "Amidst a creative journey that included learning new techniques and practicing illustrations, a serendipitous moment sparked an exciting new comic series. While exploring articles on bacterial antibiotic-resistance, I came across Sruthi Balakrishnan's captivating write-up. Playfully, I <a class='text-link' href='https://twitter.com/rohitsuratekar/status/1314325171700989952?s=20' target='_blank'>tweeted</a> to her, suggesting a comic adaptation of her blog post.<br><br>Little did I know that this seemingly casual comment would plant the seeds for an extraordinary project. The idea began brewing, and a few hours later, I found myself embarking on a thrilling endeavor - a comic series dedicated to the fascinating world of bacteria.<br><br>With artistic inspiration flowing, I bring you the current comic-strip, a culmination of that initial tweet and the boundless creativity that followed. Before you dive into this microbial adventure, I encourage you to read Sruthi's enlightening <a href='https://massivesci.com/notes/antibiotic-resistant-susceptible-bacteria-cell-walls/' target='_blank' class='text-link'>article</a>. Understanding the context will further enrich your experience as we explore the mesmerizing realms of bacteria through the lens of art."
+      }
+    ]
   }
 }
