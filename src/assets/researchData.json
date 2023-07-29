@@ -56,17 +56,27 @@
   ],
   "education": [
     {
+      "degree": "Postdoctoral Research",
+      "institute": "IIMCB, Warsaw, Poland",
+      "topic": "Developmental Genomics",
+      "thesis": "Deciphering the dynamics of transcriptional regulatory networks of zebrafish heart development with mathematical modelling.",
+      "lab": "Winata Lab",
+      "work": "Research Topic"
+    },
+    {
       "degree": "Ph.D.",
       "institute": "NCBS-TIFR, Bangalore",
       "topic": "Mathematical Modelling",
       "thesis": "Understanding structure and dynamics of the Drosophila PI(4,5)P2 cycle with mathematical models.",
-      "lab": "Krishna Lab"
+      "lab": "Krishna Lab",
+      "work": "Thesis Topic"
     },
     {
       "degree": "B.Tech.",
       "institute": "NIT Allahabad",
       "topic": "Biotechnology",
-      "thesis": "Direct and Indirect effect of turbulence on bacterial growth."
+      "thesis": "Direct and Indirect effect of turbulence on bacterial growth.",
+      "work": "Thesis Topic"
     }
   ],
   "conference": [

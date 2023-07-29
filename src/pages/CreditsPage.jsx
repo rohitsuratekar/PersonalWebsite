@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import AppIcons from "@/components/IconLibrary";
 
 const CreditsPage = () => {
   const selector = useSelector((state) => state.app.credits);
@@ -26,7 +25,7 @@ const CreditsPage = () => {
             </li>
           ))}
         </ul>
-        <div className="text-xs text-secondary">
+        <div className="text-xs text-secondary mt-4">
           {selector.GeneralCredits.title}
         </div>
         <div className="text-sm mt-3">{selector.GeneralCredits.content}</div>
