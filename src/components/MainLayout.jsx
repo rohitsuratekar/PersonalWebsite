@@ -11,7 +11,7 @@ const MainLayout = () => {
       {location.pathname !== "/" && (
         <div className="h-screen grid grid-cols-1 sm:grid-cols-12">
           <div className="hidden sm:block bg-background-100 col-span-2 xl:col-span-3" />
-          <div className="col-span-8 xl:col-span-6 flex flex-col">
+          <div className="col-span-8 xl:col-span-6 flex flex-col bg-white">
             <MainHeader />
             <MainNavBar />
             <Outlet />
@@ -21,7 +21,7 @@ const MainLayout = () => {
           <div className="hidden sm:block bg-background-100 col-span-2 xl:col-span-3" />
         </div>
       )}
-      {location.pathname === "/" && <Outlet />}
+      {location.pathname === "/" && <div className="bg-white"><Outlet /></div>}
     </>
   );
 };
