@@ -1,0 +1,96 @@
+{
+  "LicenseAndCopyright": {
+    "title": "License and Copyright",
+    "content": "As an advocate for open source and Creative Commons, I have applied the following open licenses to the content of this website.",
+    "licenses": [
+      {
+        "type": "Website Source Code",
+        "licenseURL": "https://github.com/rohitsuratekar/PersonalWebsite/blob/master/LICENSE",
+        "licenseName": "MIT License"
+      },
+      {
+        "type": "All photographs (clicked by me)",
+        "licenseURL": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "licenseName": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
+      },
+      {
+        "type": "All sketches and poems",
+        "licenseURL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "licenseName": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License"
+      },
+      {
+        "type": "Digital Designing content copyright is mentioned on respective project page."
+      },
+      {
+        "type": "Any Digital Designing content without project page should be considered with",
+        "licenseURL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "licenseName": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License"
+      },
+      {
+        "type": "Project code licenses are on their respective GitHub repositories."
+      }
+    ]
+  },
+  "GeneralCredits": {
+    "title": "General Credits",
+    "content": "The entire website has been created by Rohit Suratekar, utilizing the following libraries and components.",
+    "credits": [
+      {
+        "type": "React",
+        "desc": "JS Framework",
+        "libraryURL": "https://react.dev/",
+        "licenseURL": "https://github.com/facebook/react/blob/main/LICENSE",
+        "licenseName": "MIT License"
+      },
+      {
+        "type": "Tailwindcss",
+        "desc": "CSS Framework",
+        "libraryURL": "https://tailwindcss.com/",
+        "licenseURL": "https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE",
+        "licenseName": "MIT License"
+      },
+      {
+        "type": "Node.js",
+        "desc": "Dependency Management",
+        "libraryURL": "https://nodejs.org/en/",
+        "licenseURL": "https://github.com/nodejs/node/blob/master/LICENSE",
+        "licenseName": "Mixed Licenses"
+      },
+      {
+        "type": "FontAwesome",
+        "desc": "Icons and SVGs",
+        "libraryURL": "https://fontawesome.com/",
+        "licenseURL": "https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt",
+        "licenseName": "CC BY 4.0 License"
+      },
+      {
+        "type": "Vite",
+        "desc": "Frontend Tooling",
+        "libraryURL": "https://vitejs.dev/",
+        "licenseURL": "https://github.com/vitejs/vite/blob/main/LICENSE",
+        "licenseName": "MIT License"
+      },
+      {
+        "type": "React Router",
+        "desc": "Routing",
+        "libraryURL": "https://reactrouter.com/en/main",
+        "licenseURL": "https://github.com/remix-run/react-router/blob/main/LICENSE.md",
+        "licenseName": "MIT License"
+      },
+      {
+        "type": "Redux",
+        "desc": "State Container",
+        "libraryURL": "https://redux.js.org/",
+        "licenseURL": "https://github.com/reduxjs/redux/blob/master/LICENSE.md",
+        "licenseName": "MIT License"
+      },
+      {
+        "type": "Firebase",
+        "desc": "Website hosting",
+        "libraryURL": "https://firebase.google.com/docs/hosting",
+        "licenseURL": "https://developers.google.com/terms/site-policies",
+        "licenseName": "Multiple Licenses"
+      }
+    ]
+  }
+}

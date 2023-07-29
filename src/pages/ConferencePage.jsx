@@ -56,6 +56,31 @@ const ConferencePage = () => {
         {selector.map((item, index) => (
           <ConfBox key={index} item={item} />
         ))}
+        <div className="text-xs text-secondary mb-2 mt-4">
+          Additional Conferences
+        </div>
+        <ul className=" mx-3" style={{ listStyleType: "square" }}>
+          {mainSelector.additionalConference.map((item, index) => (
+            <li key={index}>
+              <span className=" text-sm">{item.title}</span> {"  "}
+              <span className=" text-xs text-background">({item.date})</span>
+            </li>
+          ))}
+        </ul>
+        <div className="text-xs text-secondary mb-2 mt-4">
+          Workshop Organization
+        </div>
+        <div className="text-sm">
+          <a
+            href="https://ncbs-students.github.io/Workshop2017/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-link"
+          >
+            Informal Programming Workshop
+          </a>{" "}
+          , NCBS, Bangalore, India
+        </div>
       </div>
     </>
   );

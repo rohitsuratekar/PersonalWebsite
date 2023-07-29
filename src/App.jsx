@@ -18,6 +18,7 @@ import ComicPage from "@/pages/ArtPages/ComicPage";
 import CinematographyPage from "@/pages/ArtPages/CinematographyPage";
 import WritingPage from "@/pages/ArtPages/WritingPage";
 import ErdosPage from "@/pages/AdditionalPages/Erdos";
+import CreditsPage from "@/pages/CreditsPage";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="write" element={<WritingPage />} />
           <Route path="cinematography" element={<CinematographyPage />} />
           <Route path="erdos" element={<ErdosPage />} />
+          <Route path="credits" element={<CreditsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

@@ -14,6 +14,7 @@ export const researchSlice = createSlice({
     projects: researchData["projects"],
     skills: researchData["skills"],
     tools: researchData["tools"],
+    additionalConference: researchData["additionalConference"],
     crumbs: [
       { name: "Publication List", link: "/publications" },
       { name: "Skills and Work", link: "/projects" },

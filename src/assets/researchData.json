@@ -256,5 +256,19 @@
       "milestone": "Submitted PhD thesis and published manuscript.",
       "details": "Through the development of a mathematical model focusing on the PIP2 cycle, a key component of lipid signalling, I shed light on the intricate nature of Drosophila phototransduction lipid signalling. This model not only brought clarity to the regulation of lipid processes but also paved the way for new experimental directions, offering valuable insights into this complex system."
     }
+  ],
+  "additionalConference":[
+    {
+      "title": "Bangalore Complexity meeting, Bangalore, India",
+      "date": "4 - 6 Feb, 2017"
+    },
+    {
+      "title": "Inositide signalling in health and disease, Coorge, India",
+      "date": "28 Nov - 2 Dec, 2012"
+    },
+    {
+      "title": "Bioprospecting: Access for Sustainable Development, Allahabad, India",
+      "date": "19 - 20 Feb, 2010"
+    }
   ]
 }

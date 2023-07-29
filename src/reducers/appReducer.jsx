@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
+import creditsData from "@/assets/creditsData.json";
 
 export const appSlice = createSlice({
   name: "app",
   initialState: {
     title: "Rohit Suratekar",
+    credits: creditsData,
     mainNav: [
       { id: 1, name: "research", url: "/research" },
       { id: 2, name: "technology", url: "/technology" },
