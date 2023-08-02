@@ -9,7 +9,7 @@ const WritingPage = () => {
   return (
     <>
       <SubNavBar itemList={crumbs} />
-      <div className="p-5 grid grid-cols-1">
+      <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">Journey Through Words</div>
         <div className="mb-3">{selector.summary}</div>
         <div className="text-xs text-secondary mb-3">

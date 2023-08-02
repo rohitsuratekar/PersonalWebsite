@@ -9,7 +9,7 @@ const ProjectItem = ({ item }) => {
 
   return (
     <>
-      <div className=" bg-background-50 p-3 shadow-sm flex flex-col">
+      <div className="px-8 bg-background-50 p-3 shadow-sm flex flex-col">
         <div className="flex flex-row align-middle  items-center">
           <div className="h-6 w-6 fill-background group-hover:fill-primary">
             <AppIcons icon={item.platform} />

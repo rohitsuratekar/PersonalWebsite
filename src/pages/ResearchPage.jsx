@@ -54,28 +54,34 @@ const ResearchPage = () => {
   };
 
   return (
-    <div className="p-5 grid grid-cols-1">
-      <div className="text-xs text-secondary mb-2">Current Research Focus</div>
-      <div className="tracking-normal text-base antialiased ">
-        {selector.focus}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:h-12  my-3 gap-3 cursor-pointer">
-        {selector.quickLinks.map((item, index) => (
-          <QuickLink item={item} key={index} />
+    <>
+      <div className="p-5 px-8 grid grid-cols-1">
+        <div className="text-xs text-secondary mb-2">
+          Current Research Focus
+        </div>
+        <div className="tracking-normal text-base antialiased ">
+          {selector.focus}
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 sm:h-12  my-3 gap-3 cursor-pointer">
+          {selector.quickLinks.map((item, index) => (
+            <QuickLink item={item} key={index} />
+          ))}
+        </div>
+        <div className="text-xs text-secondary mb-2">
+          Professional Experiance
+        </div>
+        <div className="bg-background-50 grid grid-cols-1 py-3 my-2 drop-shadow">
+          {arangeItems(selector.workExp).map((element, index) => (
+            <WorkPosition key={index} item={element} index={index} />
+          ))}
+          <div className="mb-3"></div>
+        </div>
+        <div className="text-xs text-secondary mb-2 mt-3">Education</div>
+        {selector.education.map((item, index) => (
+          <EducationBox key={index} item={item} />
         ))}
       </div>
-      <div className="text-xs text-secondary mb-2">Professional Experiance</div>
-      <div className="bg-background-50 grid grid-cols-1 py-3 my-2 drop-shadow">
-        {arangeItems(selector.workExp).map((element, index) => (
-          <WorkPosition key={index} item={element} />
-        ))}
-        <div className="mb-3"></div>
-      </div>
-      <div className="text-xs text-secondary mb-2 mt-3">Education</div>
-      {selector.education.map((item, index) => (
-        <EducationBox key={index} item={item} />
-      ))}
-    </div>
+    </>
   );
 };
 

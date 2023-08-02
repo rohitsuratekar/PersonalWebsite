@@ -43,7 +43,7 @@ const TechPage = () => {
 
   return (
     <>
-      <div className="p-5 grid grid-cols-1">
+      <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">
         Developer Chronicles
         </div>
@@ -71,8 +71,8 @@ const TechPage = () => {
         <div className="mt-4"></div>
         {selector.langugeSections.map((element, index) => (
           <div key={index}>
-            <div className="text-xs text-secondary mb-2">{element.header}</div>
-            <div className="mb-4">{element.text}</div>
+            <div className="text-xs text-secondary">{element.header}</div>
+            <div className="mb-5">{element.text}</div>
           </div>
         ))}
       </div>

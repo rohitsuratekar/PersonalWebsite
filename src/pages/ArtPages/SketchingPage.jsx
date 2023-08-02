@@ -34,7 +34,7 @@ const SketchingPage = () => {
   return (
     <>
       <SubNavBar itemList={crumbs} />
-      <div className="p-5 grid grid-cols-1">
+      <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">
           From Scribbles to Sketches
         </div>

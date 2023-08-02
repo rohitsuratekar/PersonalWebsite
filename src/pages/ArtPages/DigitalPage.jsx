@@ -110,7 +110,7 @@ const DigitalPage = () => {
   return (
     <>
       <SubNavBar itemList={crumbs} />
-      <div className="p-5 grid grid-cols-1">
+      <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">Digital Art Fusion</div>
         <div>{selector.summary}</div>
         <div className="text-xs text-secondary mt-3">Tools and Techniques</div>

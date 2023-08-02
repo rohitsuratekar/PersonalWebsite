@@ -51,7 +51,7 @@ const ConferencePage = () => {
   return (
     <>
       <SubNavBar itemList={crumbs} />
-      <div className="p-4 grid grid-cols-1 ">
+      <div className="p-4 px-8 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">Conferences and Talks</div>
         {selector.map((item, index) => (
           <ConfBox key={index} item={item} />

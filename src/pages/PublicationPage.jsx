@@ -59,7 +59,7 @@ const PublicationPage = () => {
   return (
     <>
       <SubNavBar itemList={crumbs} />
-      <div className="p-5 grid grid-cols-1 gap-3">
+      <div className="p-5 px-8 grid grid-cols-1 gap-3">
         <div className="text-xs text-secondary mb-2">Publications</div>
         {getPapers().map((citation, index) => (
           <PublicationBox item={citation} key={index} />

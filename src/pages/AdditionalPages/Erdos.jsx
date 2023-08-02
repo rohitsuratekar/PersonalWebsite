@@ -3,7 +3,7 @@ import erdosImg from "@/assets/img/erdos.png";
 const ErdosPage = () => {
   return (
     <>
-      <div className="p-5 grid grid-cols-1">
+      <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-xs text-secondary mb-3">Erdős number</div>
         <div>
           As per{" "}

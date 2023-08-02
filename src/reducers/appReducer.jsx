@@ -7,10 +7,10 @@ export const appSlice = createSlice({
     title: "Rohit Suratekar",
     credits: creditsData,
     mainNav: [
-      { id: 1, name: "research", url: "/research" },
-      { id: 2, name: "technology", url: "/technology" },
-      { id: 3, name: "creativity", url: "/creativity" },
-      { id: 4, name: "social", url: "/social" },
+      { id: 1, name: "Research", url: "/research" },
+      { id: 2, name: "Technology", url: "/technology" },
+      { id: 3, name: "Creativity", url: "/creativity" },
+      { id: 4, name: "Social", url: "/social" },
     ],
     homeLinks: [
       {

@@ -31,7 +31,7 @@ const PhotographyPage = () => {
   return (
     <>
       <SubNavBar itemList={crumbs} />
-      <div className="p-5 grid grid-cols-1">
+      <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-xs text-secondary mb-2">How it all started?</div>
         <div>
           <div className="md:w-1/2 xxl:w-1/4 float-left mb-4 sm:mb-0 mr-4">

@@ -79,7 +79,7 @@ const ResearchProjectPage = () => {
   return (
     <>
       <SubNavBar itemList={crumbs} />
-      <div className="p-5 grid grid-cols-1">
+      <div className="p-5 px-8 grid grid-cols-1">
         {skillSelector.map((item, key) => (
           <div key={key}>
             <div className="text-xs text-secondary mb-3">{item.topic}</div>

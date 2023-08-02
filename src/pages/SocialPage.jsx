@@ -6,7 +6,7 @@ const SocialPage = () => {
 
   return (
     <>
-      <div className="p-5 grid grid-cols-1">
+      <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-xs text-secondary">My Journey and Interests</div>
         <ul className="m-3" style={{ listStyleType: "square" }}>
           {mainSelector.facts.map((item, key) => (
