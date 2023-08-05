@@ -65,11 +65,11 @@ const ComicPage = () => {
     <>
       <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-2">
+        <div className="text-sm text-secondary mb-2">
           The World of Comic Creation
         </div>
         <div>{selector.summary}</div>
-        <div className="text-xs text-secondary my-2">Comic Showcase</div>
+        <div className="text-sm text-secondary my-2">Comic Showcase</div>
         {selectedProject === null && (
           <div className="text-sm text-background">
             [Click on a thumbnail to explore more details.]

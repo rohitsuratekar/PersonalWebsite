@@ -7,7 +7,7 @@ const SocialPage = () => {
   return (
     <>
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary">My Journey and Interests</div>
+        <div className="text-sm text-secondary">My Journey and Interests</div>
         <ul className="m-3" style={{ listStyleType: "square" }}>
           {mainSelector.facts.map((item, key) => (
             <li key={key}>
@@ -32,7 +32,7 @@ const SocialPage = () => {
         <div>
           {mainSelector.profiles.map((item, index) => (
             <div key={index}>
-              <div className="text-xs text-secondary mb-1">{item.title}</div>
+              <div className="text-sm text-secondary mb-1">{item.title}</div>
               <div className="flex flex-wrap gap-1 mb-2">
                 {Object.entries(item.links).map(([key, value]) => (
                   <div key={key} className="">

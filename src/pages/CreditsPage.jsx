@@ -6,7 +6,7 @@ const CreditsPage = () => {
   return (
     <>
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary">
+        <div className="text-sm text-secondary">
           {selector.LicenseAndCopyright.title}
         </div>
         <div className="text-sm mt-3">
@@ -25,7 +25,7 @@ const CreditsPage = () => {
             </li>
           ))}
         </ul>
-        <div className="text-xs text-secondary mt-4">
+        <div className="text-sm text-secondary mt-4">
           {selector.GeneralCredits.title}
         </div>
         <div className="text-sm mt-3">{selector.GeneralCredits.content}</div>

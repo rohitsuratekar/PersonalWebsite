@@ -31,7 +31,7 @@ const CreativePage = () => {
   return (
     <>
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-2">Artistic Journey</div>
+        <div className="text-sm text-secondary mb-2">Artistic Journey</div>
         <div className="mb-4">{selector.background}</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 xl:grid-cols-3">
           {selector.sections.map((item, index) => (

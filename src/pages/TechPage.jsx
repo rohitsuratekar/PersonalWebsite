@@ -44,7 +44,7 @@ const TechPage = () => {
   return (
     <>
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-2">
+        <div className="text-sm text-secondary mb-2">
         Developer Chronicles
         </div>
         <div className="tracking-normal text-base antialiased ">
@@ -55,7 +55,7 @@ const TechPage = () => {
             <QuickLink item={item} key={index} />
           ))}
         </div>
-        <div className="text-xs text-secondary mb-3">
+        <div className="text-sm text-secondary mb-3">
           Programing Language Proficiency
         </div>
         <div className="divide-y divide-background-50 border-l-2 border-background-900 border-dashed border-r-2">
@@ -71,7 +71,7 @@ const TechPage = () => {
         <div className="mt-4"></div>
         {selector.langugeSections.map((element, index) => (
           <div key={index}>
-            <div className="text-xs text-secondary">{element.header}</div>
+            <div className="text-sm text-secondary">{element.header}</div>
             <div className="mb-5">{element.text}</div>
           </div>
         ))}

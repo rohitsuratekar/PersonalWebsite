@@ -56,7 +56,7 @@ const ResearchPage = () => {
   return (
     <>
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-2">
+        <div className="text-sm text-secondary mb-2">
           Current Research Focus
         </div>
         <div className="tracking-normal text-base antialiased ">
@@ -67,7 +67,7 @@ const ResearchPage = () => {
             <QuickLink item={item} key={index} />
           ))}
         </div>
-        <div className="text-xs text-secondary mb-2">
+        <div className="text-sm text-secondary mb-2">
           Professional Experiance
         </div>
         <div className="bg-background-50 grid grid-cols-1 py-3 my-2 drop-shadow">
@@ -76,7 +76,7 @@ const ResearchPage = () => {
           ))}
           <div className="mb-3"></div>
         </div>
-        <div className="text-xs text-secondary mb-2 mt-3">Education</div>
+        <div className="text-sm text-secondary mb-2 mt-3">Education</div>
         {selector.education.map((item, index) => (
           <EducationBox key={index} item={item} />
         ))}

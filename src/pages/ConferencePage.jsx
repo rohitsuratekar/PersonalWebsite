@@ -52,11 +52,11 @@ const ConferencePage = () => {
     <>
       <SubNavBar itemList={crumbs} />
       <div className="p-4 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-2">Conferences and Talks</div>
+        <div className="text-sm text-secondary mb-2">Conferences and Talks</div>
         {selector.map((item, index) => (
           <ConfBox key={index} item={item} />
         ))}
-        <div className="text-xs text-secondary mb-2 mt-4">
+        <div className="text-sm text-secondary mb-2 mt-4">
           Additional Conferences
         </div>
         <ul className=" mx-3" style={{ listStyleType: "square" }}>
@@ -67,7 +67,7 @@ const ConferencePage = () => {
             </li>
           ))}
         </ul>
-        <div className="text-xs text-secondary mb-2 mt-4">
+        <div className="text-sm text-secondary mb-2 mt-4">
           Workshop Organization
         </div>
         <div className="text-sm">

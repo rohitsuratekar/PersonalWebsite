@@ -48,7 +48,7 @@ const TechProjectPage = () => {
   return (
     <>
       <div className="p-5 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-2">
+        <div className="text-sm text-secondary mb-2">
           Selected Developed Project
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

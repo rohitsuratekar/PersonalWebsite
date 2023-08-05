@@ -32,7 +32,7 @@ const PhotographyPage = () => {
     <>
       <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-2">How it all started?</div>
+        <div className="text-sm text-secondary mb-3">How it all started?</div>
         <div>
           <div className="md:w-1/2 xxl:w-1/4 float-left mb-4 sm:mb-0 mr-4">
             <img src={profilePhoto} className="w-full" alt="Rohit Photo" />
@@ -44,7 +44,7 @@ const PhotographyPage = () => {
             <QuickLink item={item} key={index} />
           ))}
         </div>
-        <div className="text-xs text-secondary mb-2 mt-3">What do I have ?</div>
+        <div className="text-sm text-secondary mb-2 mt-3">What do I have ?</div>
         <div>{selector.gearsDetails}</div>
         <div>
           {Object.entries(selector.gears).map(([key, value]) => (

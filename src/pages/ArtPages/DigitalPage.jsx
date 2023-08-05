@@ -111,9 +111,9 @@ const DigitalPage = () => {
     <>
       <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-2">Digital Art Fusion</div>
+        <div className="text-sm text-secondary mb-2">Digital Art Fusion</div>
         <div>{selector.summary}</div>
-        <div className="text-xs text-secondary mt-3">Tools and Techniques</div>
+        <div className="text-sm text-secondary mt-3">Tools and Techniques</div>
         <ul className="m-3" style={{ listStyleType: "square" }}>
           {selector.skills.map((item, key) => (
             <li key={key}>
@@ -122,7 +122,7 @@ const DigitalPage = () => {
             </li>
           ))}
         </ul>
-        <div className="text-xs text-secondary">Gallery of Curated Work</div>
+        <div className="text-sm text-secondary">Gallery of Curated Work</div>
         <div className="flex flex-wrap gap-2 mt-4 mb-3">
           {
             <div

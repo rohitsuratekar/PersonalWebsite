@@ -82,11 +82,11 @@ const ResearchProjectPage = () => {
       <div className="p-5 px-8 grid grid-cols-1">
         {skillSelector.map((item, key) => (
           <div key={key}>
-            <div className="text-xs text-secondary mb-3">{item.topic}</div>
-            <div className="mb-3">{item.details}</div>
+            <div className="text-sm text-secondary">{item.topic}</div>
+            <div className="mb-4">{item.details}</div>
           </div>
         ))}
-        <div className="text-xs text-secondary">Tools and Techniques</div>
+        <div className="text-sm text-secondary">Tools and Techniques</div>
         <ul className="m-3" style={{ listStyleType: "square" }}>
           {toolSelector.map((item, key) => (
             <li key={key}>
@@ -98,7 +98,7 @@ const ResearchProjectPage = () => {
           ))}
         </ul>
         <div className="mb-3"></div>
-        <div className="text-xs text-secondary mb-3">Data Science Blog</div>
+        <div className="text-sm text-secondary">Data Science Blog</div>
         <div className="mb-3">
           Explore the fascinating world of data science and visualization on my
           blog, where I delved into the art of extracting insights from data.
@@ -113,7 +113,7 @@ const ResearchProjectPage = () => {
           </a>
           .
         </div>
-        <div className="text-xs text-secondary mb-3">
+        <div className="text-sm text-secondary mb-3">
           Selected Research Projects
         </div>
         {selector.map((element, index) => (
