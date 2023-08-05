@@ -1,5 +1,6 @@
-import { useSelector } from "react-redux";
-import SubNavBar from "@/components/SubNavBar";
+import { useSelector, useDispatch } from "react-redux";
+import { changeCrumbs } from "@/reducers/appReducer";
+import { useEffect } from "react";
 
 const PublicationBox = ({ item }) => {
   const parts = item.authors.split(new RegExp(`(Rohit Suratekar)`, "gi"));
@@ -26,6 +27,14 @@ const PublicationPage = () => {
   const mainSelector = useSelector((state) => state.research);
   const publicationList = mainSelector.publications;
   const crumbs = mainSelector.crumbs;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(changeCrumbs(crumbs));
+    return () => {
+      dispatch(changeCrumbs(null));
+    };
+  }, []);
 
   const sortItems = (items) => {
     return items.sort((b, a) => {
@@ -58,7 +67,6 @@ const PublicationPage = () => {
 
   return (
     <>
-      <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1 gap-3">
         <div className="text-sm text-secondary mb-2">Publications</div>
         {getPapers().map((citation, index) => (

@@ -3,9 +3,15 @@ import creditsData from "@/assets/creditsData.json";
 
 export const appSlice = createSlice({
   name: "app",
+  reducers:{
+    changeCrumbs(state, action){
+      state.currentCrumbs = action.payload
+    }
+  },
   initialState: {
     title: "Rohit Suratekar",
     credits: creditsData,
+    currentCrumbs: null,
     mainNav: [
       { id: 1, name: "Research", url: "/research" },
       { id: 2, name: "Technology", url: "/technology" },
@@ -36,3 +42,5 @@ export const appSlice = createSlice({
     ],
   },
 });
+
+export const { changeCrumbs } = appSlice.actions

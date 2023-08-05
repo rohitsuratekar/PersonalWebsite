@@ -1,9 +1,10 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { changeCrumbs } from "@/reducers/appReducer";
+import { useEffect } from "react";
 import profilePhoto from "@/assets/photography/rohit_suratekar_photo.jpg";
 import { QuickLink } from "@/components/CommonComponents";
 import flyPhoto from "@/assets/photography/fly.jpg";
 import cameraPhoto from "@/assets/photography/camera.jpg";
-import SubNavBar from "@/components/SubNavBar";
 
 const GearBox = ({ item, title }) => {
   return (
@@ -27,10 +28,17 @@ const PhotographyPage = () => {
   const mainSelector = useSelector((state) => state.art);
   const selector = mainSelector.photography;
   const crumbs = mainSelector.crumbs;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(changeCrumbs(crumbs));
+    return () => {
+      dispatch(changeCrumbs(null));
+    };
+  }, []);
 
   return (
     <>
-      <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-sm text-secondary mb-3">How it all started?</div>
         <div>

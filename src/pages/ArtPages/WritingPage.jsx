@@ -1,14 +1,22 @@
-import { useSelector } from "react-redux";
-import SubNavBar from "@/components/SubNavBar";
+import { useSelector, useDispatch } from "react-redux";
+import { changeCrumbs } from "@/reducers/appReducer";
+import { useEffect } from "react";
 
 const WritingPage = () => {
   const mainSelector = useSelector((state) => state.art);
   const selector = mainSelector.writing;
   const crumbs = mainSelector.crumbs;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(changeCrumbs(crumbs));
+    return () => {
+      dispatch(changeCrumbs(null));
+    };
+  }, []);
 
   return (
     <>
-      <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-sm text-secondary mb-2">Journey Through Words</div>
         <div className="mb-3">{selector.summary}</div>

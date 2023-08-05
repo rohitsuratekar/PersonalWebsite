@@ -4,7 +4,7 @@ const ErdosPage = () => {
   return (
     <>
       <div className="p-5 px-8 grid grid-cols-1">
-        <div className="text-xs text-secondary mb-3">Erdős number</div>
+        <div className="text-sm text-secondary mb-3">Erdős number</div>
         <div>
           As per{" "}
           <a

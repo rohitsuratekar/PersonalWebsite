@@ -1,5 +1,6 @@
-import { useSelector } from "react-redux";
-import SubNavBar from "@/components/SubNavBar";
+import { useSelector, useDispatch } from "react-redux";
+import { changeCrumbs } from "@/reducers/appReducer";
+import { useEffect } from "react";
 
 const VideoTypeItem = ({ item }) => {
   return (
@@ -37,9 +38,17 @@ const CinematographyPage = () => {
   const selector = mainSelector.cinematography;
   const crumbs = mainSelector.crumbs;
 
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(changeCrumbs(crumbs));
+    return () => {
+      dispatch(changeCrumbs(null));
+    };
+  }, []);
+
   return (
     <>
-      <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-sm text-secondary mb-2">
           Capturing Moments in Motion

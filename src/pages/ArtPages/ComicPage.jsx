@@ -1,7 +1,7 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { changeCrumbs } from "@/reducers/appReducer";
 import comicsAssets from "@/components/ComicsExporter";
-import { useState } from "react";
-import SubNavBar from "@/components/SubNavBar";
+import { useState, useEffect } from "react";
 
 const ProjectThumbnail = ({ project, isSelected, onClick }) => {
   const getClass = () => {
@@ -50,8 +50,17 @@ const ComicPage = () => {
   const mainSelector = useSelector((state) => state.art);
   const selector = mainSelector.comics;
   const crumbs = mainSelector.crumbs;
-
   const [selectedProject, setSelectedProject] = useState(null);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(changeCrumbs(crumbs));
+    return () => {
+      dispatch(changeCrumbs(null));
+    };
+  }, []);
+
+  
 
   const handleProjectClick = (project) => {
     if (selectedProject === project) {
@@ -63,7 +72,6 @@ const ComicPage = () => {
 
   return (
     <>
-      <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1">
         <div className="text-sm text-secondary mb-2">
           The World of Comic Creation

@@ -1,7 +1,8 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { changeCrumbs } from "@/reducers/appReducer";
+import { useEffect } from "react";
 import AppIcons from "@/components/IconLibrary";
 import { Chip } from "@/components/CommonComponents";
-import SubNavBar from "@/components/SubNavBar";
 
 const KeyHolder = ({ items }) => {
   return (
@@ -76,9 +77,17 @@ const ResearchProjectPage = () => {
   const toolSelector = mainSelector.tools;
   const crumbs = mainSelector.crumbs;
 
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(changeCrumbs(crumbs));
+    return () => {
+      dispatch(changeCrumbs(null));
+    };
+  }, []);
+
   return (
     <>
-      <SubNavBar itemList={crumbs} />
       <div className="p-5 px-8 grid grid-cols-1">
         {skillSelector.map((item, key) => (
           <div key={key}>

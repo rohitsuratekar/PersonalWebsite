@@ -1,11 +1,12 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
+
 const MainNavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const navList = useSelector(state=> state.app.mainNav);
-  
+  const navList = useSelector((state) => state.app.mainNav);
+
   const addClass = (element) => {
     var baseClass =
       " h-full text-center cursor-pointer hover:text-primary py-1";
@@ -18,10 +19,13 @@ const MainNavBar = () => {
   };
   const changeNav = (itemClicked) => {
     navigate(itemClicked.url);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
-      <nav className="grid grid-cols-4 border-y-2 content-center">
+      <nav
+        className={`grid grid-cols-4 border-y-2 content-center `}
+      >
         {navList.map((element) => (
           <div
             key={element.id}

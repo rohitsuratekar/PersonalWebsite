@@ -5,6 +5,7 @@ const NavItem = ({ item }) => {
   const location = useLocation();
   const goTo = (url) => {
     navigate(url);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

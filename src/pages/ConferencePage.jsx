@@ -1,6 +1,7 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { changeCrumbs } from "@/reducers/appReducer";
+import { useEffect } from "react";
 import getImageURL from "@/components/ImageLoader";
-import SubNavBar from "@/components/SubNavBar";
 
 const ConfBox = ({ item }) => {
   return (
@@ -47,10 +48,17 @@ const ConferencePage = () => {
   const mainSelector = useSelector((state) => state.research);
   const selector = mainSelector.conference;
   const crumbs = mainSelector.crumbs;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(changeCrumbs(crumbs));
+    return () => {
+      dispatch(changeCrumbs(null));
+    };
+  }, []);
 
   return (
     <>
-      <SubNavBar itemList={crumbs} />
       <div className="p-4 px-8 grid grid-cols-1">
         <div className="text-sm text-secondary mb-2">Conferences and Talks</div>
         {selector.map((item, index) => (
