@@ -32,7 +32,7 @@ const WorkPosition = ({ item, index }) => {
         {item.hasOwnProperty("company") && (
           <>
             <div className="col-span-1"></div>
-            <div className="col-span-11 text-xs italic mt-3 mb-3">
+            <div className="col-span-11 text-sm italic mt-3 mb-3">
               {item.company}
             </div>
           </>

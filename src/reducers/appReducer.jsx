@@ -27,7 +27,7 @@ export const appSlice = createSlice({
       {
         title: "🧑‍💻 Technology",
         url: "technology",
-        details: "Programming, applications and software",
+        details: "Programming and software",
       },
       {
         title: "👨‍🎨 Creativity",
