@@ -1,4 +1,13 @@
 {
+  "patents":[
+    {
+      "application":"US20230310587A1",
+      "url": "https://patents.google.com/patent/US20230310587A1/en",
+      "title": "Novel immunogenic coronavirus peptides and compositions thereof",
+      "year": 2023,
+      "status": "pending"
+    }
+  ],
   "publications": [
     {
       "year": 2022,
@@ -69,6 +78,16 @@
       "journal": "PNAS Nexus",
       "rest": "1, no. 1 (April 15, 2022): pgac018.",
       "preprint": false
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "doi": "https://doi.org/10.1101/2023.10.24.563847",
+      "authors": "Robert P. Matson, Isin Y. Comba, Eli Silvert, Michiel J.M. Niesen, Karthik Murugadoss, Dhruti Padwardhan, Rohit Suratekar, Elizabeth-Grace Goel, Brittany J. Poelaert, et al.",
+      "title": "A deep learning framework for predicting the neutralizing activity of COVID-19 therapeutics and vaccines against evolving SARS-CoV-2 variants",
+      "journal": "bioRxiv",
+      "rest": "October 26, 2023.",
+      "preprint": true
     }
   ]
 }

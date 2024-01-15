@@ -8,6 +8,7 @@ export const researchSlice = createSlice({
     focus: researchData["focus"],
     quickLinks: researchData["quickLinks"],
     publications: publicationData["publications"],
+    patents: publicationData["patents"],
     workExp: researchData["workExp"],
     education: researchData["education"],
     conference: researchData["conference"],

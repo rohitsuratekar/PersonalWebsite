@@ -185,7 +185,7 @@
   "skills":[
     {
       "topic": "Clinical Work on Diseases",
-      "details": "Cardiac Amyloidosis, Liver Cirrhosis, COVID-19, Non-Small Cell Lung Cancer, Prostate Cancer, Preclampsia, Esophageal Adenocarcinoma, Idiopathic Pulmonary Fibrosis"
+      "details": "Cardiac Amyloidosis, Liver Cirrhosis, COVID-19, Non-Small Cell Lung Cancer, Prostate Cancer, Preclampsia, Esophageal Adenocarcinoma, Idiopathic Pulmonary Fibrosis, Heart Failure, Parkinsons Disease, ASCVD, HCM"
     },
     {
       "topic": "Regulatory Affairs",
@@ -203,7 +203,7 @@
   "tools": [
     {
       "type": "Mathematics",
-      "details": "Boolean Modelling, Neural Networks, Random Forest, Clustering, Transformers, Graph Theory"
+      "details": "Boolean Modelling, Neural Networks, Random Forest, LLMs, Transformers, Graph Theory"
     },
     {
       "type": "ML Tools",

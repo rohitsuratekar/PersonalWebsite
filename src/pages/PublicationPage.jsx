@@ -23,8 +23,26 @@ const PublicationBox = ({ item }) => {
   );
 };
 
+const PatentBox = ({ item }) => {
+  return (
+    <>
+      <div className="text-sm">
+      <span className="text-background">{item.year}</span>
+        <span className="text-black ml-1">{item.title}</span>
+        <span className="text-link ml-1 italic underline">
+          <a href={item.url} target="_blank" rel="noopener noreferrer">
+            {item.application}
+          </a>
+        </span>
+        <span className="text-background ml-1">(Status: {item.status})</span>
+      </div>
+    </>
+  );
+};
+
 const PublicationPage = () => {
   const mainSelector = useSelector((state) => state.research);
+  const patentList = mainSelector.patents;
   const publicationList = mainSelector.publications;
   const crumbs = mainSelector.crumbs;
   const dispatch = useDispatch();
@@ -75,6 +93,10 @@ const PublicationPage = () => {
         <div className="text-sm text-secondary my-2">Preprints</div>
         {getPriprints().map((citation, index) => (
           <PublicationBox item={citation} key={index} />
+        ))}
+        <div className="text-sm text-secondary my-2">Patents</div>
+        {patentList.map((citation, index) => (
+          <PatentBox item={citation} key={index}/>
         ))}
       </div>
     </>
