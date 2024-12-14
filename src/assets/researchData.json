@@ -185,7 +185,7 @@
   "skills":[
     {
       "topic": "Clinical Work on Diseases",
-      "details": "Cardiac Amyloidosis, Liver Cirrhosis, COVID-19, Non-Small Cell Lung Cancer, Prostate Cancer, Preclampsia, Esophageal Adenocarcinoma, Idiopathic Pulmonary Fibrosis, Heart Failure, Parkinsons Disease, ASCVD, HCM"
+      "details": "Atrial Fibrillation, Cardiac Amyloidosis, Liver Cirrhosis, COVID-19, Non-Small Cell Lung Cancer, Prostate Cancer, Preclampsia, Esophageal Adenocarcinoma, Idiopathic Pulmonary Fibrosis, Heart Failure, Parkinsons Disease, ASCVD, HCM"
     },
     {
       "topic": "Regulatory Affairs",
@@ -223,6 +223,13 @@
     }
   ],
   "projects": [
+    {
+      "title": "AI-ECG model for early Atrial Fibrillation detection",
+      "institute": "Anumana, Inc.",
+      "status": "on-going",
+      "keywords": ["AI", "ECG", "Afib", "CNN"],
+       "details": "Driving innovation in cardiovascular care, we developed a cutting-edge AI-ECG algorithm for precise detection of Atrial Fibrillation (Afib). Leveraging advanced EHR data and sophisticated deep learning techniques, we engineered a robust CNN-based model for accurate Afib identification. This initiative highlights impactful collaborations with industry pioneers, pushing the boundaries of AI in healthcare."
+    },
     {
       "title": "AI-ECG model for Cardiac Amyloidosis detection",
       "institute": "Anumana, Inc.",

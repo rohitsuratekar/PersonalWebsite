@@ -10,6 +10,16 @@
   ],
   "publications": [
     {
+      "year": 2024,
+      "month": 11,
+      "doi": "https://doi.org/10.1038/s41540-024-00471-0",
+      "authors": "Matson, Robert P., Isin Y. Comba, Eli Silvert, Michiel J. M. Niesen, Karthik Murugadoss, Dhruti Patwardhan, Rohit Suratekar, et al.",
+      "title": "A Deep Learning Approach Predicting the Activity of COVID-19 Therapeutics and Vaccines against Emerging Variants.",
+      "journal": "Npj Systems Biology and Applications",
+      "rest": "10, no. 1 (November 27, 2024)",
+      "preprint": false
+    },
+    {
       "year": 2022,
       "month": 9,
       "doi": "https://doi.org/10.3390/vaccines10091509",
