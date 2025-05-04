@@ -19,11 +19,18 @@
   ],
   "workExp": [
     {
+      "company": "Anumana, Bangalore",
+      "position": "Lead Scientist",
+      "description": "AI in Healthcare",
+      "start": "Apr 2025",
+      "end": null
+    },
+    {
       "company": "nference Labs, Bangalore",
       "position": "Lead Scientist",
       "description": "AI in Healthcare",
       "start": "Apr 2023",
-      "end": null
+      "end": "Mar 2025"
     },
     {
       "company": "nference Labs, Bangalore",
