@@ -21,8 +21,8 @@
     {
       "company": "Anumana, Bangalore",
       "position": "Lead Scientist",
-      "description": "AI in Healthcare",
-      "start": "Apr 2025",
+      "description": "Clinical Trials and AI Agents",
+      "start": "Jul 2025",
       "end": null
     },
     {
@@ -30,7 +30,7 @@
       "position": "Lead Scientist",
       "description": "AI in Healthcare",
       "start": "Apr 2023",
-      "end": "Mar 2025"
+      "end": "Jun 2025"
     },
     {
       "company": "nference Labs, Bangalore",
@@ -192,7 +192,11 @@
   "skills":[
     {
       "topic": "Clinical Work on Diseases",
-      "details": "Atrial Fibrillation, Cardiac Amyloidosis, Liver Cirrhosis, COVID-19, Non-Small Cell Lung Cancer, Prostate Cancer, Preclampsia, Esophageal Adenocarcinoma, Idiopathic Pulmonary Fibrosis, Heart Failure, Parkinsons Disease, ASCVD, HCM"
+      "details": "Heart Failure, ASCVD, Atrial Fibrillation, Cardiac Amyloidosis, Liver Cirrhosis, COVID-19, Non-Small Cell Lung Cancer, Prostate Cancer, Preclampsia, Esophageal Adenocarcinoma, Idiopathic Pulmonary Fibrosis, Parkinsons Disease, HCM"
+    },
+    {
+      "topic": "Clinical Trials Data Analysis",
+      "details": "FHS, MESA, CHS, ACCORD, SPRINT, WHI, CARDIA"
     },
     {
       "topic": "Regulatory Affairs",
@@ -210,11 +214,11 @@
   "tools": [
     {
       "type": "Mathematics",
-      "details": "Boolean Modelling, Neural Networks, Random Forest, LLMs, Transformers, Graph Theory"
+      "details": "LLMs, Boolean Modelling, Neural Networks, Random Forest, Transformers, Graph Theory"
     },
     {
       "type": "ML Tools",
-      "details": "Tensorflow, Keras, nltk, sklearn, PyTorch, huggingface"
+      "details": "LangChain, LangGraph, Tensorflow, Keras, nltk, sklearn, PyTorch, huggingface"
     },
     {
       "type": "Genomics",
@@ -231,16 +235,23 @@
   ],
   "projects": [
     {
-      "title": "AI-ECG model for early Atrial Fibrillation detection",
+      "title": "Agentic framework for generating clinical trail cohorts",
       "institute": "Anumana, Inc.",
       "status": "on-going",
+      "keywords": ["AI", "Agent", "Cohorts"],
+       "details": "Building on advancements in AI-driven healthcare, we developed an agentic framework for automated clinical trial cohort generation. By leveraging large-scale EHR data and multimodal patient records, this framework intelligently orchestrates specialized agents to perform complex tasks such as patient eligibility extraction, inclusion/exclusion criteria matching, and dynamic cohort refinement. The system reduces manual effort, ensures reproducibility, and accelerates trial readiness. This initiative underscores the potential of autonomous AI systems in clinical research, fostering efficiency, scalability, and precision in trial design."
+    },
+    {
+      "title": "AI-ECG model for early Atrial Fibrillation detection",
+      "institute": "Anumana, Inc.",
+      "status": "finished",
       "keywords": ["AI", "ECG", "Afib", "CNN"],
        "details": "Driving innovation in cardiovascular care, we developed a cutting-edge AI-ECG algorithm for precise detection of Atrial Fibrillation (Afib). Leveraging advanced EHR data and sophisticated deep learning techniques, we engineered a robust CNN-based model for accurate Afib identification. This initiative highlights impactful collaborations with industry pioneers, pushing the boundaries of AI in healthcare."
     },
     {
       "title": "AI-ECG model for Cardiac Amyloidosis detection",
       "institute": "Anumana, Inc.",
-      "status": "on-going",
+      "status": "finished",
       "url": "https://www.businesswire.com/news/home/20230621151490/en/Anumana-Receives-U.S.-FDA-Breakthrough-Device-Designation-for-its-Cardiac-Amyloidosis-Algorithm",
       "keywords": ["AI", "ECG", "Rare-Disease", "CNN"],
       "milestone": "Granted Breakthrough Device Designation from FDA",
