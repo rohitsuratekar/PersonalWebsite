@@ -9,6 +9,16 @@
     }
   ],
   "publications": [
+      {
+      "year": 2025,
+      "month": 11,
+      "doi": "https://doi.org/10.1016/j.jacc.2025.10.065",
+      "authors": "Desai, Akshay S., Ambarish Pandey, Rohit Suratekar, et al.",
+      "title": "Predicting Heart Failure From 12-Lead ECGs Using AI: A HeartShare/AMP-HF Pooled Cohort Analysis.",
+      "journal": "J Am Coll Cardiol (JACC)",
+      "rest": "(November 2025)",
+      "preprint": false
+    },
     {
       "year": 2024,
       "month": 11,

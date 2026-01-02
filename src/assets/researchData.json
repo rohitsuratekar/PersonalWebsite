@@ -20,10 +20,17 @@
   "workExp": [
     {
       "company": "Anumana, Bangalore",
+      "position": "Senior Lead Data Scientist",
+      "description": "RWE and Clinical AI",
+      "start": "Oct 2025",
+      "end": null
+    },
+    {
+      "company": "Anumana, Bangalore",
       "position": "Lead Scientist",
       "description": "Clinical Trials and AI Agents",
       "start": "Jul 2025",
-      "end": null
+      "end": "Oct 2025"
     },
     {
       "company": "nference Labs, Bangalore",
@@ -87,6 +94,16 @@
     }
   ],
   "conference": [
+    {
+      "name": "American Heart Association Scientific Sessions , AHA 2025",
+      "url": "https://eppro02.ativ.me/web/planner.php?id=AHA25&table=agenda&tid=517247",
+      "date": "November 7-10, 2025",
+      "place": "New Orleans",
+      "country": "USA",
+      "title": "Predicting Heart Failure From 12-Lead ECGs Using AI",
+      "special": "Late Breaker",
+      "type": "other"
+    },
     {
       "name": "2nd International FishMed Conference on Zebrafish Research, FishMed2018",
       "url": "http://fishmed2018.pl/",
@@ -235,7 +252,7 @@
   ],
   "projects": [
     {
-      "title": "Agentic framework for generating clinical trail cohorts",
+      "title": "Agentic framework for generating clinical trials cohorts",
       "institute": "Anumana, Inc.",
       "status": "on-going",
       "keywords": ["AI", "Agent", "Cohorts"],
